@@ -1,0 +1,4 @@
+Name = Day-Care Checker Item
+Version = 1.1
+Credits = FL
+Website = https://www.pokecommunity.com/showthread.php?t=278209

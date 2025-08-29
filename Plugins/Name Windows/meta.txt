@@ -1,0 +1,4 @@
+Name         = Name Window
+Version      = 1.5
+Website      = https://reliccastle.com/resources/197/
+Credits      = Mr. Gela

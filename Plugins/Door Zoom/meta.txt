@@ -1,0 +1,4 @@
+Name         = Generation 5 Door Zoom Animation
+Version      = 1.1
+Credits      = Marin
+Link         = https://www.pokecommunity.com/showthread.php?t=400870

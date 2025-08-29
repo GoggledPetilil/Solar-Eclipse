@@ -1,0 +1,245 @@
+#-------------------------------
+[RIVAL1]
+BattleBGM        = Battle Elite.mid
+#-------------------------------
+[RIVAL1,Blue]
+BattleVS         = forestSM
+#-------------------------------
+[RIVAL1,Blue,1]
+BattleVS         = flamesSM
+#-------------------------------
+[RIVAL1,Blue,2]
+BattleVS         = wavesSM
+#-------------------------------
+[LEADER_Brock]
+TrainerPositionX = -8
+BattleVS         = integratedVS
+BattleScript     = BROCK
+#-------------------------------
+[CLONE]
+BattleBGM        = Battle Ghost.ogg
+#-------------------------------
+[TEAMSOL_M]
+BattleIntro      = evilTeam
+BattleBGM        = Battle Team Sol.ogg
+VictoryTheme     = Victory Against Team Sol.ogg
+#-------------------------------
+[TEAMSOL_F]
+BattleIntro      = evilTeam
+BattleBGM        = Battle Team Sol.ogg
+VictoryTheme     = Victory Against Team Sol.ogg
+#-------------------------------
+[LEADER_Xin]
+BattleIntro      = crystalSM
+VictoryTheme     = Victory Against Gym Leader.ogg
+BattleScript     = XIN
+#-------------------------------
+[LEADER_Amanda]
+BattleIntro      = crystalSM
+VictoryTheme     = Victory Against Gym Leader.ogg
+BattleScript     = AMANDA
+Ace		 = 4
+#-------------------------------
+[LEADER_Calix]
+BattleIntro      = crystalSM
+VictoryTheme     = Victory Against Gym Leader.ogg
+BattleScript     = CALIX
+Ace		 = 4
+#-------------------------------
+[LEADER_Emilia]
+BattleIntro      = crystalSM
+VictoryTheme     = Victory Against Gym Leader.ogg
+Ace		 = 5
+#-------------------------------
+[LEADER_Emilia,1]
+BattleIntro      = crystalSM
+VictoryTheme     = Victory Against Gym Leader.ogg
+Ace		 = 6
+#-------------------------------
+[LEADER_Benjamin]
+BattleIntro      = crystalSM
+VictoryTheme     = Victory Against Gym Leader.ogg
+BattleScript     = BENJAMIN
+Ace		 = 5
+#-------------------------------
+[LEADER_Benjamin,1]
+BattleIntro      = crystalSM
+VictoryTheme     = Victory Against Gym Leader.ogg
+BattleScript     = BENJAMIN
+Ace		 = 5
+#-------------------------------
+[LEADER_Benjamin,2]
+BattleIntro      = crystalSM
+VictoryTheme     = Victory Against Gym Leader.ogg
+BattleScript     = BENJAMIN
+Ace		 = 5
+#-------------------------------
+[LEADER_Benjamin,3]
+BattleIntro      = crystalSM
+VictoryTheme     = Victory Against Gym Leader.ogg
+BattleScript     = BENJAMIN
+Ace		 = 6
+#-------------------------------
+[LEADER_Benjamin,4]
+BattleIntro      = crystalSM
+VictoryTheme     = Victory Against Gym Leader.ogg
+BattleScript     = BENJAMIN
+Ace		 = 6
+#-------------------------------
+[LEADER_Patriama]
+BattleIntro      = crystalSM
+VictoryTheme     = Victory Against Gym Leader.ogg
+BattleScript     = PATRIAMA
+Ace		 = 5
+#-------------------------------
+[LEADER_Angeline]
+BattleIntro      = crystalSM
+VictoryTheme     = Victory Against Gym Leader.ogg
+BattleScript     = ANGELINE
+Ace		 = 5
+#-------------------------------
+[LEADER_Leonard]
+BattleIntro      = crystalSM
+VictoryTheme     = Victory Against Gym Leader.ogg
+BattleScript     = LEONARD
+Ace		 = 6
+#-------------------------------
+[LEADER_Yira]
+BattleVS         = crystalSM
+VictoryTheme     = Victory Against Gym Leader.ogg
+BattleScript     = YIRA
+Ace		 = 6
+#-------------------------------
+[RIVAL_Diana]
+BattleIntro      = spaceSM
+#-------------------------------
+[RIVAL_Diana,Diana,1]
+BattleBGM        = Battle Diana.ogg
+BattleScript     = DIANA_1
+#-------------------------------
+[RIVAL_Diana,Diana,2]
+BattleBGM        = Battle Diana.ogg
+BattleScript     = DIANA_2
+Ace		 = 3
+#-------------------------------
+[RIVAL_Diana,Diana,3]
+BattleBGM        = Battle Diana.ogg
+BattleScript     = DIANA_3
+Ace		 = 4
+#-------------------------------
+[RIVAL_Diana,Diana,5]
+BattleBGM        = Battle Diana.ogg
+BattleScript     = DIANA_5
+Ace		 = 6
+#-------------------------------
+[RIVAL_Diana,Diana,6]
+BattleScript     = DIANA_6
+BattleBGM        = Battle Diana Final.ogg
+Ace		 = 6
+#-------------------------------
+[RIVAL_Diana,Diana,8]
+BattleVS         = crystalSM
+VictoryTheme     = Victory Against Gym Leader.ogg
+BattleScript     = DIANA_8
+BattleBGM        = Battle Gym Leader.ogg
+Ace		 = 6
+#-------------------------------
+[RIVAL_Giltbert]
+BattleIntro      = specialSM
+#-------------------------------
+[RIVAL_Giltbert,Giltbert,1]
+BattleBGM        = Battle Giltbert.ogg
+BattleScript     = GILTBERT_1
+#-------------------------------
+[RIVAL_Giltbert,Giltbert,3]
+BattleBGM        = Battle Giltbert.ogg
+BattleScript     = GILTBERT_3
+#-------------------------------
+[RIVAL_Giltbert,Giltbert,4]
+BattleBGM        = Battle Giltbert.ogg
+BattleScript     = GILTBERT_4
+#-------------------------------
+[RIVAL_Giltbert,Giltbert,6]
+BattleBGM        = Battle Giltbert Final.ogg
+BattleScript     = GILTBERT_6
+Ace		 = 6
+#-------------------------------
+[TEAMSOL_AdminX]
+BattleIntro      = evilTeam
+BattleIntro      = goldSM
+VictoryTheme     = Victory Against Team Sol.ogg
+#-------------------------------
+[TEAMSOL_AdminX,Aelia,1]
+BattleScript     = AELIA_1
+Ace		 = 3
+#-------------------------------
+[TEAMSOL_AdminX,Aelia,2]
+BattleScript     = AELIA_2
+Ace		 = 6
+#-------------------------------
+[TEAMSOL_AdminX,Aelia,3]
+BattleScript     = AELIA_3
+Ace		 = 6
+#-------------------------------
+[TEAMSOL_AdminY]
+BattleIntro      = evilTeam
+BattleIntro      = goldSM
+VictoryTheme     = Victory Against Team Sol.ogg
+#-------------------------------
+[TEAMSOL_AdminY,Lairus,1]
+BattleScript     = LAIRUS_1
+Ace		 = 4
+#-------------------------------
+[TEAMSOL_AdminY,Lairus,2]
+BattleScript     = LAIRUS_2
+Ace		 = 6
+#-------------------------------
+[TEAMSOL_AdminY,Lairus,3]
+BattleScript     = LAIRUS_3
+Ace		 = 6
+#-------------------------------
+[TEAMSOL_AdminZ]
+BattleIntro      = evilTeam
+BattleIntro      = goldSM
+VictoryTheme     = Victory Against Team Sol.ogg
+#-------------------------------
+[TEAMSOL_AdminZ,Sienna,1]
+BattleScript     = SIENNA_1
+Ace		 = 4
+#-------------------------------
+[TEAMSOL_AdminZ,Sienna,2]
+BattleScript     = SIENNA_2
+Ace		 = 6
+#-------------------------------
+[TEAMSOL_AdminZ,Sienna,3]
+BattleScript     = SIENNA_3
+Ace		 = 6
+#-------------------------------
+[TEAMSOL_Boss]
+BattleIntro      = evilTeam
+BattleIntro      = goldSM
+VictoryTheme     = Victory Against Team Sol.ogg
+#-------------------------------
+[TEAMSOL_Boss,Zenithian,1]
+BattleScript     = ZENITHIAN_1
+Ace		 = 6
+#-------------------------------
+[TEAMSOL_Boss,Zenithian,2]
+BattleScript     = ZENITHIAN_2
+#-------------------------------
+[TEAMSOL_Boss,Zenithian,3]
+BattleScript     = ZENITHIAN_3
+Ace		 = 6
+#-------------------------------
+[PROFESSOR]
+BattleIntro      = trainerSM
+#-------------------------------
+[PROFESSOR,Xenia,1]
+BattleScript     = XENIA_1
+#-------------------------------
+[BACKERS_M,Peti & Gelato]
+BattleVS         = integratedVS
+BattleScript     = DEVS
+#-------------------------------
+[FISHERMAN,Dick]
+Ace		 = 6

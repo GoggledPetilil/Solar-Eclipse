@@ -1,0 +1,4 @@
+Name         = Quicksave
+Version      = 1.0.0
+Website      = https://reliccastle.com/resources/136/
+Credits      = Marin

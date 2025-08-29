@@ -1,0 +1,4 @@
+Name         = Field moves usable by compatibility
+Version      = 19.1
+Website      = https://www.pokecommunity.com/showthread.php?t=417391
+Credits      = Lexor

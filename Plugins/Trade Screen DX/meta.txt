@@ -1,0 +1,4 @@
+Name         = Trade Screen: DX
+Version      = 1.0.0
+Website      = https://luka-sj.com/res/ebdx
+Credits      = Rua, Luka S.J.,Maruno,Marin,Pokecheck.org,PinkCatDragon,Tebited15,BadSamaritan,WolfPP,redblueyellow,Damien,Issei Hyoudou,Nasasu,luckygirl88

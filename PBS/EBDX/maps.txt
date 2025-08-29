@@ -1,0 +1,352 @@
+#-------------------------------
+[11]
+# Route 10
+BattleEnv       = MOUNTAINLAKE
+#-------------------------------
+[12]
+# Route 11
+BattleEnv       = MOUNTAINLAKE
+#-------------------------------
+[16]
+# Route 19
+BattleEnv       = SNOW
+#-------------------------------
+[17]
+# Biytea Gym
+BattleEnv       = OUTDOOR
+#-------------------------------
+[18]
+# Route 7
+BattleEnv       = MAGMA
+#-------------------------------
+[19]
+# Route 18
+BattleEnv       = MOUNTAIN
+#-------------------------------
+[24]
+# Mount Laplaenta
+BattleEnv       = ICECAVE
+#-------------------------------
+[25]
+# Mount Laplaenta
+BattleEnv       = SNOW
+#-------------------------------
+[26]
+# Mount Laplaenta
+BattleEnv       = ICECAVE
+#-------------------------------
+[27]
+# Northern Passage
+BattleEnv       = ICECAVE
+#-------------------------------
+[29]
+# Mount Laplaenta
+BattleEnv       = ICECAVE
+#-------------------------------
+[39]
+# Route 18
+BattleEnv       = CAVE
+#-------------------------------
+[40]
+# Route 18
+BattleEnv       = CAVE
+#-------------------------------
+[41]
+# Route 18
+BattleEnv       = CAVE
+#-------------------------------
+[42]
+# Pumon Cave
+BattleEnv       = CAVE
+#-------------------------------
+[45]
+# Route 18
+BattleEnv       = CAVE
+#-------------------------------
+[46]
+# Route 13
+BattleEnv       = HOLTLANT
+#-------------------------------
+[53]
+# PSC Arena
+BattleEnv       = STAGE
+#-------------------------------
+[90]
+# Gardenia Exam Area
+BattleEnv       = FOREST
+#-------------------------------
+[95]
+# Yoko Forest
+BattleEnv       = FOREST
+#-------------------------------
+[96]
+# Route 3
+BattleEnv       = MOUNTAIN
+#-------------------------------
+[97]
+# Victory Road
+BattleEnv       = MAGMA
+#-------------------------------
+[101]
+# Dimensional Forest
+BattleEnv       = FOREST
+#-------------------------------
+[102]
+# Junkar City
+BattleEnv       = MOUNTAIN
+#-------------------------------
+[118]
+# Route 16
+BattleEnv       = SNOW
+#-------------------------------
+[105]
+# Junkar Gym
+BattleEnv       = DARKCAVE
+#-------------------------------
+[132]
+# Route 4
+BattleEnv       = MOUNTAIN
+#-------------------------------
+[134]
+# Telgior Mines
+BattleEnv       = CAVE
+#-------------------------------
+[135]
+# Route 5
+BattleEnv       = FOREST
+#-------------------------------
+[153]
+# Victory Road
+BattleEnv       = MAGMA
+#-------------------------------
+[160]
+# Holtlant Town
+BattleEnv       = HOLTLANT
+#-------------------------------
+[162]
+# Route 12
+BattleEnv       = OUTDOOR
+#-------------------------------
+[165]
+# Telgior Mines
+BattleEnv       = DARKCAVE
+#-------------------------------
+[166]
+# Telgior Mines
+BattleEnv       = DARKCAVE
+#-------------------------------
+[183]
+# Route 3
+BattleEnv       = CAVE
+#-------------------------------
+[187] 
+# Route 8
+BattleEnv       = MALUM
+#-------------------------------
+[190] 
+# Route 7
+BattleEnv       = MALUM
+#-------------------------------
+[191] 
+# Malum Volcano
+BattleEnv       = MAGMA
+#-------------------------------
+[192] 
+# Malum Volcano
+BattleEnv       = MAGMA
+#-------------------------------
+[193] 
+# Malum Volcano
+BattleEnv       = MAGMA
+#-------------------------------
+[195] 
+# Route 17
+BattleEnv       = MYRFIELD
+#-------------------------------
+[206]
+# Route 3
+BattleEnv       = MOUNTAIN
+#-------------------------------
+[209]
+# Praestia Cavern
+BattleEnv       = ILLUSIONCAVE
+#-------------------------------
+[210]
+# Praestia Cavern
+BattleEnv       = ILLUSIONCAVE
+#-------------------------------
+[211]
+# Praestia Cavern
+BattleEnv       = ILLUSIONCAVE
+#-------------------------------
+[212]
+# Praestia Cavern
+BattleEnv       = ILLUSIONCAVE
+#-------------------------------
+[215]
+# Pumon Cave
+BattleEnv       = ICECAVE
+#-------------------------------
+[227]
+# Sol Tower
+BattleEnv       = DARKNESS
+#-------------------------------
+[242]
+# Eastern Grotto
+BattleEnv       = FOREST
+#-------------------------------
+[243]
+# Arcadia Ruins
+BattleEnv       = CAVE
+#-------------------------------
+[244]
+# Arcadia Ruins
+BattleEnv       = CAVE
+#-------------------------------
+[252]
+# Victory Road
+BattleEnv       = MAGMA
+#-------------------------------
+[257] 
+# Malum Volcano
+BattleEnv       = MAGMA
+#-------------------------------
+[261]
+# Nightmare
+BattleEnv       = FOREST
+#-------------------------------
+[262]
+# Arcadia Ruins
+BattleEnv       = CAVE
+#-------------------------------
+[263]
+# Arcadia Ruins
+BattleEnv       = CAVE
+#-------------------------------
+[264]
+# Arcadia Ruins
+BattleEnv       = CAVE
+#-------------------------------
+[265]
+# Arcadia Ruins
+BattleEnv       = CAVE
+#-------------------------------
+[266]
+# Arcadia Ruins
+BattleEnv       = CAVE
+#-------------------------------
+[271]
+# Northern Passage
+BattleEnv       = ICECAVE
+#-------------------------------
+[272]
+# Northern Passage
+BattleEnv       = SNOW
+#-------------------------------
+[274]
+# Mount Laplaenta
+BattleEnv       = ICECAVE
+#-------------------------------
+[275]
+# Mount Laplaenta
+BattleEnv       = ICECAVE
+#-------------------------------
+[276]
+# Mount Laplaenta
+BattleEnv       = ICECAVE
+#-------------------------------
+[279]
+# Praestia Cavern
+BattleEnv       = ILLUSIONCAVE
+#-------------------------------
+[285]
+# Victory Road
+BattleEnv       = MAGMA
+#-------------------------------
+[286]
+# Victory Road
+BattleEnv       = MAGMA
+#-------------------------------
+[297]
+# Victory Road
+BattleEnv       = MAGMA
+#-------------------------------
+[299]
+# Praestia Cavern
+BattleEnv       = ILLUSIONCAVE
+#-------------------------------
+[300]
+# Praestia Cavern
+BattleEnv       = ILLUSIONCAVE
+#-------------------------------
+[301]
+# Praestia Cavern
+BattleEnv       = ILLUSIONCAVE
+#-------------------------------
+[302]
+# Praestia Cavern
+BattleEnv       = ILLUSIONCAVE
+#-------------------------------
+[303]
+# Praestia Cavern
+BattleEnv       = ILLUSIONCAVE
+#-------------------------------
+[306]
+# Mount Laplaenta
+BattleEnv       = ICECAVE
+#-------------------------------
+[307]
+# Southern Chamber
+BattleEnv       = DARKCAVE
+#-------------------------------
+[311]
+# Northern Passage
+BattleEnv       = ICECAVE
+#-------------------------------
+[312]
+# Eastern Grotto
+BattleEnv       = FOREST
+#-------------------------------
+[313] 
+# Western Chasm
+BattleEnv       = MAGMA
+#-------------------------------
+[314]
+# Northern Passage
+BattleEnv       = ICECAVE
+#-------------------------------
+[315]
+# Southern Chamber
+BattleEnv       = DARKCAVE
+#-------------------------------
+[316]
+# Eastern Grotto
+BattleEnv       = FOREST
+#-------------------------------
+[317] 
+# Western Chasm
+BattleEnv       = MAGMA
+#-------------------------------
+[318]
+# Southern Chamber
+BattleEnv       = DARKCAVE
+#-------------------------------
+[319]
+# Eastern Grotto
+BattleEnv       = FOREST
+#-------------------------------
+[322]
+# Southern Chamber
+BattleEnv       = DARKCAVE
+#-------------------------------
+[323] 
+# Western Chasm
+BattleEnv       = MAGMA
+#-------------------------------
+[324] 
+# Western Chasm
+BattleEnv       = MAGMA
+#-------------------------------
+[354] 
+# Meteor Hills
+BattleEnv       = CAVE

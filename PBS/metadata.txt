@@ -1,0 +1,1806 @@
+﻿# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
+[000]
+Home = 3,8,5,8
+WildBattleBGM = Battle wild.ogg
+TrainerBattleBGM = Battle trainer.ogg
+WildVictoryME = Battle victory wild.ogg
+TrainerVictoryME = Battle victory trainer.ogg
+SurfBGM = Surfing.ogg
+BicycleBGM = Bicycle.ogg
+PlayerA = POKEMONTRAINER_Sorin,trainer_POKEMONTRAINER_Sorin,boy_bike4,boy_surf4,boy_run4,boy_surf4,boy_fish_offset4,boy_fish_offset4
+PlayerB = POKEMONTRAINER_Soleil,trainer_POKEMONTRAINER_Soleil,girl_bike3,girl_surf3,girl_run3,girl_surf3,girl_fish_offset3,girl_fish_offset3
+PlayerC = POKEMONTRAINER_Luan,trainer_POKEMONTRAINER_Luan,boy_bike3,boy_surf3,boy_run3,boy_surf3,boy_fish_offset3,boy_fish_offset3
+PlayerD = POKEMONTRAINER_Lusine,trainer_POKEMONTRAINER_Lusine,girl_bike4,girl_surf4,girl_run4,girl_surf4,girl_fish_offset4,girl_fish_offset4
+PlayerE = POKEMONTRAINER_Ethan,trainer_POKEMONTRAINER_Gold,boy_bike,boy_surf,boy_run,boy_surf,boy_fish_offset,boy_fish_offset
+PlayerF = POKEMONTRAINER_Lyra,trainer_POKEMONTRAINER_Lyra,girl_bike,girl_surf,girl_run,girl_surf,girl_fish_offset,girl_fish_offset
+PlayerG = POKEMONTRAINER_Lucas,trainer_POKEMONTRAINER_Lucas,boy_bike2,boy_surf2,boy_run2,boy_surf2,boy_fish_offset2,boy_fish_offset2
+PlayerH = POKEMONTRAINER_Dawn,trainer_POKEMONTRAINER_Dawn,girl_bike2,girl_surf2,girl_run2,girl_surf2,girl_fish_offset2,girl_fish_offset2
+PlayerK = POKEMONTRAINER_Black,trainer_POKEMONTRAINER_Black,boy_bike5,boy_surf5,boy_run5,boy_surf5,boy_fish_offset5,boy_fish_offset5
+PlayerL = POKEMONTRAINER_White,trainer_POKEMONTRAINER_White,girl_bike5,girl_surf5,girl_run5,girl_surf5,girl_fish_offset5,girl_fish_offset5
+#-------------------------------
+[001]
+# Intro
+MapPosition = 0,13,4
+#-------------------------------
+[002]
+# Eisenblut City
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Snow,0
+MapPosition = 0,24,2
+BattleBack = City
+#-------------------------------
+[003]
+# \PN's House
+MapPosition = 0,13,6
+#-------------------------------
+[004]
+# Eisenblut Poké Center
+HealingSpot = 2,68,38
+MapPosition = 0,24,2
+#-------------------------------
+[005]
+# Eisenblut City
+MapPosition = 0,24,2
+#-------------------------------
+[006]
+# Eisenblut City
+MapPosition = 0,24,2
+#-------------------------------
+[007]
+# Power Plant
+MapPosition = 0,24,2
+#-------------------------------
+[008]
+# Sylveticus Corp.
+MapPosition = 0,24,2
+#-------------------------------
+[009]
+# Eisenblut Gym
+MapPosition = 0,24,2
+#-------------------------------
+[010]
+# Eisenblut City
+MapPosition = 0,24,2
+#-------------------------------
+[011]
+# Route 10
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,12,18
+BattleBack = Water
+MapSize = 5,11111
+#-------------------------------
+[012]
+# Route 11
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,18,18
+BattleBack = Water
+MapSize = 4,1111
+#-------------------------------
+[013]
+# Route 9
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,9,14
+MapSize = 2,1011101011
+#-------------------------------
+[014]
+# R3-Biytea Gate
+Bicycle = true
+MapPosition = 0,16,13
+#-------------------------------
+[015]
+# R2-Biytea Gate
+Bicycle = true
+MapPosition = 0,15,12
+#-------------------------------
+[016]
+# Route 19
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Snow,0
+MapPosition = 0,9,2
+SnapEdges = true
+MapSize = 2,11
+#-------------------------------
+[017]
+# Biytea Gym
+Outdoor = true
+Bicycle = true
+MapPosition = 0,15,13
+#-------------------------------
+[018]
+# Route 7
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,8,13
+#-------------------------------
+[019]
+# Route 18
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Snow,0
+MapPosition = 0,20,2
+MapSize = 4,1111
+#-------------------------------
+[020]
+# Route 18
+MapPosition = 0,21,2
+#-------------------------------
+[021]
+# R18-Myrfield Gate
+Bicycle = true
+MapPosition = 0,20,2
+#-------------------------------
+[022]
+# Biytea City
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,15,13
+#-------------------------------
+[023]
+# R18-Eisenblut Gate
+Outdoor = false
+Bicycle = true
+MapPosition = 0,23,2
+#-------------------------------
+[024]
+# Mount Laplaenta
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,8,2
+#-------------------------------
+[025]
+# Mount Laplaenta
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Blizzard,100
+MapPosition = 0,8,2
+#-------------------------------
+[026]
+# Mount Laplaenta
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,8,2
+#-------------------------------
+[027]
+# Northern Passage
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,8,2
+#-------------------------------
+[028]
+# R19-Farnlor Gate
+Bicycle = true
+MapPosition = 0,10,2
+#-------------------------------
+[029]
+# Mount Laplaenta
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,8,2
+#-------------------------------
+[030]
+# Jyeshtha City
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Sandstorm,0
+MapPosition = 0,10,7
+#-------------------------------
+[031]
+# Jyeshtha Poké Center
+HealingSpot = 30,16,55
+MapPosition = 0,10,7
+#-------------------------------
+[032]
+# Route 1
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,14,6
+MapSize = 2,11
+#-------------------------------
+[033]
+# Biytea Gym
+MapPosition = 0,15,13
+#-------------------------------
+[034]
+# Jyeshtha City
+MapPosition = 0,10,7
+#-------------------------------
+[035]
+# Jyeshtha City
+MapPosition = 0,10,7
+#-------------------------------
+[036]
+# Jyeshtha City
+MapPosition = 0,10,7
+#-------------------------------
+[037]
+# Jyeshtha Library
+MapPosition = 0,10,7
+#-------------------------------
+[038]
+# Jyeshtha Gym
+MapPosition = 0,10,7
+DarkMap = false
+TrainerBattleBGM = Battle Gym Trainer.ogg
+#-------------------------------
+[039]
+# Route 18
+MapPosition = 0,21,2
+MapSize = 2,11
+#-------------------------------
+[042]
+# Pumon Cave
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,15,6
+#-------------------------------
+[043]
+# Gardenia Town
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 3,8,5
+MapPosition = 0,13,6
+#-------------------------------
+[044]
+# Farnlor Inn
+MapPosition = 0,11,2
+#-------------------------------
+[046]
+# Route 13
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Sandstorm,0
+MapPosition = 0,10,8
+MapSize = 1,11
+#-------------------------------
+[047]
+# R13-Holtlant Gate
+Bicycle = true
+MapPosition = 0,10,9
+#-------------------------------
+[048]
+# Giltbert's House
+MapPosition = 0,13,6
+#-------------------------------
+[049]
+# R13-Jyeshtha Gate
+Bicycle = true
+MapPosition = 0,10,8
+#-------------------------------
+[050]
+# Myrfield Dojo
+MapPosition = 0,19,2
+TrainerBattleBGM = Battle Gym Trainer.ogg
+#-------------------------------
+[051]
+# Myrfield City
+MapPosition = 0,19,2
+#-------------------------------
+[052]
+# Sylveticus Corp.
+MapPosition = 0,24,2
+#-------------------------------
+[053]
+# SCT Arena
+MapPosition = 0,13,4
+#-------------------------------
+[054]
+# Astor Corp.
+MapPosition = 0,15,8
+#-------------------------------
+[055]
+# Helianthus City
+MapPosition = 0,15,8
+#-------------------------------
+[056]
+# Sol Island
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,17,18
+#-------------------------------
+[057]
+# Sol Research Lab
+HealingSpot = 56,36,20
+MapPosition = 0,17,18
+#-------------------------------
+[058]
+# Sol Research Lab
+MapPosition = 0,17,18
+#-------------------------------
+[059]
+# Sol Research Lab
+MapPosition = 0,17,18
+#-------------------------------
+[060]
+# Sol Research Lab
+MapPosition = 0,17,18
+#-------------------------------
+[061]
+# Sol Research Lab
+MapPosition = 0,17,18
+#-------------------------------
+[062]
+# Sol Research Lab
+MapPosition = 0,17,18
+#-------------------------------
+[063]
+# Sol Research Lab
+MapPosition = 0,17,18
+#-------------------------------
+[064]
+# Sol Research Lab
+MapPosition = 0,17,18
+#-------------------------------
+[065]
+# Sol Research Lab
+MapPosition = 0,17,18
+#-------------------------------
+[066]
+# Sol Research Lab
+MapPosition = 0,17,18
+#-------------------------------
+[067]
+# Sol Research Lab
+MapPosition = 0,17,18
+#-------------------------------
+[068]
+# Sol Research Lab
+MapPosition = 0,17,18
+#-------------------------------
+[069]
+# Eisenblut City
+MapPosition = 0,24,2
+#-------------------------------
+[070]
+# Sol Research Lab
+MapPosition = 0,17,18
+#-------------------------------
+[071]
+# Sol Research Lab
+MapPosition = 0,17,18
+#-------------------------------
+[072]
+# Sol Research Lab
+MapPosition = 0,17,18
+#-------------------------------
+[073]
+# Jadevik Lighthouse
+MapPosition = 0,22,18
+#-------------------------------
+[074]
+# Jadevik Lighthouse
+MapPosition = 0,22,18
+#-------------------------------
+[075]
+# Jadevik Lighthouse
+MapPosition = 0,22,18
+#-------------------------------
+[076]
+# Biytea Poké Center
+HealingSpot = 22,43,37
+MapPosition = 0,15,13
+#-------------------------------
+[077]
+# Helianthus City
+Outdoor = false
+MapPosition = 0,15,8
+#-------------------------------
+[078]
+# Gardenia Academy
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,13,4
+SnapEdges = true
+#-------------------------------
+[079]
+# Gardenia Academy
+Outdoor = false
+MapPosition = 0,13,4
+#-------------------------------
+[080]
+# Biytea City
+MapPosition = 0,15,13
+#-------------------------------
+[081]
+# Biytea City
+MapPosition = 0,15,13
+#-------------------------------
+[082]
+# Biytea City
+MapPosition = 0,15,13
+#-------------------------------
+[083]
+# Biytea City
+MapPosition = 0,15,13
+#-------------------------------
+[084]
+# R6-Biytea Gate
+Bicycle = true
+MapPosition = 0,14,13
+#-------------------------------
+[085]
+# Helianthus City
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,15,8
+BattleBack = City
+#-------------------------------
+[086]
+# Route 19
+Outdoor = false
+ShowArea = true
+Bicycle = false
+MapPosition = 0,9,2
+#-------------------------------
+[087]
+# Gardenia Gate
+Bicycle = true
+MapPosition = 0,13,5
+#-------------------------------
+[088]
+# Poké Fan Club
+MapPosition = 0,15,8
+#-------------------------------
+[089]
+# Gardenia Exam Area
+Outdoor = true
+Bicycle = true
+MapPosition = 0,13,4
+#-------------------------------
+[090]
+# Gardenia Exam Area
+Outdoor = true
+Bicycle = false
+MapPosition = 0,13,4
+SnapEdges = true
+#-------------------------------
+[091]
+# Helianthus Gym
+MapPosition = 0,15,8
+TrainerBattleBGM = Battle Gym Trainer.ogg
+#-------------------------------
+[092]
+# Route 2
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,15,9
+BattleBack = Field
+MapSize = 1,1111
+#-------------------------------
+[093]
+# R1-Helianthus Gate
+Bicycle = true
+MapPosition = 0,15,7
+#-------------------------------
+[094]
+# R2-Yoko Gate
+Bicycle = true
+MapPosition = 0,15,10
+#-------------------------------
+[095]
+# Yoko Forest
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,16,10
+#-------------------------------
+[096]
+# Route 3
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Rain,0
+MapPosition = 0,16,13
+MapSize = 5,11111
+#-------------------------------
+[097]
+# Victory Road
+Bicycle = true
+MapPosition = 0,15,13
+TrainerBattleBGM = Battle Gym Trainer.ogg
+#-------------------------------
+[098]
+# Route 3
+MapPosition = 0,17,13
+#-------------------------------
+[099]
+# Route 3
+MapPosition = 0,18,13
+#-------------------------------
+[100]
+# Helianthus Motors
+Bicycle = true
+MapPosition = 0,15,8
+#-------------------------------
+[101]
+# Dimensional Forest
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,11,6
+#-------------------------------
+[102]
+# Junkar City
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Rain,0
+MapPosition = 0,21,13
+BattleBack = City
+#-------------------------------
+[103]
+# Junkar Poké Center
+HealingSpot = 102,48,37
+MapPosition = 0,21,13
+#-------------------------------
+[104]
+# Junkar Gym
+MapPosition = 0,21,13
+TrainerBattleBGM = Battle Gym Trainer.ogg
+#-------------------------------
+[105]
+# Junkar Gym
+Weather = Rain,0
+MapPosition = 0,21,13
+#-------------------------------
+[106]
+# Junkar City
+MapPosition = 0,21,13
+#-------------------------------
+[107]
+# Junkar City
+MapPosition = 0,21,13
+#-------------------------------
+[108]
+# Junkar City
+MapPosition = 0,21,13
+#-------------------------------
+[109]
+# Junkar City
+MapPosition = 0,21,13
+#-------------------------------
+[110]
+# Junkar Farmhouse
+MapPosition = 0,21,13
+#-------------------------------
+[111]
+# Farnlor City
+Outdoor = true
+ShowArea = true
+Bicycle = false
+Weather = Snow,100
+MapPosition = 0,11,2
+BattleBack = Snow
+Environment = Snow
+#-------------------------------
+[112]
+# Farnlor Poké Centre
+HealingSpot = 111,41,16
+MapPosition = 0,11,2
+#-------------------------------
+[113]
+# Farnlor Gym
+Weather = Snow,0
+MapPosition = 0,11,2
+#-------------------------------
+[114]
+# Farnlor Gym
+MapPosition = 0,11,2
+TrainerBattleBGM = Battle Gym Trainer.ogg
+#-------------------------------
+[115]
+# Gardenia Town
+MapPosition = 0,13,6
+#-------------------------------
+[116]
+# Gardenia Town
+MapPosition = 0,13,6
+#-------------------------------
+[117]
+# Gardenia Town
+MapPosition = 0,13,6
+#-------------------------------
+[118]
+# Route 16
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Snow,100
+MapPosition = 0,12,2
+MapSize = 4,111000110010
+#-------------------------------
+[119]
+# R1-R16 Gate
+Outdoor = false
+Bicycle = true
+MapPosition = 0,14,4
+#-------------------------------
+[120]
+# Helianthus City
+MapPosition = 0,15,8
+#-------------------------------
+[121]
+# Helianthus Poké Center
+HealingSpot = 85,30,23
+MapPosition = 0,15,8
+#-------------------------------
+[122]
+# Yoko Forest
+Outdoor = false
+ShowArea = true
+Bicycle = false
+MapPosition = 0,16,10
+#-------------------------------
+[123]
+# Helianthus City
+MapPosition = 0,15,8
+#-------------------------------
+[124]
+# Farnlor Inn
+MapPosition = 0,11,2
+#-------------------------------
+[125]
+# Farnlor City
+MapPosition = 0,11,2
+#-------------------------------
+[126]
+# Farnlor City
+MapPosition = 0,11,2
+#-------------------------------
+[127]
+# Towngor City
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Rain,0
+MapPosition = 0,9,13
+BattleBack = City
+#-------------------------------
+[128]
+# Towngor Poké Center
+Outdoor = false
+Bicycle = false
+HealingSpot = 127,73,28
+MapPosition = 0,9,13
+#-------------------------------
+[129]
+# Game Corner
+Outdoor = false
+Bicycle = false
+MapPosition = 0,9,13
+#-------------------------------
+[130]
+# R14-Forest Gate
+Bicycle = true
+MapPosition = 0,11,6
+#-------------------------------
+[131]
+# Route 15
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,12,6
+#-------------------------------
+[132]
+# Route 4
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,22,13
+MapSize = 2,11010101
+#-------------------------------
+[133]
+# R4-Junkar Gate
+Bicycle = true
+MapPosition = 0,22,13
+#-------------------------------
+[134]
+# Telgior Mines
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,23,15
+#-------------------------------
+[135]
+# Route 5
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,23,17
+BattleBack = Forest
+MapSize = 1,11
+Environment = Forest
+#-------------------------------
+[136]
+# R4-R5 Gate
+Bicycle = true
+MapPosition = 0,24,15
+#-------------------------------
+[137]
+# Pokémon Guild
+MapPosition = 0,15,13
+#-------------------------------
+[138]
+# R5-Jadevik Gate
+Bicycle = true
+MapPosition = 0,23,18
+#-------------------------------
+[139]
+# Jadevik City
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,22,18
+#-------------------------------
+[140]
+# Jadevik Poké Center
+HealingSpot = 139,45,34
+MapPosition = 0,22,18
+#-------------------------------
+[141]
+# Jadevik City
+MapPosition = 0,22,18
+#-------------------------------
+[142]
+# Jadevik City
+MapPosition = 0,22,18
+#-------------------------------
+[143]
+# Jadevik City
+MapPosition = 0,22,18
+#-------------------------------
+[144]
+# Jadevik Port
+MapPosition = 0,22,18
+#-------------------------------
+[145]
+# Malum City
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,6,13
+#-------------------------------
+[146]
+# Malum Poké Center
+HealingSpot = 145,28,16
+MapPosition = 0,6,13
+#-------------------------------
+[147]
+# Malum City
+MapPosition = 0,6,13
+#-------------------------------
+[148]
+# Malum City
+MapPosition = 0,6,13
+#-------------------------------
+[149]
+# Malum City
+MapPosition = 0,6,13
+#-------------------------------
+[150]
+# Café Minan
+MapPosition = 0,6,13
+#-------------------------------
+[151]
+# R15-Forest Gate
+Bicycle = true
+MapPosition = 0,11,6
+#-------------------------------
+[152]
+# Malum Gym
+Outdoor = false
+ShowArea = false
+Bicycle = false
+Weather = Rain,0
+MapPosition = 0,6,13
+TrainerBattleBGM = Battle Gym Trainer.ogg
+#-------------------------------
+[153]
+# Victory Road
+Bicycle = true
+MapPosition = 0,15,13
+TrainerBattleBGM = Battle Gym Trainer.ogg
+#-------------------------------
+[154]
+# Holtlant Town
+MapPosition = 0,9,9
+#-------------------------------
+[155]
+# Holtlant Poké Center
+HealingSpot = 160,15,14
+MapPosition = 0,9,9
+#-------------------------------
+[156]
+# Pokémon Day Care
+Outdoor = false
+MapPosition = 0,9,9
+#-------------------------------
+[157]
+# Holtlant Bike Shop
+Outdoor = false
+Bicycle = true
+MapPosition = 0,9,9
+#-------------------------------
+[158]
+# Holtlant Town
+MapPosition = 0,9,9
+#-------------------------------
+[159]
+# Holtlant Town
+MapPosition = 0,9,9
+#-------------------------------
+[160]
+# Holtlant Town
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Rain,0
+MapPosition = 0,9,9
+BattleBack = City
+#-------------------------------
+[161]
+# Hidden Grotto
+Outdoor = true
+ShowArea = false
+Bicycle = false
+MapPosition = 0,12,2
+SnapEdges = true
+#-------------------------------
+[162]
+# Route 12
+Outdoor = true
+ShowArea = true
+Bicycle = true
+BicycleAlways = true
+MapPosition = 0,9,10
+MapSize = 1,111
+#-------------------------------
+[163]
+# Towngor Cycle Gate
+Bicycle = true
+MapPosition = 0,9,13
+#-------------------------------
+[164]
+# Holtlant Cycle Gate
+Bicycle = true
+MapPosition = 0,9,9
+#-------------------------------
+[165]
+# Telgior Mines
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,23,15
+#-------------------------------
+[166]
+# Telgior Mines
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,23,15
+#-------------------------------
+[167]
+# Route 6
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,10,13
+MapSize = 5,11111
+#-------------------------------
+[168]
+# Route 6
+Outdoor = false
+ShowArea = true
+Bicycle = false
+MapPosition = 0,12,13
+#-------------------------------
+[169]
+# Department Store
+Outdoor = false
+Bicycle = false
+MapPosition = 0,9,13
+#-------------------------------
+[170]
+# R6-Towngor Gate
+Outdoor = false
+Bicycle = true
+MapPosition = 0,10,13
+#-------------------------------
+[171]
+# Team Sol HQ
+Outdoor = false
+Bicycle = false
+MapPosition = 0,9,13
+#-------------------------------
+[172]
+# R9-Towngor Gate
+Outdoor = false
+Bicycle = true
+MapPosition = 0,9,14
+#-------------------------------
+[173]
+# Zimbani Poké Center
+HealingSpot = 194,36,26
+MapPosition = 0,11,18
+#-------------------------------
+[174]
+# Zimbani City
+MapPosition = 0,11,18
+#-------------------------------
+[175]
+# Towngor Tunnel
+Outdoor = false
+Bicycle = true
+MapPosition = 0,9,13
+MapSize = 1,11
+#-------------------------------
+[176]
+# Towngor City
+Outdoor = false
+Bicycle = false
+MapPosition = 0,9,13
+#-------------------------------
+[177]
+# Myrfield City
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Snow,0
+MapPosition = 0,19,2
+BattleBack = City
+#-------------------------------
+[178]
+# Diana's House
+MapPosition = 0,19,2
+#-------------------------------
+[179]
+# Myrfield Poké Center
+HealingSpot = 177,33,49
+MapPosition = 0,19,2
+#-------------------------------
+[180]
+# Myrfield City
+MapPosition = 0,19,2
+#-------------------------------
+[181]
+# Myrfield Theatre
+MapPosition = 0,19,2
+#-------------------------------
+[182]
+# Myrfield City
+MapPosition = 0,19,2
+#-------------------------------
+[183]
+# Route 3
+Outdoor = false
+Bicycle = true
+MapPosition = 0,19,13
+#-------------------------------
+[184]
+# Myrfield City
+MapPosition = 0,19,2
+#-------------------------------
+[185]
+# Club Trubbish
+Outdoor = false
+Bicycle = false
+MapPosition = 0,9,13
+#-------------------------------
+[186]
+# Club Trubbish
+Outdoor = false
+Bicycle = false
+MapPosition = 0,9,13
+#-------------------------------
+[187]
+# Route 8
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,4,12
+BattleBack = Mountain
+MapSize = 2,1011
+#-------------------------------
+[188]
+# Towngor City
+Outdoor = false
+Bicycle = false
+MapPosition = 0,9,13
+#-------------------------------
+[189]
+# R7-Towngor Gate
+Outdoor = false
+Bicycle = true
+MapPosition = 0,8,13
+#-------------------------------
+[190]
+# Route 7
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,7,13
+BattleBack = Mountain
+MapSize = 2,11
+#-------------------------------
+[191]
+# Malum Volcano
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,4,11
+#-------------------------------
+[192]
+# Malum Volcano
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,4,11
+#-------------------------------
+[193]
+# Malum Volcano
+Outdoor = true
+ShowArea = true
+Bicycle = false
+MapPosition = 0,4,11
+#-------------------------------
+[194]
+# Zimbani City
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,11,18
+#-------------------------------
+[195]
+# Route 17
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Rain,0
+MapPosition = 0,17,3
+MapSize = 3,111
+#-------------------------------
+[196]
+# Photo Studio
+Bicycle = true
+MapPosition = 0,11,18
+#-------------------------------
+[197]
+# Zimbani City
+MapPosition = 0,11,18
+#-------------------------------
+[198]
+# Zimbani City
+MapPosition = 0,11,18
+#-------------------------------
+[199]
+# Zimbani Gym
+MapPosition = 0,11,18
+TrainerBattleBGM = Battle Gym Trainer.ogg
+#-------------------------------
+[200]
+# Battle Colosseum
+MapPosition = 0,11,18
+#-------------------------------
+[201]
+# Zimbani City
+MapPosition = 0,11,18
+#-------------------------------
+[202]
+# Battle Colosseum
+MapPosition = 0,11,18
+#-------------------------------
+[203]
+# Zimbani Port
+MapPosition = 0,11,18
+#-------------------------------
+[204]
+# R9-Zimbani Gate
+Outdoor = false
+ShowArea = false
+Bicycle = true
+MapPosition = 0,10,18
+#-------------------------------
+[205]
+# Dragon Tomb
+Outdoor = false
+ShowArea = true
+Bicycle = false
+MapPosition = 0,11,15
+#-------------------------------
+[206]
+# Eisenblut Station
+Outdoor = false
+ShowArea = false
+Bicycle = false
+MapPosition = 0,24,2
+#-------------------------------
+[207]
+# SCT
+MapPosition = 0,13,4
+#-------------------------------
+[208]
+# Zimbani City
+MapPosition = 0,11,18
+#-------------------------------
+[209]
+# Praestia Cavern
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,16,3
+#-------------------------------
+[210]
+# Praestia Cavern
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,16,3
+#-------------------------------
+[211]
+# Praestia Cavern
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,16,3
+#-------------------------------
+[212]
+# Praestia Cavern
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,16,3
+#-------------------------------
+[213]
+# Route 14
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Sandstorm,0
+MapPosition = 0,9,6
+MapSize = 2,11
+#-------------------------------
+[214]
+# R14-Jyeshtha Gate
+Bicycle = true
+MapPosition = 0,10,7
+#-------------------------------
+[215]
+# Pumon Cave
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,15,6
+#-------------------------------
+[216]
+# Gardenia Academy
+MapPosition = 0,13,4
+#-------------------------------
+[217]
+# Gardenia Academy
+MapPosition = 0,13,4
+#-------------------------------
+[218]
+# Dragon Tomb
+Outdoor = false
+ShowArea = true
+Bicycle = false
+MapPosition = 0,11,15
+#-------------------------------
+[219]
+# Dragon Tomb
+Outdoor = false
+ShowArea = true
+Bicycle = false
+MapPosition = 0,11,15
+#-------------------------------
+[220]
+# Dragon Tomb
+Outdoor = false
+ShowArea = true
+Bicycle = false
+MapPosition = 0,11,15
+#-------------------------------
+[221]
+# Dragon Tomb
+Outdoor = false
+ShowArea = true
+Bicycle = false
+MapPosition = 0,11,15
+#-------------------------------
+[222]
+# Gardenia Academy
+MapPosition = 0,13,4
+#-------------------------------
+[223]
+# Astor Corp.
+MapPosition = 0,15,8
+#-------------------------------
+[224]
+# Astor Corp.
+MapPosition = 0,15,8
+#-------------------------------
+[225]
+# Astor Corp.
+MapPosition = 0,15,8
+#-------------------------------
+[226]
+# R17-Myrfield Gate
+Bicycle = true
+MapPosition = 0,19,3
+#-------------------------------
+[227]
+# Sol Tower
+Outdoor = false
+ShowArea = true
+MapPosition = 0,17,18
+#-------------------------------
+[232]
+# Alice Mansion
+Outdoor = false
+ShowArea = true
+Bicycle = false
+MapPosition = 0,11,6
+#-------------------------------
+[233]
+# Alice Mansion
+Outdoor = false
+ShowArea = true
+Bicycle = false
+MapPosition = 0,11,6
+#-------------------------------
+[234]
+# Alice Mansion
+Outdoor = false
+ShowArea = true
+Bicycle = false
+MapPosition = 0,11,6
+#-------------------------------
+[235]
+# Alice Mansion
+Outdoor = false
+ShowArea = true
+Bicycle = false
+MapPosition = 0,11,6
+#-------------------------------
+[236]
+# Alice Mansion
+Outdoor = false
+ShowArea = true
+Bicycle = false
+MapPosition = 0,11,6
+#-------------------------------
+[237]
+# Alice Mansion
+Outdoor = false
+ShowArea = true
+Bicycle = false
+MapPosition = 0,11,6
+#-------------------------------
+[238]
+# Alice Mansion
+Outdoor = false
+ShowArea = true
+Bicycle = false
+MapPosition = 0,11,6
+#-------------------------------
+[239]
+# Junkar Gym
+MapPosition = 0,21,13
+#-------------------------------
+[240]
+# Rock Bazaar
+MapPosition = 0,21,13
+#-------------------------------
+[242]
+# Eastern Grotto
+Outdoor = true
+Bicycle = true
+MapPosition = 0,23,17
+SnapEdges = true
+#-------------------------------
+[243]
+# Arcadia Ruins
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,8,6
+#-------------------------------
+[244]
+# Arcadia Ruins
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,8,6
+#-------------------------------
+[245]
+# Crescent Tower
+Outdoor = false
+ShowArea = true
+MapPosition = 0,19,2
+#-------------------------------
+[246]
+# Team Sol HQ
+MapPosition = 0,9,13
+#-------------------------------
+[247]
+# Team Sol HQ
+MapPosition = 0,9,13
+#-------------------------------
+[248]
+# Gardenia Town
+MapPosition = 0,13,6
+#-------------------------------
+[249]
+# Gardenia Town
+MapPosition = 0,13,6
+#-------------------------------
+[250]
+# Team Sol HQ
+MapPosition = 0,9,13
+#-------------------------------
+[251]
+# Team Sol HQ
+MapPosition = 0,9,13
+#-------------------------------
+[252]
+# Victory Road
+Bicycle = true
+MapPosition = 0,15,13
+TrainerBattleBGM = Battle Gym Trainer.ogg
+#-------------------------------
+[253]
+# Farnlor Inn
+MapPosition = 0,11,2
+#-------------------------------
+[254]
+# Farnlor Inn
+MapPosition = 0,11,2
+#-------------------------------
+[255]
+# Farnlor Inn
+MapPosition = 0,11,2
+#-------------------------------
+[256]
+# Farnlor Inn
+MapPosition = 0,11,2
+#-------------------------------
+[257]
+# Malum Volcano
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,4,11
+#-------------------------------
+[258]
+# Route 11
+Outdoor = false
+ShowArea = false
+MapPosition = 0,20,18
+#-------------------------------
+[259]
+# Route 11?
+Outdoor = false
+ShowArea = false
+MapPosition = 0,20,18
+#-------------------------------
+[260]
+# Route 11?
+Outdoor = true
+ShowArea = false
+Bicycle = false
+MapPosition = 0,20,18
+#-------------------------------
+[261]
+# Nightmare
+Outdoor = true
+ShowArea = false
+Bicycle = false
+MapPosition = 0,20,18
+SnapEdges = true
+#-------------------------------
+[262]
+# Arcadia Ruins
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,8,6
+#-------------------------------
+[263]
+# Arcadia Ruins
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,8,6
+#-------------------------------
+[264]
+# Arcadia Ruins
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,8,6
+#-------------------------------
+[265]
+# Arcadia Ruins
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,8,6
+#-------------------------------
+[266]
+# Arcadia Ruins
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,8,6
+#-------------------------------
+[267]
+# Sol Research Lab
+MapPosition = 0,17,18
+#-------------------------------
+[268]
+# Sol Research Lab
+MapPosition = 0,17,18
+#-------------------------------
+[269]
+# Sol Research Lab
+MapPosition = 0,17,18
+#-------------------------------
+[270]
+# Sol Research Lab
+MapPosition = 0,17,18
+#-------------------------------
+[271]
+# Northern Passage
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,8,2
+#-------------------------------
+[272]
+# Northern Passage
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Snow,100
+MapPosition = 0,8,2
+SnapEdges = true
+#-------------------------------
+[274]
+# Mount Laplaenta
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,8,2
+#-------------------------------
+[275]
+# Mount Laplaenta
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,8,2
+#-------------------------------
+[276]
+# Mount Laplaenta
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,8,2
+#-------------------------------
+[277]
+# Praestia Cavern
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Blizzard,100
+MapPosition = 0,15,3
+#-------------------------------
+[278]
+# R16-Praestia Gate
+Outdoor = false
+ShowArea = false
+Bicycle = true
+MapPosition = 0,15,3
+#-------------------------------
+[279]
+# Praestia Cavern
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,16,3
+#-------------------------------
+[280]
+# Sylveticus Corp.
+MapPosition = 0,24,2
+#-------------------------------
+[281]
+# Sylveticus Corp.
+MapPosition = 0,24,2
+#-------------------------------
+[282]
+# Eisenblut Gym
+MapPosition = 0,24,2
+TrainerBattleBGM = Battle Gym Trainer.ogg
+#-------------------------------
+[283]
+# Eisenblut Gym
+MapPosition = 0,24,2
+#-------------------------------
+[284]
+# Team Sol HQ
+MapPosition = 0,9,13
+#-------------------------------
+[285]
+# Victory Road
+Bicycle = true
+MapPosition = 0,15,13
+TrainerBattleBGM = Battle Gym Trainer.ogg
+#-------------------------------
+[286]
+# Victory Road
+Bicycle = true
+MapPosition = 0,15,13
+TrainerBattleBGM = Battle Gym Trainer.ogg
+#-------------------------------
+[287]
+# Gardenia Academy
+MapPosition = 0,13,4
+#-------------------------------
+[288]
+# Gardenia Academy
+MapPosition = 0,13,4
+#-------------------------------
+[289]
+# Arcadia Ruins
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Sandstorm,100
+MapPosition = 0,8,6
+#-------------------------------
+[290]
+# R8-Malum Gate
+Bicycle = true
+MapPosition = 0,5,13
+#-------------------------------
+[291]
+# Towngor Tunnel
+Bicycle = true
+MapPosition = 0,9,13
+#-------------------------------
+[292]
+# Towngor Tunnel
+Bicycle = true
+MapPosition = 0,9,13
+#-------------------------------
+[293]
+# Team Sol HQ
+MapPosition = 0,9,13
+#-------------------------------
+[294]
+# Team Sol HQ
+MapPosition = 0,9,13
+#-------------------------------
+[295]
+# Biytea Gym
+MapPosition = 0,15,13
+#-------------------------------
+[296]
+# Biytea Gym
+MapPosition = 0,15,13
+#-------------------------------
+[297]
+# Victory Road
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,15,13
+#-------------------------------
+[298]
+# Battle Frontier
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,3,5
+#-------------------------------
+[299]
+# Praestia Cavern
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,16,3
+#-------------------------------
+[300]
+# Praestia Cavern
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,16,3
+#-------------------------------
+[301]
+# Praestia Cavern
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,16,3
+#-------------------------------
+[302]
+# Praestia Cavern
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,16,3
+#-------------------------------
+[303]
+# Praestia Cavern
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,16,3
+#-------------------------------
+[305]
+# Hall of Fame
+MapPosition = 0,13,4
+#-------------------------------
+[312]
+# Eastern Grotto
+Outdoor = true
+Bicycle = true
+MapPosition = 0,23,17
+SnapEdges = true
+#-------------------------------
+[316]
+# Eastern Grotto
+Outdoor = true
+Bicycle = true
+MapPosition = 0,23,17
+SnapEdges = true
+#-------------------------------
+[318]
+# Southern Chamber
+Bicycle = true
+#-------------------------------
+[319]
+# Eastern Grotto
+Outdoor = true
+Bicycle = true
+MapPosition = 0,23,17
+SnapEdges = true
+#-------------------------------
+[320]
+# Crescent Tower
+MapPosition = 0,19,2
+#-------------------------------
+[321]
+# Crescent Tower
+MapPosition = 0,19,2
+#-------------------------------
+[336]
+# Sol Research Lab
+Outdoor = false
+MapPosition = 0,17,18
+#-------------------------------
+[342]
+# Sol Tower
+Outdoor = false
+MapPosition = 0,17,18
+#-------------------------------
+[344]
+# Sol Tower
+Outdoor = false
+MapPosition = 0,17,18
+#-------------------------------
+[346]
+# Myrfield Gym
+MapPosition = 0,19,2
+TrainerBattleBGM = Battle Gym Trainer.ogg
+#-------------------------------
+[347]
+# Gardenia Academy
+Outdoor = false
+ShowArea = true
+MapPosition = 0,13,4
+#-------------------------------
+[348]
+# Fitzberg City
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,3,5
+#-------------------------------
+[352]
+# Route 4
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,23,13
+#-------------------------------
+[353]
+# Meteor Hills
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,24,13
+#-------------------------------
+[356]
+# Friend Safari
+Outdoor = true
+Bicycle = true
+#-------------------------------
+[358]
+# Hidden Grotto
+Outdoor = true
+ShowArea = false
+Bicycle = false
+MapPosition = 0,12,2
+SnapEdges = true
+#-------------------------------
+[359]
+# Hidden Grotto
+Outdoor = true
+ShowArea = false
+Bicycle = false
+MapPosition = 0,12,2
+SnapEdges = true
+#-------------------------------
+[360]
+# Hidden Grotto
+Outdoor = true
+ShowArea = false
+Bicycle = false
+MapPosition = 0,12,2
+SnapEdges = true
+#-------------------------------
+[373]
+# Fitzberg City
+MapPosition = 0,3,5
+#-------------------------------
+[374]
+# Fitzberg City
+MapPosition = 0,3,5
+#-------------------------------
+[375]
+# Fitzberg Poké Center
+Outdoor = false
+HealingSpot = 348,55,49
+MapPosition = 0,3,5
+#-------------------------------
+[376]
+# Fitzberg-Frontier Gate
+Outdoor = false
+Bicycle = true
+MapPosition = 0,3,5
+#-------------------------------
+[377]
+# Fitzberg Station
+MapPosition = 0,3,5
+#-------------------------------
+[378]
+# Fitzberg Station
+MapPosition = 0,3,5

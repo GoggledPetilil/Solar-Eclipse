@@ -1,0 +1,3 @@
+Name      = Marin's Footprints
+Version   = 1.2
+Credits   = Marin

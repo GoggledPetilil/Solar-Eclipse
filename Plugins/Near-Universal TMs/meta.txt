@@ -1,0 +1,4 @@
+Name         = Near-Universal TMs
+Version      = 1.0
+Website      = https://www.pokecommunity.com/showthread.php?t=492298
+Credits      = FL

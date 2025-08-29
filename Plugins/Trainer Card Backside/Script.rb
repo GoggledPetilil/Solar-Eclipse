@@ -1,0 +1,437 @@
+class PokemonTrainerCard_Scene
+  ITEMS_DRAWN = 6
+  ITEM_HEADERS = ["BATTLE","PARAMETERS","BENEFITS","SPECIAL"]  
+
+  def pbStartScene
+    @front = true
+    @sel = 0
+    @viewport = Viewport.new(0,0,Graphics.width,Graphics.height)
+    @viewport.z = 99999
+    @sprites = {}
+    background = pbResolveBitmap(sprintf("Graphics/Pictures/Trainer Card/bg_f"))
+    if $Trainer.female? && background
+      addBackgroundPlane(@sprites,"bg","Trainer Card/bg_f",@viewport)
+    else
+      addBackgroundPlane(@sprites,"bg","Trainer Card/bg",@viewport)
+    end
+    cardexists = pbResolveBitmap(sprintf("Graphics/Pictures/Trainer Card/card_f"))
+    @sprites["card"] = IconSprite.new(0,-20,@viewport)
+    if $Trainer.female? && cardexists
+      @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/card_f")
+    else
+      stars = ($game_variables[Settings::TRAINER_STARS]).clamp(0,5)
+      str = "Graphics/Pictures/Trainer Card/card_" + (stars).to_s
+      @sprites["card"].setBitmap(str)
+    end
+    @sprites["overlay"] = BitmapSprite.new(Graphics.width,Graphics.height,@viewport)
+    pbSetSystemFont(@sprites["overlay"].bitmap)
+    @sprites["elements"] = IconSprite.new(0,0,@viewport)
+    @sprites["elements"].setBitmap(sprintf("Graphics/Pictures/Trainer Card/card_overlay"))
+    @sprites["trainer"] = IconSprite.new(336*0.9,-60*0.1,@viewport)
+    @sprites["trainer"].setBitmap(GameData::TrainerType.player_front_sprite_filename($Trainer.trainer_type))
+    @sprites["trainer"].x -= (@sprites["trainer"].bitmap.width-128)/(2*1)
+    @sprites["trainer"].y -= (@sprites["trainer"].bitmap.height-128)/(1*1)
+    @sprites["trainer"].z = 2
+    @sprites["trainer"].zoom_x = 2
+    @sprites["trainer"].zoom_y = 2
+    pbDrawTrainerCardFront
+    pbFadeInAndShow(@sprites) { pbUpdate }
+  end
+
+  def pbStartSceneBack
+    @front = false
+    @sel = 0
+    @viewport = Viewport.new(0,0,Graphics.width,Graphics.height)
+    @viewport.z = 99999
+    @sprites = {}
+    background = pbResolveBitmap(sprintf("Graphics/Pictures/Trainer Card/bg_f"))
+    if $Trainer.female? && background
+      addBackgroundPlane(@sprites,"bg","Trainer Card/bg_f",@viewport)
+    else
+      addBackgroundPlane(@sprites,"bg","Trainer Card/bg",@viewport)
+    end
+    cardexists = pbResolveBitmap(sprintf("Graphics/Pictures/Trainer Card/card_f"))
+    @sprites["card"] = IconSprite.new(0,-20,@viewport)
+    stars = ($game_variables[Settings::TRAINER_STARS]).clamp(0,5)
+    str = "Graphics/Pictures/Trainer Card/card_back_" + (stars).to_s
+    @sprites["card"].setBitmap(str)
+    @sprites["overlay"] = BitmapSprite.new(Graphics.width,Graphics.height,@viewport)
+    pbSetSystemFont(@sprites["overlay"].bitmap)
+    @sprites["elements"] = IconSprite.new(0,0,@viewport)
+    @sprites["elements"].setBitmap(sprintf("Graphics/Pictures/Trainer Card/card_overlay"))
+    @sprites["knob"] = IconSprite.new(0,0,@viewport)
+    stars = ($game_variables[Settings::TRAINER_STARS]).clamp(0,5)
+    knobStr = "Graphics/Pictures/Trainer Card/card_knob_" + (stars).to_s
+    @sprites["knob"].setBitmap(sprintf(knobStr))
+    pbDrawTrainerCardBack
+    pbFadeInAndShow(@sprites) { pbUpdate }
+  end
+
+  def pbDrawTrainerCardBack
+    overlay = @sprites["overlay"].bitmap
+    overlay.clear
+    pbDrawItems
+    pbDrawListKnob
+  end
+
+  def pbTrainerCard
+    pbSEPlay("GUI trainer card open")
+    loop do
+      Graphics.update
+      Input.update
+      pbUpdate
+      if Input.trigger?(Input::BACK)
+        pbPlayCloseMenuSE
+        break
+      end
+      if Input.trigger?(Input::ACTION) || Input.trigger?(Input::USE)
+	pbSEPlay("GUI trainer card flip")
+	pbDisposeSpriteHash(@sprites)
+	@viewport.dispose
+	(@front) ? pbStartSceneBack : pbStartScene
+      end
+      oldsel = @sel
+      if Input.repeat?(Input::DOWN)
+        if @sel < (pbGetAllCatagories.size) - ITEMS_DRAWN
+          @sel += 1
+        end
+      end
+      if Input.repeat?(Input::UP)
+        if @sel > 0
+          @sel -= 1
+        end
+      end
+      if Input.repeat?(Input::JUMPDOWN)
+        if (@sel + ITEMS_DRAWN) < (pbGetAllCatagories.size - ITEMS_DRAWN).floor
+          @sel += ITEMS_DRAWN
+        else
+          @sel = pbGetAllCatagories.size - ITEMS_DRAWN
+        end
+      end
+      if Input.repeat?(Input::JUMPUP)
+        if @sel > ITEMS_DRAWN
+          @sel -= ITEMS_DRAWN
+        else
+          @sel = 0
+        end
+      end
+      if @sel != oldsel && !@front
+        pbDrawItems
+        pbDrawListKnob
+        pbSEPlay("GUI trainer card sel")
+      end
+    end
+  end
+
+  def pbGetAllCatagories
+    return pbDrawBattle + pbDrawParam + pbDrawBenefits + pbDrawSpecial
+  end
+
+  def pbDrawItems
+    baseColor   = pbBaseTextColor
+    shadowColor = pbShadowTextColor
+    titleX = 48
+    titleY = 32
+    offsetY = 32
+    contentX = 460
+    contentY = titleY
+    headerX = 254
+    pbDisposeSprite(@sprites, "text")
+    @sprites["text"] = TextSprite.new(@viewport)
+    @sprites["text"].draw(["Rank",titleX,titleY+(offsetY*0),0,baseColor,shadowColor])
+    @sprites["text"].draw([$Trainer.difficulty.to_s,contentX,contentY+(offsetY*0),1,baseColor,shadowColor])
+    i = 0
+    p = 0
+    elements = pbGetAllCatagories
+    for i in @sel...(@sel + PokemonTrainerCard_Scene::ITEMS_DRAWN)
+      elementText = elements[i].to_s
+      newX = titleX
+      newY = titleY
+      textAlign = 0
+      newOffsetY = offsetY*(p+2)
+      if ITEM_HEADERS.include?(elementText)
+        newX = headerX
+        textAlign = 2
+        @sprites["text"].draw([elementText,newX,newY+(newOffsetY),textAlign,baseColor,shadowColor])
+      elsif elements[i] != nil
+        @sprites["text"].draw([elementText,newX,newY+(newOffsetY),textAlign,baseColor,shadowColor])
+        elementText = AnswerDictionary(elements[i]).to_s
+        newX = contentX
+        newY = contentY
+        textAlign = 1
+        @sprites["text"].draw([elementText,newX,newY+(newOffsetY),textAlign,baseColor,shadowColor])
+      end
+      i+=1
+      p+=1
+    end
+  end
+
+  def pbDrawBattle
+    header = ITEM_HEADERS[0]
+    array = ["Player Strength","Opponent Strength","Banned Items",
+             "Opponent Level","Opponent Skill"]
+    s = [header]
+    i = 0
+    loop do
+      s << array[i]
+      i += 1
+      break if i >= array.length
+    end
+    return s
+  end
+
+  def pbDrawParam
+    header = ITEM_HEADERS[1]
+    array = ["Forced IVs","EV Gain","Exp. Modifier",
+	     "Money Modifier","Capture Modifier"]
+    s = [header]
+    i = 0
+    loop do
+      s << array[i]
+      i += 1
+      break if i >= array.length
+    end
+    return s
+  end
+
+  def pbDrawBenefits
+    header = ITEM_HEADERS[2]
+    array = ["Pokémon Affection","Exp. All","Recycle Items",
+	     "Box Link","Free Doctors"]
+    s = [header]
+    i = 0
+    loop do
+      s << array[i]
+      i += 1
+      break if i >= array.length
+    end
+    return s
+  end
+
+  def pbDrawSpecial
+    header = ITEM_HEADERS[3]
+    array = ["Nuzlocke","Randomizer","Inverse Battles",
+	     "Level Cap","Little Cup","Harder Bosses"]
+    s = [header]
+    i = 0
+    loop do
+      s << array[i]
+      i += 1
+      break if i >= array.length
+    end
+    return s
+  end
+
+  def pbDrawListKnob
+    knobX = 476
+    knobY = 92
+    knobEndY = knobY + 112
+    step = (pbGetAllCatagories.size - ITEMS_DRAWN)
+    @sprites["knob"].x = knobX
+    newY = knobY + knobEndY * (@sel.to_f/step.to_f)
+    @sprites["knob"].y = newY.clamp(knobY,knobY + knobEndY)
+  end
+
+  def ProperString(input)
+    string = input.to_s
+    if string.capitalize == "True"
+      return "On"
+    elsif string.capitalize == "False"
+      return "Off"
+    else
+      return string.capitalize
+    end
+  end
+
+  def pbGetDictionary
+    dictionary = { "Nuzlocke" => pbGetNuzlocke, "Randomizer" => pbGetRandomizer, "Inverse Battles" => pbGetInverse, 
+		   "Little Cup" => pbGetLittleCup, "Harder Bosses" => pbGetHarderBosses, "Opponent Level" => pbGetEnemyLevel,
+		   "Pokémon Affection" => pbGetAffectionM, "Exp. All" => pbGetExpShare, "Recycle Items" => pbGetKeepItems,
+		   "Box Link" => pbGetBoxLink, "Free Doctors" => pbGetFreeDoctors,
+		   "Player Strength" => pbGetPlayerStrength, "Opponent Strength" => pbGetOpponentStrength, 
+		   "Banned Items" => pbGetBannedItems, "Exp. Modifier" => pbGetEXPModifier, "Money Modifier" => pbGetMoneyModifier,
+		   "Opponent Skill" => pbGetEnemyAI, "Forced IVs" => pbGetForcedIVs, "EV Gain" => pbGetEVGain,
+		   "Level Cap" => pbGetLevelCap, "Capture Modifier" => pbGetCaptureRate}
+    return dictionary
+  end
+
+  def AnswerDictionary(key)
+    return pbGetDictionary.fetch(key)
+  end
+
+  def pbGetNuzlocke
+    if $PokemonGlobal.qNuzlocke
+      return "On"
+    else
+      return "Off"
+    end
+  end
+
+  def pbGetRandomizer
+    if $PokemonGlobal.isRandomizer
+      return "On"
+    else
+      return "Off"
+    end
+  end
+
+  def pbGetInverse
+    s = $game_switches[Settings::INVERSE_BATTLE]
+    return ProperString(s)
+  end
+
+  def pbGetLevelCap
+    if $game_switches[Settings::FORCED_LEVELCAP] && $game_switches[12] == false
+      return Settings::LEVELCAPS[$Trainer.badge_count.clamp(0,Settings::LEVELCAPS.size)]
+    else
+      return "Off"
+    end
+  end
+
+  def pbGetLittleCup
+    s = $game_switches[Settings::LITTLE_CUP]
+    return ProperString(s)
+  end
+
+  def pbGetHarderBosses
+    s = $game_switches[Settings::HARDER_BOSSES]
+    return ProperString(s)
+  end
+
+  def pbGetPlayerStrength
+    val = $game_variables[Settings::PLAYER_DAMAGE_OUPUT]
+    if val >= 1
+      s = "Max"
+    elsif val <= -1
+      s = "Min"
+    else
+      s = "Standard"
+    end
+    return s
+  end
+
+  def pbGetOpponentStrength
+    val = $game_variables[Settings::ENEMY_DAMAGE_OUPUT]
+    if val >= 1
+      s = "Max"
+    elsif val <= -1
+      s = "Min"
+    else
+      s = "Standard"
+    end
+    return s
+  end
+
+  def pbGetBannedItems
+    s = ""
+    i = 0
+    if $game_switches[Settings::BAN_RECOVERY]
+      s += "Recovery"
+      i += 1
+    end
+    if $game_switches[Settings::BAN_REVIVAL]
+      if i > 0
+        s += "/"
+      end
+      s += "Revival"
+      i += 1
+    end
+    if $game_switches[Settings::BAN_XITEMS]
+      if i > 0
+        s += "/"
+      end
+      s += "X Items"
+      i += 1
+    end
+    if i >= 3
+      s = "All"
+    elsif i < 1
+      s = "None"
+    end
+    return s
+  end
+
+  def pbGetEXPModifier
+    v = ($game_variables[Settings::EXP_MODIFIER].to_f).floor(1)
+    s = v.to_s + "x"
+    return s
+  end
+
+  def pbGetMoneyModifier
+    v = ($game_variables[Settings::MONEY_MODIFIER].to_f).floor(1)
+    s = v.to_s + "x"
+    return s
+  end
+
+  def pbGetCaptureRate
+    v = ($game_variables[Settings::CATCH_MODIFIER].to_f).floor(1)
+    s = v.to_s + "x"
+    return s
+  end
+
+  def pbGetEnemyAI
+    s = "Standard"
+    s = "Bad" if $game_variables[Settings::TRAINER_AI] >= 0
+    s = "Ok" if $game_variables[Settings::TRAINER_AI] >= 1
+    s = "Good" if $game_variables[Settings::TRAINER_AI] >= 32
+    s = "Great" if $game_variables[Settings::TRAINER_AI] >= 48
+    s = "Excellent" if $game_variables[Settings::TRAINER_AI] >= 100
+    return s
+  end
+
+  def pbGetForcedIVs
+    s = ""
+    if $game_variables[Settings::FORCED_IVS] < 0
+      s = "Standard"
+    else
+      s = $game_variables[Settings::FORCED_IVS].to_s
+    end
+    return s
+  end
+
+  def pbGetEVGain
+    s = !$game_switches[Settings::NO_EVS]
+    return ProperString(s)
+  end
+
+  def pbGetEnemyLevel
+    s = ""
+    if $game_variables[Settings::OPPONENT_LEVEL_MOD] != 0
+      if $game_variables[Settings::OPPONENT_LEVEL_MOD] > 0
+        s = "+"
+      end
+      s += $game_variables[Settings::OPPONENT_LEVEL_MOD].to_s
+      if $game_switches[Settings::RISING_LEVEL]
+        s += "~"
+      end
+    else
+      s = "Standard"
+    end
+    return s
+  end
+
+  def pbGetAffectionM
+    s = $game_switches[Settings::AFFECTION_EFFECTS]
+    return ProperString(s)
+  end
+
+  def pbGetExpShare
+    s = $game_switches[Settings::EXP_ALL]
+    return ProperString(s)
+  end
+
+  def pbGetKeepItems
+    s = $game_switches[Settings::KEEP_ITEMS]
+    return ProperString(s)
+  end
+
+  def pbGetBoxLink
+    s = $game_switches[Settings::BOX_LINK]
+    return ProperString(s)
+  end
+
+  def pbGetFreeDoctors
+    s = $game_switches[Settings::FREE_DOCTORS]
+    return ProperString(s)
+  end
+end

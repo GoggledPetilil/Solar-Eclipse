@@ -1,0 +1,3 @@
+Name         = Trainer Card Backside
+Version      = 1.0
+Credits      = Peti

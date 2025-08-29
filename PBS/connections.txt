@@ -1,0 +1,24 @@
+﻿# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
+# Zimbani City (194) - Route 10 (11)
+194,East,14,11,West,7
+# Sol Island (56) - Route 10 (11)
+56,West,13,11,East,7
+# Sol Island (56) - Route 11 (12)
+56,East,14,12,West,21
+# Jadevik City (139) - Route 11 (12)
+139,West,23,12,East,0
+# Gardenia Town (43) - Route 1 (32)
+43,East,3,32,West,0
+# Route 15 (131) - Gardenia Town (43)
+131,East,2,43,West,0
+# Route 2 (92) - Helianthus City (85)
+92,North,0,85,South,24
+# Junkar City (102) - Route 3 (96)
+102,West,20,96,East,0
+# Farnlor City (111) - Route 16 (118)
+111,East,25,118,West,14
+# Route 7 (190) - Malum City (145)
+190,West,0,145,East,0
+# Route 14 (213) - Arcadia Ruins (289)
+213,North,0,289,South,18

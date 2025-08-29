@@ -1,0 +1,3 @@
+Name         = PE Terrain Step Sounds
+Version      = 1.2
+Credits      = Enurta, gameguy, Ikaro

@@ -1,0 +1,4 @@
+Name         = Spot Step Animation
+Version      = 1.0
+Website      = https://reliccastle.com/resources/648/
+Credits      = boonzeet

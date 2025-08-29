@@ -1,0 +1,4 @@
+Name         = Advanced Pokédex
+Version      = 1.3.2
+Website      = https://www.pokecommunity.com/showthread.php?t=315535
+Credits      = FL,ThatWelshOne_ (Type match-up summary)
