@@ -8,25 +8,23 @@ class PokemonTrainerCard_Scene
     @viewport = Viewport.new(0,0,Graphics.width,Graphics.height)
     @viewport.z = 99999
     @sprites = {}
-    background = pbResolveBitmap(sprintf("Graphics/Pictures/Trainer Card/bg_f"))
-    if $Trainer.female? && background
-      addBackgroundPlane(@sprites,"bg","Trainer Card/bg_f",@viewport)
-    else
-      addBackgroundPlane(@sprites,"bg","Trainer Card/bg",@viewport)
-    end
-    cardexists = pbResolveBitmap(sprintf("Graphics/Pictures/Trainer Card/card_f"))
+
+    addBackgroundPlane(@sprites,"bg","Trainer Card/bg",@viewport)
     @sprites["card"] = IconSprite.new(0,-20,@viewport)
-    if $Trainer.female? && cardexists
-      @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/card_f")
-    else
-      stars = ($game_variables[Settings::TRAINER_STARS]).clamp(0,5)
-      str = "Graphics/Pictures/Trainer Card/card_" + (stars).to_s
-      @sprites["card"].setBitmap(str)
-    end
+    @sprites["knob"] = IconSprite.new(0,0,@viewport)
+    pbRefreshCardBitmap
+    @sprites["card"].ox = @sprites["card"].bitmap.width / 2
+    @sprites["card"].oy = @sprites["card"].bitmap.height / 2
+    @sprites["card"].x += @sprites["card"].ox
+    @sprites["card"].y += @sprites["card"].oy
+
     @sprites["overlay"] = BitmapSprite.new(Graphics.width,Graphics.height,@viewport)
     pbSetSystemFont(@sprites["overlay"].bitmap)
     @sprites["elements"] = IconSprite.new(0,0,@viewport)
     @sprites["elements"].setBitmap(sprintf("Graphics/Pictures/Trainer Card/card_overlay"))
+
+    @sprites["text"] = TextSprite.new(@viewport)
+
     @sprites["trainer"] = IconSprite.new(336*0.9,-60*0.1,@viewport)
     @sprites["trainer"].setBitmap(GameData::TrainerType.player_front_sprite_filename($Trainer.trainer_type))
     @sprites["trainer"].x -= (@sprites["trainer"].bitmap.width-128)/(2*1)
@@ -34,37 +32,67 @@ class PokemonTrainerCard_Scene
     @sprites["trainer"].z = 2
     @sprites["trainer"].zoom_x = 2
     @sprites["trainer"].zoom_y = 2
-    pbDrawTrainerCardFront
+
+    pbRedrawSide
     pbFadeInAndShow(@sprites) { pbUpdate }
   end
 
-  def pbStartSceneBack
-    @front = false
-    @sel = 0
-    @viewport = Viewport.new(0,0,Graphics.width,Graphics.height)
-    @viewport.z = 99999
-    @sprites = {}
-    background = pbResolveBitmap(sprintf("Graphics/Pictures/Trainer Card/bg_f"))
-    if $Trainer.female? && background
-      addBackgroundPlane(@sprites,"bg","Trainer Card/bg_f",@viewport)
+  def pbRefreshCardBitmap
+    stars = ($game_variables[Settings::TRAINER_STARS]).clamp(0,5)
+    @sprites["knob"].setBitmap("Graphics/Pictures/Trainer Card/card_knob_#{stars}")
+    if @front
+      @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/card_#{stars}")
     else
-      addBackgroundPlane(@sprites,"bg","Trainer Card/bg",@viewport)
+      @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/card_back_#{stars}")
     end
-    cardexists = pbResolveBitmap(sprintf("Graphics/Pictures/Trainer Card/card_f"))
-    @sprites["card"] = IconSprite.new(0,-20,@viewport)
-    stars = ($game_variables[Settings::TRAINER_STARS]).clamp(0,5)
-    str = "Graphics/Pictures/Trainer Card/card_back_" + (stars).to_s
-    @sprites["card"].setBitmap(str)
-    @sprites["overlay"] = BitmapSprite.new(Graphics.width,Graphics.height,@viewport)
-    pbSetSystemFont(@sprites["overlay"].bitmap)
-    @sprites["elements"] = IconSprite.new(0,0,@viewport)
-    @sprites["elements"].setBitmap(sprintf("Graphics/Pictures/Trainer Card/card_overlay"))
-    @sprites["knob"] = IconSprite.new(0,0,@viewport)
-    stars = ($game_variables[Settings::TRAINER_STARS]).clamp(0,5)
-    knobStr = "Graphics/Pictures/Trainer Card/card_knob_" + (stars).to_s
-    @sprites["knob"].setBitmap(sprintf(knobStr))
-    pbDrawTrainerCardBack
-    pbFadeInAndShow(@sprites) { pbUpdate }
+  end
+
+  def pbClearSide
+    overlay = @sprites["overlay"].bitmap
+    overlay.clear
+    text = @sprites["text"].bitmap
+    text.clear
+    @sprites["trainer"].visible = false
+    @sprites["knob"].visible = false
+  end
+
+  def pbRedrawSide
+    if @front
+      pbDrawTrainerCardFront
+      @sprites["trainer"].visible = true
+      @sprites["knob"].visible = false
+    else
+      pbDrawItems
+      pbDrawListKnob
+      @sprites["trainer"].visible = false
+      @sprites["knob"].visible = true
+    end
+  end
+
+  def pbFlipCard
+    sprite = @sprites["card"]
+    frames = 16
+    yOffset = 8
+    pbSEPlay("GUI trainer card flip")
+
+    pbClearSide
+    sprite.y -= yOffset
+    for i in 0...(frames/2)
+      sprite.zoom_x = 1.0 * (1.0 - (i+1).to_f/(frames/2))
+      pbUpdateSpriteHash(@sprites)
+      Graphics.update
+    end
+
+    @front = !@front
+    pbRefreshCardBitmap
+
+    for i in 0...(frames/2)
+      sprite.zoom_x = 1.0 * ((i+1).to_f/(frames/2))
+      pbUpdateSpriteHash(@sprites)
+      Graphics.update
+    end
+    sprite.y += yOffset
+    pbRedrawSide
   end
 
   def pbDrawTrainerCardBack
@@ -80,45 +108,34 @@ class PokemonTrainerCard_Scene
       Graphics.update
       Input.update
       pbUpdate
+
       if Input.trigger?(Input::BACK)
         pbPlayCloseMenuSE
         break
       end
       if Input.trigger?(Input::ACTION) || Input.trigger?(Input::USE)
-	pbSEPlay("GUI trainer card flip")
-	pbDisposeSpriteHash(@sprites)
-	@viewport.dispose
-	(@front) ? pbStartSceneBack : pbStartScene
+        pbFlipCard
       end
-      oldsel = @sel
-      if Input.repeat?(Input::DOWN)
-        if @sel < (pbGetAllCatagories.size) - ITEMS_DRAWN
-          @sel += 1
+
+      if !@front
+        oldsel = @sel
+        if Input.repeat?(Input::DOWN)
+          @sel = [@sel+1, pbGetAllCatagories.size - ITEMS_DRAWN].min
         end
-      end
-      if Input.repeat?(Input::UP)
-        if @sel > 0
-          @sel -= 1
+        if Input.repeat?(Input::UP)
+          @sel = [@sel-1, 0].max
         end
-      end
-      if Input.repeat?(Input::JUMPDOWN)
-        if (@sel + ITEMS_DRAWN) < (pbGetAllCatagories.size - ITEMS_DRAWN).floor
-          @sel += ITEMS_DRAWN
-        else
-          @sel = pbGetAllCatagories.size - ITEMS_DRAWN
+        if Input.repeat?(Input::JUMPDOWN)
+          @sel = [@sel+ITEMS_DRAWN, pbGetAllCatagories.size - ITEMS_DRAWN].min
         end
-      end
-      if Input.repeat?(Input::JUMPUP)
-        if @sel > ITEMS_DRAWN
-          @sel -= ITEMS_DRAWN
-        else
-          @sel = 0
+        if Input.repeat?(Input::JUMPUP)
+          @sel = [@sel-ITEMS_DRAWN, 0].max
         end
-      end
-      if @sel != oldsel && !@front
-        pbDrawItems
-        pbDrawListKnob
-        pbSEPlay("GUI trainer card sel")
+        if @sel != oldsel
+          pbDrawItems
+          pbDrawListKnob
+          pbSEPlay("GUI trainer card sel")
+        end
       end
     end
   end
