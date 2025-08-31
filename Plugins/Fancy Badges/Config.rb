@@ -17,7 +17,7 @@ module FancyBadges
       "Springs Badge",
       "Life Badge",
       "Ruined Badge",
-      "Angel Badge",
+      "Glasera Badge",
       "Empire Badge",
       "Draconis Badge",
       "Punch Punch Badge",
