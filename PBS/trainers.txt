@@ -3621,7 +3621,7 @@ Pokemon = URSALUNA,80
 [GHOST,Girl]
 LoseText = "..."
 Pokemon = LEAVANNY,57
-    Moves = SWORDSDANCE,LEAFBLADE,FIRSTIMPRESSION,AERIALACE
+    Moves = SWORDSDANCE,LEAFBLADE,XSCISSOR,AERIALACE
     AbilityIndex = 0
     Item = FOCUSSASH
     IV = 31,31,31,31,31,31
@@ -3630,7 +3630,7 @@ Pokemon = GALLADE,56
     AbilityIndex = 1
     Item = ASSAULTVEST
 Pokemon = BISHARP,56
-    Moves = SWORDSDANCE,NIGHTSLASH,IRONHEAD,AIRSLASH
+    Moves = SWORDSDANCE,NIGHTSLASH,IRONHEAD,POISONJAB
     AbilityIndex = 0
     Item = DARKGEM
 #-------------------------------
