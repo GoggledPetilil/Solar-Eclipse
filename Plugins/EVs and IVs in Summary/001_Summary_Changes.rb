@@ -84,7 +84,13 @@ class PokemonSummary_Scene
     ability = @pokemon.ability
     if ability
       textpos.push([ability.name,322,278,0,base,shadow])
+      # Temp font size change
+      oldName = overlay.font.name
+      oldSize = overlay.font.size
+      pbSetSmallFont(overlay)
       drawTextEx(overlay,224,320,282,2,ability.description,base,shadow)
+      overlay.font.name = oldName
+      overlay.font.size = oldSize
     end
     # Draw all text
     pbDrawTextPositions(overlay,textpos)

@@ -474,9 +474,9 @@ Bicycle = true
 MapPosition = 0,13,4
 #-------------------------------
 [090]
-# Gardenia Exam Area
+# Hidden Grotto
 Outdoor = true
-Bicycle = false
+Bicycle = true
 MapPosition = 0,13,4
 SnapEdges = true
 #-------------------------------
@@ -869,8 +869,8 @@ BattleBack = City
 # Hidden Grotto
 Outdoor = true
 ShowArea = false
-Bicycle = false
-MapPosition = 0,12,2
+Bicycle = true
+MapPosition = 0,14,2
 SnapEdges = true
 #-------------------------------
 [162]
@@ -1735,7 +1735,7 @@ Bicycle = true
 MapPosition = 0,3,5
 #-------------------------------
 [352]
-# Route 4
+# Meteor Hills
 Outdoor = false
 ShowArea = true
 Bicycle = true
@@ -1758,23 +1758,63 @@ Bicycle = true
 Outdoor = true
 ShowArea = false
 Bicycle = false
-MapPosition = 0,12,2
+MapPosition = 0,21,2
 SnapEdges = true
 #-------------------------------
 [359]
 # Hidden Grotto
 Outdoor = true
 ShowArea = false
-Bicycle = false
-MapPosition = 0,12,2
+Bicycle = true
+MapPosition = 0,23,18
 SnapEdges = true
 #-------------------------------
 [360]
 # Hidden Grotto
 Outdoor = true
 ShowArea = false
-Bicycle = false
-MapPosition = 0,12,2
+Bicycle = true
+MapPosition = 0,15,12
+SnapEdges = true
+#-------------------------------
+[361]
+# Hidden Grotto
+Outdoor = true
+ShowArea = false
+Bicycle = true
+MapPosition = 0,17,3
+SnapEdges = true
+#-------------------------------
+[362]
+# Hidden Grotto
+Outdoor = true
+ShowArea = false
+Bicycle = true
+MapPosition = 0,10,18
+SnapEdges = true
+#-------------------------------
+[363]
+# Hidden Grotto
+Outdoor = true
+ShowArea = false
+Bicycle = true
+MapPosition = 0,11,13
+SnapEdges = true
+#-------------------------------
+[364]
+# Hidden Grotto
+Outdoor = true
+ShowArea = false
+Bicycle = true
+MapPosition = 0,8,2
+SnapEdges = true
+#-------------------------------
+[365]
+# Hidden Grotto
+Outdoor = true
+ShowArea = false
+Bicycle = true
+MapPosition = 0,11,6
 SnapEdges = true
 #-------------------------------
 [373]

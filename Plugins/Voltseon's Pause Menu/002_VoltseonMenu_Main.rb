@@ -101,7 +101,7 @@ class VoltseonsPauseMenu_Scene
   end
 
   def pbHideMenu
-    duration = Graphics.frame_rate/8
+    duration = Graphics.frame_rate/10
     duration.times do
       @sprites.each do |key,sprite|
         if key[/backshade/]
@@ -109,10 +109,13 @@ class VoltseonsPauseMenu_Scene
           sprite.opacity.clamp(0,255)
         elsif key[/location/]
           sprite.x -= (sprite.bitmap.width/duration)
+          sprite.opacity -= (255/duration)
         elsif sprite.y >= (Graphics.height/2)
           sprite.y += ((Graphics.height/2)/duration)
+          sprite.opacity -= (255/duration)
         else
           sprite.y -= ((Graphics.height/2)/duration)
+          sprite.opacity -= (255/duration)
         end
       end
       @components.each do |component|
@@ -120,8 +123,10 @@ class VoltseonsPauseMenu_Scene
         sprites.each do |_,sprite|
           if sprite.y >= (Graphics.height/2)
             sprite.y += ((Graphics.height/2)/duration)
+            sprite.opacity -= (255/duration)
           else
             sprite.y -= ((Graphics.height/2)/duration)
+            sprite.opacity -= (255/duration)
           end
         end
       end

@@ -123,6 +123,10 @@ BattleEnv       = MAGMA
 # Holtlant Town
 BattleEnv       = HOLTLANT
 #-------------------------------
+[161]
+# Hidden Grotto
+BattleEnv       = SNOW
+#-------------------------------
 [162]
 # Route 12
 BattleEnv       = OUTDOOR
@@ -350,3 +354,35 @@ BattleEnv       = MAGMA
 [354] 
 # Meteor Hills
 BattleEnv       = CAVE
+#-------------------------------
+[358]
+# Hidden Grotto
+BattleEnv       = FOREST
+#-------------------------------
+[359]
+# Hidden Grotto
+BattleEnv       = FOREST
+#-------------------------------
+[360]
+# Hidden Grotto
+BattleEnv       = FOREST
+#-------------------------------
+[361]
+# Hidden Grotto
+BattleEnv       = MYRFIELD
+#-------------------------------
+[362]
+# Hidden Grotto
+BattleEnv       = FOREST
+#-------------------------------
+[363]
+# Hidden Grotto
+BattleEnv       = FOREST
+#-------------------------------
+[364]
+# Hidden Grotto
+BattleEnv       = SNOW
+#-------------------------------
+[365]
+# Hidden Grotto
+BattleEnv       = FOREST
