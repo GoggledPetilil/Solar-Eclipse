@@ -6598,13 +6598,13 @@ Pokemon = ARMAROUGE,52
 #-------------------------------
 [TEAMSOL_F,Grunt,10]
 LoseText = "I wanna sink right about now!!"
-Pokemon = KROOKODILE,52
-Pokemon = MARACTUS,53
+Pokemon = KROOKODILE,50
+Pokemon = MARACTUS,51
 #-------------------------------
 [TEAMSOL_F,Grunt,11]
 LoseText = "We're part of Team Sol! No!"
-Pokemon = GABITE,52
-Pokemon = HELIOLISK,53
+Pokemon = GABITE,50
+Pokemon = HELIOLISK,51
 #-------------------------------
 [TEAMSOL_M,Grunt,11]
 LoseText = "I'm so ashamed!"
