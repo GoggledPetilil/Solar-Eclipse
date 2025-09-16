@@ -44,39 +44,23 @@ class Adventure
 	def pbAdventuringEvent
 		partyLevel = ((pbBalancedLevel(@party) / 10.0).ceil).clamp(1,10) - 1
 		chances = rand(100)
-		if chances <= 30
-		  # Common
-		  itempool = [[:POTION],
-		                       [:ANTIDOTE],
-		                       [:SUPERPOTION],
-		                       [:GREATBALL],
-		                       [:REPEL],
-		                       [:ESCAPEROPE],
-		                       [:FULLHEAL],
-		                       [:HYPERPOTION],
-		                       [:ULTRABALL],
-		                       [:REVIVE]
+		if chances <= 1
+		  # Ultra Rare
+		  itempool = [[:NUGGET,:HYPERPOTION],
+		                       [:KINGSROCK,:NUGGET],
+		                       [:FULLRESTORE,:KINGSROCK],
+		                       [:ETHER,:FULLRESTORE],
+		                       [:IRONBALL,:ETHER],
+		                       [:BOTTLECAP,:IRONBALL],
+		                       [:ELIXIR,:BOTTLECAP],
+		                       [:BOTTLECAP,:ELIXIR],
+		                       [:LEFTOVERS,:BOTTLECAP],
+		                       [:BOTTLECAP,:LEFTOVERS]
 		                       ]
 		  if  PokeventureConfig::CollectRandomItem
 		    items.append(itempool[partyLevel].sample)
 		  end
-		elsif chances <= 10
-		  # Uncommon
-		  itempool = [[:ANTIDOTE,:SUPERPOTION,:GREATBALL,:REPEL,:ESCAPEROPE,:FULLHEAL],
-		                       [:SUPERPOTION,:GREATBALL,:REPEL,:ESCAPEROPE,:FULLHEAL,:HYPERPOTION],
-		                       [:GREATBALL,:REPEL,:ESCAPEROPE,:FULLHEAL,:HYPERPOTION,:ULTRABALL],
-		                       [:REPEL,:ESCAPEROPE,:FULLHEAL,:HYPERPOTION,:ULTRABALL,:REVIVE],
-		                       [:ESCAPEROPE,:FULLHEAL,:HYPERPOTION,:ULTRABALL,:REVIVE,:RARECANDY],
-		                       [:FULLHEAL,:HYPERPOTION,:ULTRABALL,:REVIVE,:RARECANDY,:SUNSTONE],
-		                       [:HYPERPOTION,:ULTRABALL,:REVIVE,:RARECANDY,:SUNSTONE,:MOONSTONE],
-		                       [:ULTRABALL,:REVIVE,:RARECANDY,:SUNSTONE,:MOONSTONE,:HEARTSCALE],
-		                       [:REVIVE,:RARECANDY,:SUNSTONE,:MOONSTONE,:HEARTSCALE,:FULLRESTORE],
-		                       [:RARECANDY,:SUNSTONE,:MOONSTONE,:HEARTSCALE,:FULLRESTORE,:MAXREVIVE]
-		                       ]
-		  if  PokeventureConfig::CollectRandomItem
-		    items.append(itempool[partyLevel].sample)
-		  end
-		elsif chances <= 4
+		elsif chances <= 5
 		  # Rare
 		  itempool = [[:HYPERPOTION,:ULTRABALL],
 		                       [:ULTRABALL,:REVIVE],
@@ -92,18 +76,34 @@ class Adventure
 		  if  PokeventureConfig::CollectRandomItem
 		    items.append(itempool[partyLevel].sample)
 		  end
-		elsif chances <= 1
-		  # Ultra Rare
-		  itempool = [[:NUGGET,:HYPERPOTION],
-		                       [:KINGSROCK,:NUGGET],
-		                       [:FULLRESTORE,:KINGSROCK],
-		                       [:ETHER,:FULLRESTORE],
-		                       [:IRONBALL,:ETHER],
-		                       [:BOTTLECAP,:IRONBALL],
-		                       [:ELIXIR,:BOTTLECAP],
-		                       [:BOTTLECAP,:ELIXIR],
-		                       [:LEFTOVERS,:BOTTLECAP],
-		                       [:BOTTLECAP,:LEFTOVERS]
+		elsif chances <= 15
+		  # Uncommon
+		  itempool = [[:ANTIDOTE,:SUPERPOTION,:GREATBALL,:REPEL,:ESCAPEROPE,:FULLHEAL],
+		                       [:SUPERPOTION,:GREATBALL,:REPEL,:ESCAPEROPE,:FULLHEAL,:HYPERPOTION],
+		                       [:GREATBALL,:REPEL,:ESCAPEROPE,:FULLHEAL,:HYPERPOTION,:ULTRABALL],
+		                       [:REPEL,:ESCAPEROPE,:FULLHEAL,:HYPERPOTION,:ULTRABALL,:REVIVE],
+		                       [:ESCAPEROPE,:FULLHEAL,:HYPERPOTION,:ULTRABALL,:REVIVE,:RARECANDY],
+		                       [:FULLHEAL,:HYPERPOTION,:ULTRABALL,:REVIVE,:RARECANDY,:SUNSTONE],
+		                       [:HYPERPOTION,:ULTRABALL,:REVIVE,:RARECANDY,:SUNSTONE,:MOONSTONE],
+		                       [:ULTRABALL,:REVIVE,:RARECANDY,:SUNSTONE,:MOONSTONE,:HEARTSCALE],
+		                       [:REVIVE,:RARECANDY,:SUNSTONE,:MOONSTONE,:HEARTSCALE,:FULLRESTORE],
+		                       [:RARECANDY,:SUNSTONE,:MOONSTONE,:HEARTSCALE,:FULLRESTORE,:MAXREVIVE]
+		                       ]
+		  if  PokeventureConfig::CollectRandomItem
+		    items.append(itempool[partyLevel].sample)
+		  end
+		elsif chances <= 45
+		  # Common
+		  itempool = [[:POTION],
+		                       [:ANTIDOTE],
+		                       [:SUPERPOTION],
+		                       [:GREATBALL],
+		                       [:REPEL],
+		                       [:ESCAPEROPE],
+		                       [:FULLHEAL],
+		                       [:HYPERPOTION],
+		                       [:ULTRABALL],
+		                       [:REVIVE]
 		                       ]
 		  if  PokeventureConfig::CollectRandomItem
 		    items.append(itempool[partyLevel].sample)
