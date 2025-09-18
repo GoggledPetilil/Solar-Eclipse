@@ -116,8 +116,8 @@
 
     // Enforce a static frame rate
     // (0 = disabled)
-    //
-    // "fixedFramerate": 0,
+    
+     "fixedFramerate": 60,
 
 
     // Skip (don't draw) frames when behind.
@@ -137,7 +137,7 @@
     // This option may be force-disabled at build time.
     // (default: disabled)
     //
-    "syncToRefreshrate": true,
+    "syncToRefreshrate": false,
 
 
     // A list of fonts to render without alpha blending.
