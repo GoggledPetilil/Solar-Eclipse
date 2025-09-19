@@ -43,8 +43,9 @@ class Adventure
 	end
 	def pbAdventuringEvent
 		partyLevel = ((pbBalancedLevel(@party) / 10.0).ceil).clamp(1,10) - 1
-		chances = rand(100)
-		if chances <= 1
+		#chances = rand(100)
+		chances = [0,0,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,3,3,4].sample
+		if chances == 4
 		  # Ultra Rare
 		  itempool = [[:NUGGET,:HYPERPOTION],
 		                       [:KINGSROCK,:NUGGET],
@@ -60,7 +61,7 @@ class Adventure
 		  if  PokeventureConfig::CollectRandomItem
 		    items.append(itempool[partyLevel].sample)
 		  end
-		elsif chances <= 5
+		elsif chances == 3
 		  # Rare
 		  itempool = [[:HYPERPOTION,:ULTRABALL],
 		                       [:ULTRABALL,:REVIVE],
@@ -76,7 +77,7 @@ class Adventure
 		  if  PokeventureConfig::CollectRandomItem
 		    items.append(itempool[partyLevel].sample)
 		  end
-		elsif chances <= 15
+		elsif chances == 2
 		  # Uncommon
 		  itempool = [[:ANTIDOTE,:SUPERPOTION,:GREATBALL,:REPEL,:ESCAPEROPE,:FULLHEAL],
 		                       [:SUPERPOTION,:GREATBALL,:REPEL,:ESCAPEROPE,:FULLHEAL,:HYPERPOTION],
@@ -92,7 +93,7 @@ class Adventure
 		  if  PokeventureConfig::CollectRandomItem
 		    items.append(itempool[partyLevel].sample)
 		  end
-		elsif chances <= 45
+		elsif chances == 1
 		  # Common
 		  itempool = [[:POTION],
 		                       [:ANTIDOTE],

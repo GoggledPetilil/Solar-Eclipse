@@ -7076,24 +7076,26 @@ Pokemon = GRIMMSNARL,66
 # MYRFIELD DOJO
 #-------------------------------
 [BLACKBELT,Ichigo]
-LoseText = "That was refreshing..."
-Pokemon = ROSERADE,62
-Pokemon = SNEASLER,61
+LoseText = "How did you keep you?"
+Pokemon = CROBAT,62
+Pokemon = SCOLIPEDE,61
+    AbilityIndex = 1
 #-------------------------------
 [BATTLEGIRL,Fei]
-LoseText = "I'm blown away."
-Pokemon = TOXTRICITY,61
-Pokemon = SCOLIPEDE,62
+LoseText = "I just could melt through ya..."
+Pokemon = GLIMMORA,61
+Pokemon = SALAZZLE,62
 #-------------------------------
 [BATTLEGIRL,Bora]
-LoseText = "Just breathe!"
-Pokemon = TOXAPEX,61
-Pokemon = OVERQWIL,62
+LoseText = "How did you brace my attacks?"
+Pokemon = GENGAR,61
+Pokemon = SNEASLER,62
 #-------------------------------
 [BLACKBELT,Akio]
-LoseText = "I like that!"
-Pokemon = GARBODOR,63
-Pokemon = CROBAT,62
+LoseText = "I thought I could last..."
+Pokemon = TOXAPEX,63
+Pokemon = GARBODOR,62
+    AbilityIndex = 1
 #-------------------------------
 # ROUTE 18
 #-------------------------------
