@@ -47,7 +47,7 @@ class Game_Character
   def passable?(x, y, d, strict = false)
     ret = __followingpkmn__passable?(x, y, d, strict)
    active = FollowingPkmn::active?
-    if ret && active && FollowingPkmn::IMPASSABLE_FOLLOWER && self != $game_player && !self.is_a?(Game_FollowerEvent)
+    if ret && active && FollowingPkmn::IMPASSABLE_FOLLOWER && self != $game_player && !self.is_a?(Game_FollowerEvent) && !pbMapInterpreterRunning?
       new_x = x + (d == 6 ? 1 : d == 4 ? -1 : 0)
       new_y = y + (d == 2 ? 1 : d == 8 ? -1 : 0)
       $PokemonTemp.dependentEvents.realEvents.each do |e|
