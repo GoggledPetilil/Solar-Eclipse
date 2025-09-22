@@ -385,6 +385,7 @@ class PokemonEvolutionScene
   def createEvolved
     frames = GameData::Species.cry_length(@newspecies, @pokemon.form)
     # plays Pokemon's cry
+    pos = $game_system.bgm_position
     pbBGMStop()
     GameData::Species.play_cry_from_species(@newspecies)
     frames.times do
@@ -392,7 +393,8 @@ class PokemonEvolutionScene
       self.update
     end
     pbMEPlay("EBDX/Capture Success")
-    pbBGMPlay("EBDX/Victory Against Wild")
+    pbBGMPlay("EBDX/Evolution")
+    $game_system.bgm_position = pos
     # gets info of the new species
     newspeciesname = GameData::Species.get(@newspecies).real_name
     oldspeciesname = GameData::Species.get(@pokemon.species).real_name

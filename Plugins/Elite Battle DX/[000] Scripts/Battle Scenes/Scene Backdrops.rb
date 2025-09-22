@@ -23,7 +23,7 @@ class PokeBattle_Scene
       data = backdrop.clone
     end
     # adds daylight adjustment if outdoor
-    data["outdoor"] = true if !data.has_key?("outdoor") && EliteBattle.outdoor_map? && Settings::TIME_SHADING
+    data["outdoor"] = true if !data.has_key?("outdoor") && EliteBattle.outdoor_map? && (Settings::TIME_SHADING&&$PokemonSystem.daytone==0)
     # Apply graphics
     @sprites["battlebg"] = BattleSceneRoom.new(@viewport, self, data)
     # special trainer intro graphic

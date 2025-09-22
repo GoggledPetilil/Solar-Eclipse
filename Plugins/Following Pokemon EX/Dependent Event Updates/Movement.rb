@@ -140,13 +140,15 @@ class DependentEvents
       facings.each_with_index do |facing, i|
         facing = facings[i]
         tile = $MapFactory.getFacingTile(facing, leader)
-        if GameData::TerrainTag.exists?(:StairLeft)
-          currentTag = $game_player.pbTerrainTag
-          if currentTag == :StairLeft
-            tile[2] += (tile[1] > $game_player.x ? -1 : 1)
-          elsif currentTag == :StairRight
-            tile[2] += (tile[1] < $game_player.x ? -1 : 1)
-          end
+        if tile[1] > $game_player.x
+          tile[2] -= 1 if $MapFactory.getTerrainTag(tile[0],tile[1],tile[2]-1) == :StairLeft && $game_map.terrain_tag($game_player.x,$game_player.y) == :StairLeft
+        elsif tile[1] < $game_player.x
+          tile[2] += 1 if $MapFactory.getTerrainTag(tile[0],tile[1],tile[2]+1) == :StairLeft
+        end
+        if tile[1] > $game_player.x
+          tile[2] += 1 if $MapFactory.getTerrainTag(tile[0],tile[1],tile[2]+1) == :StairRight
+        elsif tile[1] < $game_player.x
+          tile[2] -= 1 if $MapFactory.getTerrainTag(tile[0],tile[1],tile[2]-1) == :StairRight && $game_map.terrain_tag($game_player.x,$game_player.y) == :StairRight
         end
         # Assumes leader is 1x1 tile in size
         passable = tile && $MapFactory.isPassableStrict?(tile[0], tile[1], tile[2], follower)
