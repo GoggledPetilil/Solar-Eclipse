@@ -936,6 +936,7 @@ MapPosition = 0,10,13
 [171]
 # Team Sol HQ
 Outdoor = false
+ShowArea = true
 Bicycle = false
 MapPosition = 0,9,13
 #-------------------------------
@@ -1668,12 +1669,22 @@ MapPosition = 0,16,3
 # Hall of Fame
 MapPosition = 0,13,4
 #-------------------------------
+[307]
+# Southern Chamber
+ShowArea = true
+Bicycle = true
+#-------------------------------
 [312]
 # Eastern Grotto
 Outdoor = true
 Bicycle = true
 MapPosition = 0,23,17
 SnapEdges = true
+#-------------------------------
+[315]
+# Southern Chamber
+ShowArea = true
+Bicycle = true
 #-------------------------------
 [316]
 # Eastern Grotto
@@ -1684,6 +1695,7 @@ SnapEdges = true
 #-------------------------------
 [318]
 # Southern Chamber
+ShowArea = true
 Bicycle = true
 #-------------------------------
 [319]
@@ -1700,6 +1712,11 @@ MapPosition = 0,19,2
 [321]
 # Crescent Tower
 MapPosition = 0,19,2
+#-------------------------------
+[322]
+# Southern Chamber
+ShowArea = true
+Bicycle = true
 #-------------------------------
 [336]
 # Sol Research Lab

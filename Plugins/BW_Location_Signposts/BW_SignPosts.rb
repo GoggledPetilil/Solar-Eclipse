@@ -74,14 +74,14 @@ class LocationWindow
 
     if SHOW_SEASONS == true
         @season=Sprite.new
-        if pbIsSpring # Jan, May, Sep
-          @season.bitmap = RPG::Cache.load_bitmap("Graphics/Pictures/Location/","Spring")
-        elsif pbIsSummer # Feb, Jun, Oct
-          @season.bitmap = RPG::Cache.load_bitmap("Graphics/Pictures/Location/","Summer")
-        elsif pbIsAutumn # Mar, Jul, Nov
-          @season.bitmap = RPG::Cache.load_bitmap("Graphics/Pictures/Location/","Autumn")
-        elsif pbIsWinter # Apr, Aug, Dec
-          @season.bitmap = RPG::Cache.load_bitmap("Graphics/Pictures/Location/","Winter")
+        if PBDayNight.isMorning?
+          @season.bitmap = RPG::Cache.load_bitmap("Graphics/Pictures/Location/","Morning")
+        elsif PBDayNight.isEvening?
+          @season.bitmap = RPG::Cache.load_bitmap("Graphics/Pictures/Location/","Evening")
+        elsif PBDayNight.isDay?
+          @season.bitmap = RPG::Cache.load_bitmap("Graphics/Pictures/Location/","Daytime")
+        elsif PBDayNight.isNight?
+          @season.bitmap = RPG::Cache.load_bitmap("Graphics/Pictures/Location/","Night")
         end
         @season.y=Settings::SCREEN_HEIGHT
         @season.z=99999

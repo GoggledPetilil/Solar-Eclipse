@@ -846,20 +846,21 @@ class PokemonPokegearScreen
     cmdEncounters = -1
     cmdSearch = -1
     encounter_data = GameData::Encounter.get($game_map.map_id, $PokemonGlobal.encounter_version)
-    commands[cmdMap = commands.length]     = ["map", _INTL("Map")]
+    commands[cmdMap = commands.length]     = ["map", _INTL("Map"), lock=false]
     if $PokemonGlobal.phoneNumbers && $PokemonGlobal.phoneNumbers.length > 0
-      commands[cmdPhone = commands.length] = ["phone", _INTL("Phone")]
+      commands[cmdPhone = commands.length] = ["phone", _INTL("Phone"), lock=false]
     end
-    commands[cmdJukebox = commands.length] = ["jukebox", _INTL("Music")]
+    commands[cmdJukebox = commands.length] = ["jukebox", _INTL("Music"), lock=false]
     if $game_switches[Settings::PHONEAPP_EGG]
-      commands[cmdEggCheck = commands.length] = ["egg", _INTL("Day-Care")]
+      commands[cmdEggCheck = commands.length] = ["egg", _INTL("Day-Care"), lock=false]
     end
-    if $Trainer.has_pokedex && $game_switches[Settings::PHONEAPP_HABITAT] && encounter_data && $game_map.map_id != 356
-      commands[cmdEncounters = commands.length] = ["encounters", _INTL("Habitat")]
+    if $Trainer.has_pokedex && $game_switches[Settings::PHONEAPP_HABITAT]
+      habitLock = encounter_data && $game_map.map_id != 356
+      commands[cmdEncounters = commands.length] = ["encounters", _INTL("Habitat"), !habitLock]
     end
-    if $Trainer.has_pokedex && $game_switches[Settings::PHONEAPP_NAV] && 
-$PokemonEncounters.encounter_possible_here? && encounter_data && $game_map.map_id != 356
-      commands[cmdSearch = commands.length] = ["search", _INTL("DexNav")]
+    if $Trainer.has_pokedex && $game_switches[Settings::PHONEAPP_NAV]
+      navLock = $PokemonEncounters.encounter_possible_here? && encounter_data && $game_map.map_id != 356
+      commands[cmdSearch = commands.length] = ["search", _INTL("DexNav"), !navLock]
     end
     @scene.pbStartScene(commands)
     loop do
@@ -875,17 +876,17 @@ $PokemonEncounters.encounter_possible_here? && encounter_data && $game_map.map_i
       elsif cmdEggCheck >= 0 && cmd == cmdEggCheck
         DayCareChecker.display
       elsif cmdEncounters >= 0 && cmd == cmdEncounters
-	pbFadeOutIn {
-	  scene = EncounterList_Scene.new
-	  screen = EncounterList_Screen.new(scene)
-   	  screen.pbStartScreen
-	}
+        pbFadeOutIn {
+          scene = EncounterList_Scene.new
+          screen = EncounterList_Screen.new(scene)
+          screen.pbStartScreen
+        }
       elsif cmdSearch >= 0 && cmd == cmdSearch
-	pbFadeOutIn {
-	  scene = PokeSearch_Scene.new
-	  screen = PokeSearch_Screen.new(scene)
-   	  screen.pbStartScreen
-	}
+        pbFadeOutIn {
+          scene = PokeSearch_Scene.new
+          screen = PokeSearch_Screen.new(scene)
+          screen.pbStartScreen
+        }
       end
     end
     @scene.pbEndScene

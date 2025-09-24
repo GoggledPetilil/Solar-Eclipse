@@ -30,5 +30,5 @@ DESERT = ["desert"]
 #Custom Settings for manupulating the Script with instructions
 #===============================================================================
 
-SHOW_SEASONS = false
+SHOW_SEASONS = true
 #Pretty self explanatory.... Set to false if you don't want season splash...
