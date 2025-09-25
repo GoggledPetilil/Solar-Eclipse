@@ -199,7 +199,7 @@ class PokemonTrainerCard_Scene
 
   def pbDrawParam
     header = ITEM_HEADERS[1]
-    array = ["Forced IVs","EV Gain","Exp. Modifier",
+    array = ["Player IVs","Opponent IVs","EV Gain","Exp. Modifier",
 	     "Money Modifier","Capture Modifier"]
     s = [header]
     i = 0
@@ -228,7 +228,7 @@ class PokemonTrainerCard_Scene
   def pbDrawSpecial
     header = ITEM_HEADERS[3]
     array = ["Nuzlocke","Randomizer","Inverse Battles",
-	     "Level Cap","Little Cup","Harder Bosses"]
+	     "Level Cap","Little Cup","Boss Effects"]
     s = [header]
     i = 0
     loop do
@@ -262,13 +262,13 @@ class PokemonTrainerCard_Scene
 
   def pbGetDictionary
     dictionary = { "Nuzlocke" => pbGetNuzlocke, "Randomizer" => pbGetRandomizer, "Inverse Battles" => pbGetInverse, 
-		   "Little Cup" => pbGetLittleCup, "Harder Bosses" => pbGetHarderBosses, "Opponent Level" => pbGetEnemyLevel,
+		   "Little Cup" => pbGetLittleCup, "Boss Effects" => pbGetHarderBosses, "Opponent Level" => pbGetEnemyLevel,
 		   "Pokémon Affection" => pbGetAffectionM, "Exp. All" => pbGetExpShare, "Recycle Items" => pbGetKeepItems,
 		   "Box Link" => pbGetBoxLink, "Free Doctors" => pbGetFreeDoctors,
 		   "Player Strength" => pbGetPlayerStrength, "Opponent Strength" => pbGetOpponentStrength, 
 		   "Banned Items" => pbGetBannedItems, "Exp. Modifier" => pbGetEXPModifier, "Money Modifier" => pbGetMoneyModifier,
-		   "Opponent Skill" => pbGetEnemyAI, "Forced IVs" => pbGetForcedIVs, "EV Gain" => pbGetEVGain,
-		   "Level Cap" => pbGetLevelCap, "Capture Modifier" => pbGetCaptureRate}
+		   "Opponent Skill" => pbGetEnemyAI, "Player IVs" => pbGetPlayerIVs,  "Opponent IVs" => pbGetEnemyIVs, 
+		   "EV Gain" => pbGetEVGain, "Level Cap" => pbGetLevelCap, "Capture Modifier" => pbGetCaptureRate}
     return dictionary
   end
 
@@ -396,12 +396,22 @@ class PokemonTrainerCard_Scene
     return s
   end
 
-  def pbGetForcedIVs
+  def pbGetPlayerIVs
     s = ""
-    if $game_variables[Settings::FORCED_IVS] < 0
-      s = "Standard"
+    if $game_variables[Settings::PLAYER_IVS] < 0
+      s = "Random"
     else
-      s = $game_variables[Settings::FORCED_IVS].to_s
+      s = $game_variables[Settings::PLAYER_IVS].to_s
+    end
+    return s
+  end
+
+  def pbGetEnemyIVs
+    s = ""
+    if $game_variables[Settings::OPPONENT_IVS] < 0
+      s = "Random"
+    else
+      s = $game_variables[Settings::OPPONENT_IVS].to_s
     end
     return s
   end

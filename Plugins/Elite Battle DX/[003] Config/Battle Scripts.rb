@@ -897,24 +897,6 @@ module BattleScripts
       @battlers[1].pbRaiseStatStageBasic(:SPECIAL_ATTACK, 1)
       @battlers[1].pbRaiseStatStageBasic(:SPECIAL_DEFENSE, 1)
     end,
-   "lowHPOpp"   => proc do
-      if $game_switches[Settings::HARDER_BOSSES]
-        pname = @battlers[1].name
-        # begin code block for the first turn
-        # play aura flare
-        EliteBattle.playCommonAnimation(:USEITEM, @scene, 1)
-        @scene.pbDisplay("Solarium is being further pumped into #{pname}!")
-        @scene.pbDisplay("Immense energy is swelling up in #{pname}!")
-        EliteBattle.playCommonAnimation(:AURAFLARE, @scene, 1)
-        @vector.reset # AURAFLARE doesn't reset the vector by default
-        @scene.wait(16, true) # set true to anchor the sprites to vector
-        # raise battler stats (doesn't display text)
-        @battlers[1].pbRaiseStatStageBasic(:ATTACK, 1)
-        @battlers[1].pbRaiseStatStageBasic(:DEFENSE, 1)
-        @battlers[1].pbRaiseStatStageBasic(:SPECIAL_ATTACK, 1)
-        @battlers[1].pbRaiseStatStageBasic(:SPECIAL_DEFENSE, 1)
-      end
-    end,
    "faintedOpp" => "No!! It's not supposed to go like this!!",
     "afterLastOpp" => proc do
       pname = @battlers[1].name
