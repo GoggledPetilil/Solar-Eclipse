@@ -514,7 +514,7 @@ class PokemonSaveScreen
     player_str = _INTL("Player<r>{1}<br>",temp_save_data[:player].name)
 
     # Game Mode
-    game_str = _INTL("Mode<r>{1}<br>",temp_save_data[:player].difficulty)
+    game_str = _INTL("Rank<r>{1}<br>",temp_save_data[:player].difficulty)
 
     # Elapsed time
     totalsec = (temp_save_data[:frame_count] || 0) / Graphics.frame_rate

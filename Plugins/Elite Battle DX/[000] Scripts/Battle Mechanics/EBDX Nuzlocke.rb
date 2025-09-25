@@ -309,6 +309,7 @@ def pbStartOver(*args)
     pbMessage(_INTL("\\w[]\\wm\\c[8]\\l[3]All your Pokémon have fainted. You have lost the Nuzlocke challenge! The challenge will now be turned off."))
     EliteBattle.set(:nuzlocke, false)
     $PokemonGlobal.isNuzlocke = false
+    $game_switches[35] = false # Nuzlocke Tracker Switch
     pbStartOver_ebdx_nuzlocke(*args)
   end
   return pbStartOver_ebdx_nuzlocke(*args)

@@ -277,7 +277,7 @@ class PokemonTrainerCard_Scene
   end
 
   def pbGetNuzlocke
-    if $PokemonGlobal.qNuzlocke
+    if $PokemonGlobal.isNuzlocke
       return "On"
     else
       return "Off"
