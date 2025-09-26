@@ -842,15 +842,20 @@ class PokemonPokegearScreen
     cmdMap     = -1
     cmdPhone   = -1
     cmdJukebox = -1
+    cmdQuest = -1
     cmdEggCheck = -1
     cmdEncounters = -1
     cmdSearch = -1
     encounter_data = GameData::Encounter.get($game_map.map_id, $PokemonGlobal.encounter_version)
     commands[cmdMap = commands.length]     = ["map", _INTL("Map"), lock=false]
-    if $PokemonGlobal.phoneNumbers && $PokemonGlobal.phoneNumbers.length > 0
-      commands[cmdPhone = commands.length] = ["phone", _INTL("Phone"), lock=false]
+    if true
+      phoneLock = $PokemonGlobal.phoneNumbers && $PokemonGlobal.phoneNumbers.length > 0
+      commands[cmdPhone = commands.length] = ["phone", _INTL("Phone"), !phoneLock]
     end
     commands[cmdJukebox = commands.length] = ["jukebox", _INTL("Music"), lock=false]
+    if true 
+      commands[cmdQuest = commands.length] = ["quest", _INTL("Tasks"), lock=!hasAnyQuests?]
+    end
     if $game_switches[Settings::PHONEAPP_EGG]
       commands[cmdEggCheck = commands.length] = ["egg", _INTL("Day-Care"), lock=false]
     end
@@ -886,6 +891,10 @@ class PokemonPokegearScreen
           scene = PokeSearch_Scene.new
           screen = PokeSearch_Screen.new(scene)
           screen.pbStartScreen
+        }
+      elsif cmdQuest>=0 && cmd == cmdQuest
+        pbFadeOutIn {
+          pbViewQuests
         }
       end
     end

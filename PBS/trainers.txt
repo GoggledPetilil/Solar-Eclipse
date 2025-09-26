@@ -235,7 +235,7 @@ Pokemon = AMPHAROS,77
 #-------------------------------
 # SCT (Post-Game)
 #-------------------------------
-[RIVAL_Giltbert,Giltbert,6]
+[RIVAL_Giltbert,Giltbert,7]
 LoseText = "I've still got a long way to go to reach your level!"
 Pokemon = PALAFIN,80
     Name = Marino
@@ -294,7 +294,7 @@ Pokemon = AMPHAROS,80
 #-------------------------------
 # Route 1 (Hard)
 #-------------------------------
-[RIVAL_Giltbert,Giltbert,7]
+[RIVAL_Giltbert,Giltbert,8]
 LoseText = "That was an awesome battle!"
 Pokemon = MAREEP,10
     Name = Joel
