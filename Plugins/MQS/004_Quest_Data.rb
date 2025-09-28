@@ -31,25 +31,12 @@ module QuestModule
   # Here's an example of a quest with lots of stages that also doesn't have a stage location defined for every stage
   Quest3 = {
     :ID => "3",
-    :Name => "Last-minute chores",
-    :QuestGiver => "Grandma",
-    :Stage1 => "A",
-    :Stage2 => "B",
-    :Stage3 => "C",
-    :Stage4 => "D",
-    :Stage5 => "E",
-    :Stage6 => "F",
-    :Stage7 => "G",
-    :Stage8 => "H",
-    :Stage9 => "I",
-    :Stage10 => "J",
-    :Stage11 => "K",
-    :Stage12 => "L",
-    :Location1 => "nil",
-    :Location2 => "nil",
-    :Location3 => "Dewford Town",
-    :QuestDescription => "Isn't the alphabet longer than this?",
-    :RewardString => "Chicken soup!"
+    :Name => "The Fairy Queen of the Moon",
+    :QuestGiver => "Diana",
+    :Location0 => "Myrfield Gym",
+    :Location1 => :Location0,
+    :QuestDescription => "The new Myrfield Gym Leader Diana has asked you to be her first challenger. Defeat her in battle to earn your 10th Gym Badge.",
+    :RewardString => "Gym Badge"
   }
   
   # Here's an example of not defining the quest giver and reward text
@@ -156,7 +143,7 @@ module QuestModule
   
   Quest13 = {
     :ID => "13",
-    :Name => "Zimbani Rematch",
+    :Name => "The Barefisted Spunky Punk!",
     :QuestGiver => "Emilia",
     :Location0 => "Zimbani Gym",
     :Location1 => :Location0,

@@ -269,17 +269,17 @@ class QuestList_Scene
     drawFormattedTextEx(@sprites["overlay3"].bitmap,38,88,
       436,questDesc,@base,@shadow)
     # Quest reward
-    questReward = $quest_data.getQuestReward(quest.id)
-    if questReward=="nil" || questReward==""
-      questReward = "???"
-    end
-    rewardX = 38
-    rewardY = Graphics.height-140
-    rewardYOffset = 26
-    drawFormattedTextEx(@sprites["overlay3"].bitmap,rewardX,rewardY,
-      436,"Reward",locBase,locShadow)
-    drawFormattedTextEx(@sprites["overlay3"].bitmap,rewardX,rewardY + rewardYOffset,
-      436,"#{questReward}",@base,@shadow)
+#    questReward = $quest_data.getQuestReward(quest.id)
+#    if questReward=="nil" || questReward==""
+#      questReward = "???"
+#    end
+#    rewardX = 38
+#    rewardY = Graphics.height-140
+#    rewardYOffset = 26
+#    drawFormattedTextEx(@sprites["overlay3"].bitmap,rewardX,rewardY,
+#      436,"Reward",locBase,locShadow)
+#    drawFormattedTextEx(@sprites["overlay3"].bitmap,rewardX,rewardY + rewardYOffset,
+#      436,"#{questReward}",@base,@shadow)
 #    # Stage location
 #    questStageLocation = $quest_data.getStageLocation(quest.id,quest.stage)
 #    # If 'nil' or missing, set to '???'

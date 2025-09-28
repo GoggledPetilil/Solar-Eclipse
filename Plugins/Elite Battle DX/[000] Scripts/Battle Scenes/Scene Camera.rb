@@ -51,7 +51,7 @@ class PokeBattle_Scene
               @sprites["pokemon_#{i}"].actualBitmap.setSpeed(2)
               @sprites["pokemon_#{i}"].status = 2
             when :FROZEN
-              @sprites["pokemon_#{i}"].actualBitmap.setSpeed(0)
+#              @sprites["pokemon_#{i}"].actualBitmap.setSpeed(0)
               @sprites["pokemon_#{i}"].status = 3
             when :POISON
               @sprites["pokemon_#{i}"].status = 1
