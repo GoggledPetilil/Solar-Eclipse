@@ -9,12 +9,12 @@ module QuestModule
   # Here's the simplest example of a single-stage quest with everything specified
   Quest1 = {
     :ID => "1",
-    :Name => "Introductions",
-    :QuestGiver => "Little Boy",
-    :Stage1 => "Look for clues.",
-    :Location1 => "Lappet Town",
-    :QuestDescription => "Some wild Pokémon stole a little boy's favourite toy. Find those troublemakers and help him get it back.",
-    :RewardString => "Something shiny!"
+    :Name => "Become the Solar Monarch",
+    :QuestGiver => "You",
+    :Location0 => "Gardenia Academy",
+    :Location1 => :Location0,
+    :QuestDescription => "Your life-long dream is within grasp now that you've collected the 8 Gym Badges. Head to Gardenia Academy, participate in and win the Solaria Coronation Tournament, and be crowned the new Solar Monarch.",
+    :RewardString => "Being crowned Solar Monarch"
   }
   
   # Here's an extension of the above that includes multiple stages
@@ -42,46 +42,43 @@ module QuestModule
   # Here's an example of not defining the quest giver and reward text
   Quest4 = {
     :ID => "4",
-    :Name => "A new beginning",
-    :QuestGiver => "nil",
-    :Stage1 => "Turning over a new leaf... literally!",
-    :Stage2 => "Help your neighbours.",
-    :Location1 => "Milky Way",
-    :Location2 => "nil",
-    :QuestDescription => "You crash landed on an alien planet. There are other humans here and they look hungry...",
-    :RewardString => "nil"
+    :Name => "The Lost Pokénect",
+    :QuestGiver => "Lost Pokénect Owner",
+    :Location0 => "???",
+    :Location1 => :Location0,
+    :QuestDescription => "You found a Pokénect on the ground and were called by its owner, who is temporarily unable to pick it up. Hold on to the device until you get the call to meet up with the owner and return it to them.",
+    :RewardString => "Pokénect Owner's Contact Details"
   }
   
   # Other random examples you can look at if you want to fill out the UI and check out the page scrolling
   Quest5 = {
     :ID => "5",
-    :Name => "All of my friends",
-    :QuestGiver => "Barry",
-    :Stage1 => "Meet your friends near Acuity Lake.",
-    :QuestDescription => "Barry told me that he saw something cool at Acuity Lake and that I should go see. I hope it's not another trick.",
-    :RewardString => "You win nothing for giving in to peer pressure."
+    :Name => "The Flute of the Stars",
+    :QuestGiver => "Team Sol Researcher",
+    :Location0 => "Sol Research Lab",
+    :Location1 => :Location0,
+    :QuestDescription => "A scientist in the Sol Research Lab has shared with you information on a flute that could summon a Pokémon of the cosmos. To restore the flute to it's full power, he's asked you to show him the Elite Four for research.",
+    :RewardString => "Nebula Flute"
   }
   
   Quest6 = {
     :ID => "6",
-    :Name => "The journey begins",
-    :QuestGiver => "Professor Oak",
-    :Stage1 => "Deliver the parcel to the Pokémon Mart in Viridian City.",
-    :Stage2 => "Return to the Professor.",
-    :Location1 => "Viridian City",
-    :Location2 => "nil",
-    :QuestDescription => "The Professor has entrusted me with an important delivery for the Viridian City Pokémon Mart. This is my first task, best not mess it up!",
+    :Name => "The Friendless Cosplay Girl",
+    :QuestGiver => "Parasol Lady",
+    :Location0 => "Jyeshtha City",
+    :Location1 => :Location0,
+    :QuestDescription => "A lady has informed you of a Cosplay Girl in Jyeshtha City who lacks friends, but is fond of Swadloon. Perhaps giving her a Swadloon will brighten up her life.",
     :RewardString => "nil"
   }
   
   Quest7 = {
     :ID => "7",
-    :Name => "Close encounters of the... first kind?",
-    :QuestGiver => "nil",
-    :Stage1 => "Make contact with the strange creatures.",
-    :Location1 => "Rock Tunnel",
-    :QuestDescription => "A sudden burst of light, and then...! What are you?",
-    :RewardString => "A possible probing."
+    :Name => "The Gym Challenge",
+    :QuestGiver => "You",
+    :Location0 => "Solaria",
+    :Location1 => :Location0,
+    :QuestDescription => "It is a great honour to participate in the Gym Challenge and you have been chosen to do so. Travel the Solaria region and challenge the 8 Gym Leaders to earn their Gym Badge.",
+    :RewardString => "Privledge of participating in the SCT"
   }
   
   Quest8 = {

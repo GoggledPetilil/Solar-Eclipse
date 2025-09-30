@@ -228,7 +228,7 @@ class PokemonTrainerCard_Scene
   def pbDrawSpecial
     header = ITEM_HEADERS[3]
     array = ["Nuzlocke","Randomizer","Inverse Battles",
-	     "Level Cap","Little Cup","Boss Effects"]
+	     "Level Cap","Little Cup","Enhanced Bosses"]
     s = [header]
     i = 0
     loop do
@@ -262,7 +262,7 @@ class PokemonTrainerCard_Scene
 
   def pbGetDictionary
     dictionary = { "Nuzlocke" => pbGetNuzlocke, "Randomizer" => pbGetRandomizer, "Inverse Battles" => pbGetInverse, 
-		   "Little Cup" => pbGetLittleCup, "Boss Effects" => pbGetHarderBosses, "Opponent Level" => pbGetEnemyLevel,
+		   "Little Cup" => pbGetLittleCup, "Enhanced Bosses" => pbGetHarderBosses, "Opponent Level" => pbGetEnemyLevel,
 		   "Pokémon Affection" => pbGetAffectionM, "Exp. All" => pbGetExpShare, "Recycle Items" => pbGetKeepItems,
 		   "Box Link" => pbGetBoxLink, "Free Doctors" => pbGetFreeDoctors,
 		   "Player Strength" => pbGetPlayerStrength, "Opponent Strength" => pbGetOpponentStrength, 

@@ -266,8 +266,8 @@ class QuestList_Scene
     # Quest description
     questDesc = "#{$quest_data.getQuestDescription(quest.id)}"
 #    questDesc = "#{$quest_data.getStageDescription(quest.id,quest.stage)}"
-    drawFormattedTextEx(@sprites["overlay3"].bitmap,38,88,
-      436,questDesc,@base,@shadow)
+    drawFormattedTextEx(@sprites["overlay3"].bitmap,38,82,
+      436,questDesc,@base,@shadow,lineheight = 26)
     # Quest reward
 #    questReward = $quest_data.getQuestReward(quest.id)
 #    if questReward=="nil" || questReward==""
