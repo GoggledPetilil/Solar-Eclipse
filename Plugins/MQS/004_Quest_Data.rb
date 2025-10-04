@@ -83,13 +83,11 @@ module QuestModule
   
   Quest8 = {
     :ID => "8",
-    :Name => "These boots were made for walking",
-    :QuestGiver => "Musician #1",
-    :Stage1 => "Listen to the musician's, uhh, music.",
-    :Stage2 => "Find the source of the power outage.",
-    :Location1 => "nil",
-    :Location2 => "Celadon City Sewers",
-    :QuestDescription => "A musician was feeling down because he thinks no one likes his music. I should help him drum up some business."
+    :Name => "New Side Hobby: Postman",
+    :QuestGiver => "Amanda",
+    :Location0 => "Jadevik City",
+    :Location1 => :Location0,
+    :QuestDescription => "Out of convenience, Amanda has asked you to deliver a package to Bruno in Jadevik City. You'll need to cross through Route 4, Telgior Mines and Route 5."
   }
   
   Quest9 = {

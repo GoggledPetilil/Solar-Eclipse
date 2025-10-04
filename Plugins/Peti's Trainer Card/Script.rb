@@ -299,7 +299,9 @@ class PokemonTrainerCard_Scene
 
   def pbGetLevelCap
     if $game_switches[Settings::FORCED_LEVELCAP] && $game_switches[12] == false
-      return Settings::LEVELCAPS[$Trainer.badge_count.clamp(0,Settings::LEVELCAPS.size)]
+      cap = Settings::LEVELCAPS[$Trainer.badge_count.clamp(0,Settings::LEVELCAPS.size)]
+      cap += $game_variables[Settings::OPPONENT_LEVEL_MOD]
+      return cap.clamp(0,Settings::MAXIMUM_LEVEL)
     else
       return "Off"
     end

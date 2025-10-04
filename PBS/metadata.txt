@@ -1628,7 +1628,7 @@ MapPosition = 0,15,13
 Outdoor = true
 ShowArea = true
 Bicycle = true
-MapPosition = 0,3,5
+MapPosition = 0,3,3
 #-------------------------------
 [299]
 # Praestia Cavern
@@ -1751,6 +1751,11 @@ ShowArea = true
 Bicycle = true
 MapPosition = 0,3,5
 #-------------------------------
+[349]
+# Battle Hall
+Outdoor = false
+MapPosition = 0,3,3
+#-------------------------------
 [352]
 # Meteor Hills
 Outdoor = false
@@ -1834,6 +1839,22 @@ Bicycle = true
 MapPosition = 0,11,6
 SnapEdges = true
 #-------------------------------
+[366]
+# Battle Tower
+MapPosition = 0,3,3
+#-------------------------------
+[368]
+# Battle Factory
+MapPosition = 0,3,3
+#-------------------------------
+[370]
+# Battle Arcade
+MapPosition = 0,3,3
+#-------------------------------
+[371]
+# Battle Castle
+MapPosition = 0,3,3
+#-------------------------------
 [373]
 # Fitzberg City
 MapPosition = 0,3,5
@@ -1852,7 +1873,7 @@ MapPosition = 0,3,5
 # Fitzberg-Frontier Gate
 Outdoor = false
 Bicycle = true
-MapPosition = 0,3,5
+MapPosition = 0,3,4
 #-------------------------------
 [377]
 # Fitzberg Station
