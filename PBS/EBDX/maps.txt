@@ -351,6 +351,10 @@ BattleEnv       = MAGMA
 # Western Chasm
 BattleEnv       = MAGMA
 #-------------------------------
+[352] 
+# Meteor Hills
+BattleEnv       = CAVE
+#-------------------------------
 [354] 
 # Meteor Hills
 BattleEnv       = CAVE
