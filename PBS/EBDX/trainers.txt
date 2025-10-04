@@ -40,7 +40,19 @@ VictoryTheme     = Victory Against Gym Leader.ogg
 BattleScript     = AMANDA
 Ace		 = 4
 #-------------------------------
+[LEADER_Amanda,2]
+BattleIntro      = crystalSM
+VictoryTheme     = Victory Against Gym Leader.ogg
+BattleScript     = AMANDA
+Ace		 = 4
+#-------------------------------
 [LEADER_Calix]
+BattleIntro      = crystalSM
+VictoryTheme     = Victory Against Gym Leader.ogg
+BattleScript     = CALIX
+Ace		 = 4
+#-------------------------------
+[LEADER_Calix,2]
 BattleIntro      = crystalSM
 VictoryTheme     = Victory Against Gym Leader.ogg
 BattleScript     = CALIX
@@ -55,6 +67,11 @@ Ace		 = 5
 BattleIntro      = crystalSM
 VictoryTheme     = Victory Against Gym Leader.ogg
 Ace		 = 6
+#-------------------------------
+[LEADER_Emilia,2]
+BattleIntro      = crystalSM
+VictoryTheme     = Victory Against Gym Leader.ogg
+Ace		 = 5
 #-------------------------------
 [LEADER_Benjamin]
 BattleIntro      = crystalSM
@@ -92,7 +109,19 @@ VictoryTheme     = Victory Against Gym Leader.ogg
 BattleScript     = PATRIAMA
 Ace		 = 5
 #-------------------------------
+[LEADER_Patriama,2]
+BattleIntro      = crystalSM
+VictoryTheme     = Victory Against Gym Leader.ogg
+BattleScript     = PATRIAMA
+Ace		 = 5
+#-------------------------------
 [LEADER_Angeline]
+BattleIntro      = crystalSM
+VictoryTheme     = Victory Against Gym Leader.ogg
+BattleScript     = ANGELINE
+Ace		 = 5
+#-------------------------------
+[LEADER_Angeline,2]
 BattleIntro      = crystalSM
 VictoryTheme     = Victory Against Gym Leader.ogg
 BattleScript     = ANGELINE
@@ -104,7 +133,19 @@ VictoryTheme     = Victory Against Gym Leader.ogg
 BattleScript     = LEONARD
 Ace		 = 6
 #-------------------------------
+[LEADER_Leonard,2]
+BattleIntro      = crystalSM
+VictoryTheme     = Victory Against Gym Leader.ogg
+BattleScript     = LEONARD
+Ace		 = 6
+#-------------------------------
 [LEADER_Yira]
+BattleVS         = crystalSM
+VictoryTheme     = Victory Against Gym Leader.ogg
+BattleScript     = YIRA
+Ace		 = 6
+#-------------------------------
+[LEADER_Yira,2]
 BattleVS         = crystalSM
 VictoryTheme     = Victory Against Gym Leader.ogg
 BattleScript     = YIRA
