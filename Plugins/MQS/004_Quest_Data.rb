@@ -92,13 +92,11 @@ module QuestModule
   
   Quest9 = {
     :ID => "9",
-    :Name => "Got any grapes?",
-    :QuestGiver => "Duck",
-    :Stage1 => "Listen to The Duck Song.",
-    :Stage2 => "Try not to sing it all day.",
-    :Location1 => "YouTube",
-    :QuestDescription => "Let's try to revive old memes by listening to this funny song about a duck wanting grapes.",
-    :RewardString => "A loss of braincells. Hurray!"
+    :Name => "Dancing for Nectar",
+    :QuestGiver => "Junkarian Florist",
+    :Location0 => "Junkar City",
+    :Location1 => :Location0,
+    :QuestDescription => "There's a Pokémon called Oricorio that can make use of the special flower nectar grown by a florist in Junkar City. If you show her an Oricorio, she'd be willing to sell you the nectar."
   }
   
   Quest10 = {

@@ -396,7 +396,7 @@ class PokemonPokedexInfo_Scene
     line=3
     column=8
     ret[column][line] = _INTL(
-      "Evoles into: {1}",
+      "Evolves into: {1}",
       evolutionsStrings.empty? ? _INTL("None") : evolutionsStrings[0]
     )
     evolutionsStrings.shift

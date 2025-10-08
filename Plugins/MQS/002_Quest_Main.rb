@@ -51,19 +51,19 @@ class Player_Quests
     end
     for i in 0...@active_quests.length
       if @active_quests[i].id == quest
-        pbMessage("You have already started this quest.")
+#        pbMessage("You have already started this quest.")
         return
       end
     end
     for i in 0...@completed_quests.length
       if @completed_quests[i].id == quest
-        pbMessage("You have already completed this quest.")
+#        pbMessage("You have already completed this quest.")
         return
       end
     end
     for i in 0...@failed_quests.length
       if @failed_quests[i].id == quest
-        pbMessage("You have already failed this quest.")
+#        pbMessage("You have already failed this quest.")
         return
       end
     end
@@ -79,13 +79,13 @@ class Player_Quests
     found = false
     for i in 0...@completed_quests.length
       if @completed_quests[i].id == quest
-        pbMessage("You have already completed this quest.")
+#        pbMessage("You have already completed this quest.")
         return
       end
     end
     for i in 0...@failed_quests.length
       if @failed_quests[i].id == quest
-        pbMessage("You have already failed this quest.")
+#        pbMessage("You have already failed this quest.")
         return
       end
     end 
@@ -116,13 +116,13 @@ class Player_Quests
     found = false
     for i in 0...@completed_quests.length
       if @completed_quests[i].id == quest
-        pbMessage("You have already completed this quest.")
+#        pbMessage("You have already completed this quest.")
         return
       end
     end
     for i in 0...@failed_quests.length
       if @failed_quests[i].id == quest
-        pbMessage("You have already failed this quest.")
+#        pbMessage("You have already failed this quest.")
         return
       end
     end  
@@ -142,7 +142,11 @@ class Player_Quests
     end
     if !found
       color = colorQuest(nil) if color == nil
-      @completed_quests.push(Quest.new(quest,color,story))
+      temp_quest = Quest.new(quest,color,story)
+      echoln(quest.methods(false))
+      name = $quest_data.getName(temp_quest.id)
+      @completed_quests.push(temp_quest)
+      pbMessage(_INTL("\\me[{1}]\\l[3]<ac><c2=#{colorQuest("red")}>Task completed!</c2>\n<c2=#{colorQuest("blue")}>{2}</c2>\nYour task log has been updated!\\wtnp[100]</ac>",QUEST_CLEAR,name))
     end
   end
   
