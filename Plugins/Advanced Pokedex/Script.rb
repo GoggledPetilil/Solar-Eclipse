@@ -482,6 +482,8 @@ class PokemonPokedexInfo_Scene
         _INTL("{1} trading holding {2}",evoName,GameData::Item.get(parameter).name)
       when :TradeSpecies
         _INTL("{1} trading by {2}",evoName,GameData::Species.get(parameter).name)
+      when :HoldItemAlcremie
+        _INTL("{1} holding a Sweet",evoName)
       else
         evoName
     end

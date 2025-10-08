@@ -690,13 +690,13 @@
 677,TARTAPPLE,Tart Apple,Tart Apples,1,2200,"A peculiar apple that can make a certain species of Pokémon evolve. It's exceptionally tart.",1,0,7
 678,CRACKEDPOT,Cracked Pot,Cracked Pot,1,1600,"A peculiar cracked teapot that can make a certain Pokémon evolve. Tea poured from it is delicious.",1,0,7
 679,CHIPPEDPOT,Chipped Pot,Chipped Pots,1,38000,"A peculiar chipped teapot that can make a certain Pokémon evolve. Tea poured from it is delicious.",1,0,7
-680,STRAWBERRYSWEET,Strawberry Sweet,Strawberry Sweets,1,500,"A strawberry-shaped sweet. When a Milcery holds this, it will spin around happily.",1,0,7
-681,LOVESWEET,Love Sweet,Love Sweets,1,500,"A heart-shaped sweet. When a Milcery holds this, it spins around happily.",1,0,7
-682,BERRYSWEET,Berry Sweet,Berry Sweets,1,500,"A berry-shaped sweet. When a Milcery holds this, it spins around happily.",1,0,7
-683,CLOVERSWEET,Clover Sweet,Clover Sweets,1,500,"A clover-shaped sweet. When a Milcery holds this, it spins around happily.",1,0,7
-684,FLOWERSWEET,Flower Sweet,Flower Sweets,1,500,"A flower-shaped sweet. When a Milcery holds this, it spins around happily.",1,0,7
-685,STARSWEET,Star Sweet,Star Sweets,1,500,"A star-shaped sweet. When a Milcery holds this, it spins around happily.",1,0,7
-686,RIBBONSWEET,Ribbon Sweet,Ribbon Sweets,1,500,"A ribbon-shaped sweet. When a Milcery holds this, it spins around happily.",1,0,7
+680,STRAWBERRYSWEET,Strawberry Sweet,Strawberry Sweets,1,500,"A strawberry-shaped sweet. When a Milcery holds this, it will spin around happily.",1,0,0
+681,LOVESWEET,Love Sweet,Love Sweets,1,500,"A heart-shaped sweet. When a Milcery holds this, it spins around happily.",1,0,0
+682,BERRYSWEET,Berry Sweet,Berry Sweets,1,500,"A berry-shaped sweet. When a Milcery holds this, it spins around happily.",1,0,0
+683,CLOVERSWEET,Clover Sweet,Clover Sweets,1,500,"A clover-shaped sweet. When a Milcery holds this, it spins around happily.",1,0,0
+684,FLOWERSWEET,Flower Sweet,Flower Sweets,1,500,"A flower-shaped sweet. When a Milcery holds this, it spins around happily.",1,0,0
+685,STARSWEET,Star Sweet,Star Sweets,1,500,"A star-shaped sweet. When a Milcery holds this, it spins around happily.",1,0,0
+686,RIBBONSWEET,Ribbon Sweet,Ribbon Sweets,1,500,"A ribbon-shaped sweet. When a Milcery holds this, it spins around happily.",1,0,0
 687,FOSSILIZEDBIRD,Fossilized Bird,Fossilized Birds,7,5000,"The fossil of an ancient Pokémon that once soared through the sky. What it looked like is a mystery.",0,0,8
 688,FOSSILIZEDFISH,Fossilized Fish,Fossilized Fishes,7,5000,"The fossil of an ancient Pokémon that once lived in the sea. What it looked like is a mystery.",0,0,8
 689,FOSSILIZEDDRAKE,Fossilized Drake,Fossilized Drakes,7,5000,"The fossil of an ancient Pokémon that once roamed the land. What it looked like is a mystery.",0,0,8
