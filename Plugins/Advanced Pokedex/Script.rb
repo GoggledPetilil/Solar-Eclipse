@@ -45,7 +45,7 @@ class PokemonPokedexInfo_Scene
     pbStartSceneOldFL(dexlist,index,region)
     @sprites["advancedicon"]=PokemonSpeciesIconSprite.new(nil,@viewport)
     @sprites["advancedicon"].setOffset(PictureOrigin::Center)
-    @sprites["advancedicon"].x = 82
+    @sprites["advancedicon"].x = 136
     @sprites["advancedicon"].y = 308
     @sprites["advancedicon"].visible = false
   end
@@ -185,10 +185,20 @@ class PokemonPokedexInfo_Scene
     if $Trainer.owned?(@species)
       textpos.push([
         _INTL("{1}/{2}",@subPage,@totalSubPages),
-        Graphics.width-52,Graphics.height-98,1,base,shadow
+        Graphics.width-24,Graphics.height-158,1,MessageConfig::DARK_TEXT_MAIN_COLOR,MessageConfig::DARK_TEXT_SHADOW_COLOR
+      ])
+      textpos.push([
+        _INTL("< [{1}]",Keys.key_name($PokemonSystem.game_control_code("Scroll Down")[0]) || "S"),
+        28,Graphics.height-98,0,base,shadow
+      ])
+      textpos.push([
+        _INTL("[{1}] >",Keys.key_name($PokemonSystem.game_control_code("Ready Menu")[0]) || "D"),
+        Graphics.width-28,Graphics.height-98,1,base,shadow
       ])
     end
+    pbSetSmallFont(@sprites["overlay"].bitmap)
     pbDrawTextPositions(@sprites["overlay"].bitmap, textpos)
+    pbSetSystemFont(@sprites["overlay"].bitmap)
 
     # Draw title and Pokemon name.
     textpos = []
