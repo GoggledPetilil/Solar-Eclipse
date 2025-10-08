@@ -2,7 +2,8 @@
 # Adventure: code for sending pokemon adventuring
 #-------------------------------------------------------------------------------
 module PokeventureConfig
-  Updatesteps = 100 # How many steps should be taken before the Adventure progresses
+  Updatesteps = 256 # How many steps should be taken before the Adventure progresses
+  ItemLimit = 32 # How many items can be stored.
   CustomMusic = "Mystery Dungeon Guild" # Custom music to play in the menue. Must be in the BGM folder
   #Item Collection
   CollectRandomItem = true #Collect Items from the Table below
@@ -27,7 +28,7 @@ module PokeventureConfig
   # Exp
   GainExp = true # should the pokemon gain exp through adventuring
   # Wild Pokemon
-  GlobalPkmn = false # should this script use the global encounter list everywhere instead of the specific map encounters.
+  GlobalPkmn = true # should this script use the global encounter list everywhere instead of the specific map encounters.
   PkmnList = [:PIKACHU,:CHARMANDER,:SQUIRTLE,:BULBASAUR,:EEVEE]
   GlobalLeveling = true # makes the level of the encounters balanced around the number of badges instead of the location (always on if globalPkmn is on)
   #level per badge [min,max] can add more if you have more badges in your game

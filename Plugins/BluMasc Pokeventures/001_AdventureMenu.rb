@@ -93,6 +93,7 @@ class Adventure_Scene
 				@adventure.harvestItemsSilent
 				pbMessage(_INTL("All Items Collected!"))
 			else
+				@adventure.harvestItemsSilent
 				@adventure.harvestItems
 			end
 		when 9
@@ -513,8 +514,8 @@ class Adventure_Scene
 		end
 		pbUpdateCursorPos
 	  elsif Input.trigger?(Input::ACTION)
-		@fastcollect = !@fastcollect
-		pbUpdateChangingGraphics
+#		@fastcollect = !@fastcollect
+#		pbUpdateChangingGraphics
       end
     end
   end

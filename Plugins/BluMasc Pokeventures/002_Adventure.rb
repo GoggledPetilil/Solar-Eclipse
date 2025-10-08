@@ -58,7 +58,7 @@ class Adventure
 		                       [:LEFTOVERS,:BOTTLECAP],
 		                       [:BOTTLECAP,:LEFTOVERS]
 		                       ]
-		  if  PokeventureConfig::CollectRandomItem
+		  if PokeventureConfig::CollectRandomItem && items.length < PokeventureConfig::ItemLimit
 		    items.append(itempool[partyLevel].sample)
 		  end
 		elsif chances == 3
@@ -74,7 +74,7 @@ class Adventure
 		                       [:MAXREVIVE,:PPUP],
 		                       [:PPUP,:MAXELIXIR]
 		                       ]
-		  if  PokeventureConfig::CollectRandomItem
+		  if PokeventureConfig::CollectRandomItem && items.length < PokeventureConfig::ItemLimit
 		    items.append(itempool[partyLevel].sample)
 		  end
 		elsif chances == 2
@@ -90,7 +90,7 @@ class Adventure
 		                       [:REVIVE,:RARECANDY,:SUNSTONE,:MOONSTONE,:HEARTSCALE,:FULLRESTORE],
 		                       [:RARECANDY,:SUNSTONE,:MOONSTONE,:HEARTSCALE,:FULLRESTORE,:MAXREVIVE]
 		                       ]
-		  if  PokeventureConfig::CollectRandomItem
+		  if PokeventureConfig::CollectRandomItem && items.length < PokeventureConfig::ItemLimit
 		    items.append(itempool[partyLevel].sample)
 		  end
 		elsif chances == 1
@@ -106,7 +106,7 @@ class Adventure
 		                       [:ULTRABALL],
 		                       [:REVIVE]
 		                       ]
-		  if  PokeventureConfig::CollectRandomItem
+		  if PokeventureConfig::CollectRandomItem && items.length < PokeventureConfig::ItemLimit
 		    items.append(itempool[partyLevel].sample)
 		  end
 		else
@@ -279,8 +279,9 @@ class Adventure
 end
 
 def giveAdventureItemList(itemlist)
-  list = itemlist.dup.compact()
-  string = ""
+  list = itemlist.dup.compact()  
+  list = list.first(PokeventureConfig::ItemLimit)
+  string = "\\me[Item get]"
   while list.length() > 0
     item = list.pop
     count = list.tally[item]
@@ -291,9 +292,9 @@ def giveAdventureItemList(itemlist)
     end
     itemdata = GameData::Item.get(item)
     name = (count>1) ? itemdata.name_plural : itemdata.name
-    string += count.to_s+" "+name+", "
+    string += count.to_s+" \\c[1]"+name+"\\c[0], "
     $PokemonBag.pbStoreItem(item,count)
     list.delete(item)
   end
-  Kernel.pbMessage(string[0...-2])
+  Kernel.pbMessage(string[0...-2] + " collected!")
 end
