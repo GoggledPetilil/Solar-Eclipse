@@ -66,46 +66,47 @@ def pbGetRelearnableMoves(pkmn)
         tmoves.push(i) if !pkmn.hasMove?(i) && !moves.include?(i)
       end
     end
+    movelist = []
     if $game_variables[MOVETUTOR]==0
-      moves = tmoves + moves  
+      movelist = tmoves + moves  
     end
     # Egg Moves
     if $game_variables[MOVETUTOR]==1
       eggmoves=eggMoves(pkmn)
         for i in eggmoves
-        moves.push(i) if !pkmn.hasMove?(i) && !moves.include?(i)
+        movelist.push(i) if !pkmn.hasMove?(i) && !moves.include?(i)
       end
     end
     # Tutor Moves
     if $game_variables[MOVETUTOR]==2
       tutormoves= tutorMoves(pkmn)
       for i in tutormoves
-        moves.push(i) if !pkmn.hasMove?(i) && !moves.include?(i)
+        movelist.push(i) if !pkmn.hasMove?(i) && !moves.include?(i)
       end
     end
     # Hack Moves
     if $game_variables[MOVETUTOR]==3
       hmoves = hackmoves
       for i in hmoves
-         moves.push(i) if !pkmn.hasMove?(i) && !moves.include?(i)
+         movelist.push(i) if !pkmn.hasMove?(i) && !moves.include?(i)
       end
     end
     # STAB Moves
     if $game_variables[MOVETUTOR]==4
-      moves = []	  
       smoves = stabmoves(pkmn)
       for i in smoves
-         moves.push(i) if !pkmn.hasMove?(i) && !moves.include?(i) && !BANNED_TUTOR_MOVES[$game_variables[BANVAR]].include?(i)
+         movelist.push(i) if !pkmn.hasMove?(i) && !movelist.include?(i) && !BANNED_TUTOR_MOVES[$game_variables[BANVAR]].include?(i)
       end
     end
-    moves.sort! { |a, b| a.downcase <=> b.downcase } #sort moves alphabetically
-    return moves | []   # remove duplicates
+    movelist.sort! { |a, b| a.downcase <=> b.downcase } #sort moves alphabetically
+    return movelist | []   # remove duplicates
 end
   
 def can_learn_move(pkmn)
 	return false if pkmn.egg? || pkmn.shadowPokemon?
 	return true if $game_variables[MOVETUTOR]==3 || $game_variables[MOVETUTOR]==4
 	moves = pbGetRelearnableMoves(pkmn)
+echoln(pkmn.to_s + ": " + moves.to_s)
     if moves!=[]
 	 return true
 	else
