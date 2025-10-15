@@ -540,18 +540,18 @@ module BattleScripts
         @battle.pbStartTerrain(@battlers[1], :Misty)
       end
     end,
-   "faintedOpp" => "I'm sensing great power...",
+   "faintedOpp" => "That was just a warm-up. Let the real match commence.",
    "afterLastOpp" => {
    	:bgm => "Battle Gym Leader FINAL",
-   	:text => "sadfgdd"
+   	:text => "That's it, keep it up. However, I won't let you win so easily."
    	},
-   "loss" => "Hmph. I'm a little disappointed.",
+   "loss" => "To be victorious against the first Challenger to my Gym... You're playing with me.",
    "afterLast" => proc do
       hasRevive = $PokemonBag.pbHasItem?(:REVIVE) || $PokemonBag.pbHasItem?(:MAXREVIVE) || $PokemonBag.pbHasItem?(:REVIVALHERB)
       lastMon = (!hasRevive || $game_switches[Settings::BAN_REVIVAL])
       if lastMon
         pbBGMPlay("EBDX/Low HP Battle") if $PokemonSystem.lowhp<2
-        @scene.pbTrainerSpeak("Am I really about to beat you here? You're not that weak, right...")
+        @scene.pbTrainerSpeak("Now of all times? You're better than this.")
       end
    end
     }
