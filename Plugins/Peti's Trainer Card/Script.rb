@@ -1,30 +1,41 @@
 class PokemonTrainerCard_Scene
   ITEMS_DRAWN = 6
-  ITEM_HEADERS = ["BATTLE","PARAMETERS","BENEFITS","SPECIAL"]  
+  ITEM_HEADERS = ["BATTLE","PARAMETERS","BENEFITS","SPECIAL"]
+  FRONTIER_PASS_SWITCH = 247
 
   def pbStartScene
+    # General variables
+    @cardMode = 0
+    # Trainer Card variables
     @front = true
     @sel = 0
+
+    # Create scene
     @viewport = Viewport.new(0,0,Graphics.width,Graphics.height)
     @viewport.z = 99999
     @sprites = {}
-
     addBackgroundPlane(@sprites,"bg","Trainer Card/bg",@viewport)
+
+    # Base Card graphics
     @sprites["card"] = IconSprite.new(0,-20,@viewport)
     @sprites["knob"] = IconSprite.new(0,0,@viewport)
     pbRefreshCardBitmap
+
     @sprites["card"].ox = @sprites["card"].bitmap.width / 2
     @sprites["card"].oy = @sprites["card"].bitmap.height / 2
     @sprites["card"].x += @sprites["card"].ox
     @sprites["card"].y += @sprites["card"].oy
 
+    # UI Graphics
     @sprites["overlay"] = BitmapSprite.new(Graphics.width,Graphics.height,@viewport)
     pbSetSystemFont(@sprites["overlay"].bitmap)
     @sprites["elements"] = IconSprite.new(0,0,@viewport)
     @sprites["elements"].setBitmap(sprintf("Graphics/Pictures/Trainer Card/card_overlay"))
 
+    # Trainer Card text
     @sprites["text"] = TextSprite.new(@viewport)
 
+    # Trainer Card Trainer sprite
     @sprites["trainer"] = IconSprite.new(336*0.9,-60*0.1,@viewport)
     @sprites["trainer"].setBitmap(GameData::TrainerType.player_front_sprite_filename($Trainer.trainer_type))
     @sprites["trainer"].x -= (@sprites["trainer"].bitmap.width-128)/(2*1)
@@ -33,17 +44,43 @@ class PokemonTrainerCard_Scene
     @sprites["trainer"].zoom_x = 2
     @sprites["trainer"].zoom_y = 2
 
+    # Frontier Prints
+    @sprites["printTower"] = IconSprite.new(184,64,@viewport)
+    @sprites["printFactory"] = IconSprite.new(306,154,@viewport)
+    @sprites["printArcade"] = IconSprite.new(272,248,@viewport)
+    @sprites["printCastle"] = IconSprite.new(94,248,@viewport)
+    @sprites["printHall"] = IconSprite.new(60,154,@viewport)
+
     pbRedrawSide
     pbFadeInAndShow(@sprites) { pbUpdate }
   end
 
   def pbRefreshCardBitmap
-    stars = ($game_variables[Settings::TRAINER_STARS]).clamp(0,5)
-    @sprites["knob"].setBitmap("Graphics/Pictures/Trainer Card/card_knob_#{stars}")
-    if @front
-      @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/card_#{stars}")
-    else
-      @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/card_back_#{stars}")
+    # Get correct Card graphic
+    case @cardMode
+    when 0
+      stars = ($game_variables[Settings::TRAINER_STARS]).clamp(0,5)
+      @sprites["knob"].setBitmap("Graphics/Pictures/Trainer Card/card_knob_#{stars}")
+      if @front
+        @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/card_#{stars}")
+      else
+        @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/card_back_#{stars}")
+      end
+    when 1
+      @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/badge_case")
+    when 2
+      @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/frontier_pass")
+      ls = ["none","silver","gold"]
+      towTxt = ls[pbGet(174).clamp(0,2)]
+      facTxt = ls[pbGet(179).clamp(0,2)]
+      arcTxt = ls[pbGet(184).clamp(0,2)]
+      casTxt = ls[pbGet(194).clamp(0,2)]
+      halTxt = ls[pbGet(189).clamp(0,2)]
+      @sprites["printTower"].setBitmap("Graphics/Pictures/Trainer Card/frontier_print_#{towTxt}_tower")
+      @sprites["printFactory"].setBitmap("Graphics/Pictures/Trainer Card/frontier_print_#{facTxt}_factory")
+      @sprites["printArcade"].setBitmap("Graphics/Pictures/Trainer Card/frontier_print_#{arcTxt}_arcade")
+      @sprites["printCastle"].setBitmap("Graphics/Pictures/Trainer Card/frontier_print_#{casTxt}_castle")
+      @sprites["printHall"].setBitmap("Graphics/Pictures/Trainer Card/frontier_print_#{halTxt}_hall")
     end
   end
 
@@ -52,20 +89,39 @@ class PokemonTrainerCard_Scene
     overlay.clear
     text = @sprites["text"].bitmap
     text.clear
+
     @sprites["trainer"].visible = false
     @sprites["knob"].visible = false
+
+    @sprites["printTower"].visible = false
+    @sprites["printFactory"].visible = false
+    @sprites["printArcade"].visible = false
+    @sprites["printCastle"].visible = false
+    @sprites["printHall"].visible = false
   end
 
   def pbRedrawSide
-    if @front
-      pbDrawTrainerCardFront
-      @sprites["trainer"].visible = true
-      @sprites["knob"].visible = false
-    else
-      pbDrawItems
-      pbDrawListKnob
-      @sprites["trainer"].visible = false
-      @sprites["knob"].visible = true
+    # Get correct Card content graphics
+    case @cardMode
+    when 0
+      if @front
+        pbDrawTrainerCardFront
+        @sprites["trainer"].visible = true
+        @sprites["knob"].visible = false
+      else
+        pbDrawItems
+        pbDrawListKnob
+        @sprites["trainer"].visible = false
+        @sprites["knob"].visible = true
+      end
+    when 1
+      echoln("Draw Gym Badge graphics")
+    when 2
+      @sprites["printTower"].visible = true
+      @sprites["printFactory"].visible = true
+      @sprites["printArcade"].visible = true
+      @sprites["printCastle"].visible = true
+      @sprites["printHall"].visible = true
     end
   end
 
@@ -109,14 +165,22 @@ class PokemonTrainerCard_Scene
       Input.update
       pbUpdate
 
+      if Input.trigger?(Input::LEFT)
+        pbSwitchScene(@cardMode - 1)
+        pbFlipScene(true)
+      end
+      if Input.trigger?(Input::RIGHT)
+        pbSwitchScene(@cardMode + 1)
+        pbFlipScene(false)
+      end
       if Input.trigger?(Input::BACK)
         pbPlayCloseMenuSE
         break
       end
-      if Input.trigger?(Input::ACTION) || Input.trigger?(Input::USE)
-        pbFlipCard
-      end
 
+      if Input.trigger?(Input::ACTION) || Input.trigger?(Input::USE)
+        pbFlipCard if @cardMode == 0
+      end
       if !@front
         oldsel = @sel
         if Input.repeat?(Input::DOWN)
@@ -139,6 +203,53 @@ class PokemonTrainerCard_Scene
       end
     end
   end
+
+  def pbSwitchScene(sceneID)
+    scenes = 2
+    scenes = 3 if $game_switches[FRONTIER_PASS_SWITCH]
+    newScene = sceneID % scenes
+    @cardMode = newScene
+    echoln(@cardMode)
+  end
+
+  def pbFlipScene(goLeft)
+    sprite = @sprites["card"]
+    frames = 8
+    graphicOffset = 512
+    startX = sprite.x
+    startX2 = sprite.x + graphicOffset
+    endX = sprite.x - graphicOffset
+    if goLeft == true
+      startX2 = sprite.x - graphicOffset
+      endX = sprite.x + graphicOffset
+    end
+    pbSEPlay("GUI naming tab swap start")
+
+    pbClearSide
+    for i in 0...frames
+      t = (i + 1).to_f / frames
+      sprite.x = startX + (endX - startX) * t
+      pbUpdateSpriteHash(@sprites)
+      Graphics.update
+    end
+    sprite.x = endX
+
+    pbRefreshCardBitmap
+
+    for i in 0...frames
+      t = (i + 1).to_f / frames
+      sprite.x = startX2 + (startX - startX2) * t
+      pbUpdateSpriteHash(@sprites)
+      Graphics.update
+    end
+    sprite.x = startX
+    pbRedrawSide
+    pbSEPlay("GUI naming tab swap end")
+  end
+
+  ##############################################################################################################
+  # Trainer Card Backside Methods
+  ##############################################################################################################
 
   def pbGetAllCatagories
     return pbDrawBattle + pbDrawParam + pbDrawBenefits + pbDrawSpecial
