@@ -44,6 +44,22 @@ class PokemonTrainerCard_Scene
     @sprites["trainer"].zoom_x = 2
     @sprites["trainer"].zoom_y = 2
 
+    # Badge Sprites
+    badgeX = $Trainer.badge_count > 8 ? 40 : 48
+    badgeY = 52
+    bXOffset = $Trainer.badge_count > 8 ? 88 : 112
+    bYOffset = 160
+    @sprites["badge0"] = IconSprite.new(badgeX+bXOffset*0,badgeY+bYOffset*0,@viewport)
+    @sprites["badge1"] = IconSprite.new(badgeX+bXOffset*1,badgeY+bYOffset*0,@viewport)
+    @sprites["badge2"] = IconSprite.new(badgeX+bXOffset*2,badgeY+bYOffset*0,@viewport)
+    @sprites["badge3"] = IconSprite.new(badgeX+bXOffset*3,badgeY+bYOffset*0,@viewport)
+    @sprites["badge4"] = IconSprite.new(badgeX+bXOffset*0,badgeY+bYOffset*1,@viewport)
+    @sprites["badge5"] = IconSprite.new(badgeX+bXOffset*1,badgeY+bYOffset*1,@viewport)
+    @sprites["badge6"] = IconSprite.new(badgeX+bXOffset*2,badgeY+bYOffset*1,@viewport)
+    @sprites["badge7"] = IconSprite.new(badgeX+bXOffset*3,badgeY+bYOffset*1,@viewport)
+    @sprites["badge8"] = IconSprite.new(badgeX+bXOffset*4,badgeY+bYOffset*0,@viewport)
+    @sprites["badge9"] = IconSprite.new(badgeX+bXOffset*4,badgeY+bYOffset*1,@viewport)
+
     # Frontier Prints
     @sprites["printTower"] = IconSprite.new(184,64,@viewport)
     @sprites["printFactory"] = IconSprite.new(306,154,@viewport)
@@ -70,17 +86,6 @@ class PokemonTrainerCard_Scene
       @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/badge_case")
     when 2
       @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/frontier_pass")
-      ls = ["none","silver","gold"]
-      towTxt = ls[pbGet(174).clamp(0,2)]
-      facTxt = ls[pbGet(179).clamp(0,2)]
-      arcTxt = ls[pbGet(184).clamp(0,2)]
-      casTxt = ls[pbGet(194).clamp(0,2)]
-      halTxt = ls[pbGet(189).clamp(0,2)]
-      @sprites["printTower"].setBitmap("Graphics/Pictures/Trainer Card/frontier_print_#{towTxt}_tower")
-      @sprites["printFactory"].setBitmap("Graphics/Pictures/Trainer Card/frontier_print_#{facTxt}_factory")
-      @sprites["printArcade"].setBitmap("Graphics/Pictures/Trainer Card/frontier_print_#{arcTxt}_arcade")
-      @sprites["printCastle"].setBitmap("Graphics/Pictures/Trainer Card/frontier_print_#{casTxt}_castle")
-      @sprites["printHall"].setBitmap("Graphics/Pictures/Trainer Card/frontier_print_#{halTxt}_hall")
     end
   end
 
@@ -93,6 +98,17 @@ class PokemonTrainerCard_Scene
     @sprites["trainer"].visible = false
     @sprites["knob"].visible = false
 
+    @sprites["badge0"].visible = false
+    @sprites["badge1"].visible = false
+    @sprites["badge2"].visible = false
+    @sprites["badge3"].visible = false
+    @sprites["badge4"].visible = false
+    @sprites["badge5"].visible = false
+    @sprites["badge6"].visible = false
+    @sprites["badge7"].visible = false
+    @sprites["badge8"].visible = false
+    @sprites["badge9"].visible = false
+
     @sprites["printTower"].visible = false
     @sprites["printFactory"].visible = false
     @sprites["printArcade"].visible = false
@@ -102,6 +118,7 @@ class PokemonTrainerCard_Scene
 
   def pbRedrawSide
     # Get correct Card content graphics
+    hasFrontierPass = $game_switches[FRONTIER_PASS_SWITCH]
     case @cardMode
     when 0
       if @front
@@ -114,14 +131,60 @@ class PokemonTrainerCard_Scene
         @sprites["trainer"].visible = false
         @sprites["knob"].visible = true
       end
+      
+      if hasFrontierPass
+        @sprites["elements"].setBitmap(sprintf("Graphics/Pictures/Trainer Card/card_overlay"))
+      else
+        @sprites["elements"].setBitmap(sprintf("Graphics/Pictures/Trainer Card/card_overlay_3"))
+      end
     when 1
-      echoln("Draw Gym Badge graphics")
+      @sprites["badge0"].setBitmap("Graphics/Pictures/Trainer Card/badge_0")
+      @sprites["badge1"].setBitmap("Graphics/Pictures/Trainer Card/badge_1")
+      @sprites["badge2"].setBitmap("Graphics/Pictures/Trainer Card/badge_2")
+      @sprites["badge3"].setBitmap("Graphics/Pictures/Trainer Card/badge_3")
+      @sprites["badge4"].setBitmap("Graphics/Pictures/Trainer Card/badge_4")
+      @sprites["badge5"].setBitmap("Graphics/Pictures/Trainer Card/badge_5")
+      @sprites["badge6"].setBitmap("Graphics/Pictures/Trainer Card/badge_6")
+      @sprites["badge7"].setBitmap("Graphics/Pictures/Trainer Card/badge_7")
+      @sprites["badge8"].setBitmap("Graphics/Pictures/Trainer Card/badge_8")
+      @sprites["badge9"].setBitmap("Graphics/Pictures/Trainer Card/badge_9")
+
+      @sprites["badge0"].visible = true if $Trainer.badge_count > 0
+      @sprites["badge1"].visible = true if $Trainer.badge_count > 1
+      @sprites["badge2"].visible = true if $Trainer.badge_count > 2
+      @sprites["badge3"].visible = true if $Trainer.badge_count > 3
+      @sprites["badge4"].visible = true if $Trainer.badge_count > 4
+      @sprites["badge5"].visible = true if $Trainer.badge_count > 5
+      @sprites["badge6"].visible = true if $Trainer.badge_count > 6
+      @sprites["badge7"].visible = true if $Trainer.badge_count > 7
+      @sprites["badge8"].visible = true if $Trainer.badge_count > 8
+      @sprites["badge9"].visible = true if $Trainer.badge_count > 9
+
+      if hasFrontierPass
+        @sprites["elements"].setBitmap(sprintf("Graphics/Pictures/Trainer Card/card_overlay_1"))
+      else
+        @sprites["elements"].setBitmap(sprintf("Graphics/Pictures/Trainer Card/card_overlay_4"))
+      end
     when 2
+      ls = ["none","silver","gold"]
+      towTxt = ls[pbGet(174).clamp(0,2)]
+      facTxt = ls[pbGet(179).clamp(0,2)]
+      arcTxt = ls[pbGet(184).clamp(0,2)]
+      casTxt = ls[pbGet(194).clamp(0,2)]
+      halTxt = ls[pbGet(189).clamp(0,2)]
+      @sprites["printTower"].setBitmap("Graphics/Pictures/Trainer Card/frontier_print_#{towTxt}_tower")
+      @sprites["printFactory"].setBitmap("Graphics/Pictures/Trainer Card/frontier_print_#{facTxt}_factory")
+      @sprites["printArcade"].setBitmap("Graphics/Pictures/Trainer Card/frontier_print_#{arcTxt}_arcade")
+      @sprites["printCastle"].setBitmap("Graphics/Pictures/Trainer Card/frontier_print_#{casTxt}_castle")
+      @sprites["printHall"].setBitmap("Graphics/Pictures/Trainer Card/frontier_print_#{halTxt}_hall")
+
       @sprites["printTower"].visible = true
       @sprites["printFactory"].visible = true
       @sprites["printArcade"].visible = true
       @sprites["printCastle"].visible = true
       @sprites["printHall"].visible = true
+
+      @sprites["elements"].setBitmap(sprintf("Graphics/Pictures/Trainer Card/card_overlay_2"))
     end
   end
 
@@ -209,7 +272,6 @@ class PokemonTrainerCard_Scene
     scenes = 3 if $game_switches[FRONTIER_PASS_SWITCH]
     newScene = sceneID % scenes
     @cardMode = newScene
-    echoln(@cardMode)
   end
 
   def pbFlipScene(goLeft)
