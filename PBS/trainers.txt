@@ -3335,7 +3335,7 @@ Pokemon = PETILIL,13
 # BATTLE FRONTIER
 #-------------------------------
 [TOWERTYCOON,Alice]
-LoseText = "..."
+LoseText = "I lost to someone like you? Maybe that's not so bad..."
 Pokemon = MILOTIC,50
     Moves = DRAGONPULSE,HYPNOSIS,HYDROPUMP,RECOVER
     AbilityIndex = 0
@@ -3356,7 +3356,7 @@ Pokemon = DRAGONITE,50
     EV = 0,252,0,252,0,0
 #-------------------------------
 [TOWERTYCOON,Alice,1]
-LoseText = "..."
+LoseText = "I lost to someone like you? Maybe that's not so bad..."
 Pokemon = HEATRAN,50
     Moves = EARTHPOWER,MAGMASTORM,DARKPULSE,FLASHCANNON
     AbilityIndex = 0
@@ -3377,7 +3377,7 @@ Pokemon = REGIGIGAS,50
     EV = 0,252,0,252,0,0
 #-------------------------------
 [CASTLEVALET,Poppy]
-LoseText = "..."
+LoseText = "I gave it my all, yet it wasn't enough. Well done!"
 Pokemon = HOUNDOOM,50
     Moves = FIREFANG,CRUNCH,ROAR,COUNTER
     AbilityIndex = 0
@@ -3401,7 +3401,7 @@ Pokemon = STARAPTOR,50
     EV = 0,252,0,252,0,0
 #-------------------------------
 [CASTLEVALET,Poppy,1]
-LoseText = "..."
+LoseText = "I gave it my all, yet it wasn't enough. Well done!"
 Pokemon = HOUNDOOM,50
     Moves = FIREFANG,THUNDERFANG,REVERSAL,ENDURE
     AbilityIndex = 0
