@@ -170,7 +170,7 @@
 168,PROTEAN,Protean,"Changes type to the move-type it's about to use."
 169,FURCOAT,Fur Coat,"Doubles raw Defence stat."
 170,MAGICIAN,Magician,"Steals the held item of a foe it hits."
-171,BULLETPROOF,Bulletproof,"Immune to ball and bomb moves."
+171,BULLETPROOF,Bulletproof,"Immune to bomb moves."
 172,COMPETITIVE,Competitive,"When stats are lowered, increases Sp. Atk by 2"
 173,STRONGJAW,Strong Jaw,"Powers up biting moves by 1.5x."
 174,REFRIGERATE,Refrigerate,"Normal-type moves become Ice-type and boosed by 1.3x."
