@@ -698,7 +698,7 @@ class FightWindowEBDX
 
     priorityStr = "-" if movePriority == 0
     priorityStr = "+#{movePriority}" if movePriority > 0
-    priorityStr = "-#{movePriority}" if movePriority < 0
+    priorityStr = "#{movePriority}" if movePriority < 0
     return priorityStr
   end
   #-----------------------------------------------------------------------------
