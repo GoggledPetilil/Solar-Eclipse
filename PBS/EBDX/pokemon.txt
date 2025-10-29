@@ -3429,7 +3429,7 @@ BattlerEnemyX           = -8
 [CRESSELIA]
 BattlerEnemyY           = 17
 BattleIntro             = minorLegendary
-BattleBGM               = Battle Ghost.ogg
+BattleBGM               = Battle Legendary Pokemon.ogg
 BattlerAltitude         = 9
 BattlerPlayerX          = 10
 BattlerPlayerY          = 25
@@ -3452,7 +3452,7 @@ BattlerEnemyX           = 0
 [DARKRAI]
 BattlerEnemyY           = 26
 BattleIntro             = minorLegendary
-BattleBGM               = Battle Ghost.ogg
+BattleBGM               = Battle Legendary Pokemon.ogg
 BattlerAltitude         = 9
 BattlerPlayerX          = 26
 BattlerPlayerY          = 27
@@ -3460,6 +3460,8 @@ BattlerEnemyX           = 8
 #-------------------------------
 [SHAYMIN]
 BattlerEnemyY           = 14
+BattleIntro             = minorLegendary
+BattleBGM               = Battle Legendary Pokemon.ogg
 BattlerAltitude         = 0
 BattlerPlayerX          = 0
 BattlerPlayerY          = 16
@@ -4562,6 +4564,8 @@ BattlerEnemyX           = 0
 #-------------------------------
 [MELOETTA]
 BattlerEnemyY           = 30
+BattleIntro             = minorLegendary
+BattleBGM               = Battle Legendary Pokemon.ogg
 BattlerAltitude         = 16
 BattlerPlayerX          = 0
 BattlerPlayerY          = 11
@@ -4793,6 +4797,8 @@ BattlerEnemyX           = 0
 #-------------------------------
 [DEOXYS,1]
 BattlerEnemyY           = 12
+BattleIntro             = minorLegendary
+BattleBGM               = Battle Deoxys.ogg
 BattlerAltitude         = 0
 BattlerPlayerX          = 0
 BattlerPlayerY          = 30
@@ -4908,6 +4914,8 @@ BattleEnv               = DARKNESS
 #-------------------------------
 [SHAYMIN,1]
 BattlerEnemyY           = 14
+BattleIntro             = minorLegendary
+BattleBGM               = Battle Legendary Pokemon.ogg
 BattlerAltitude         = 0
 BattlerPlayerX          = 0
 BattlerPlayerY          = 16
@@ -5132,6 +5140,8 @@ BattlerEnemyX           = 0
 #-------------------------------
 [MELOETTA,1]
 BattlerEnemyY           = 18
+BattleIntro             = minorLegendary
+BattleBGM               = Battle Legendary Pokemon.ogg
 BattlerAltitude         = 0
 BattlerPlayerX          = 0
 BattlerPlayerY          = 16

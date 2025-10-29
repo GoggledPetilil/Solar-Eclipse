@@ -1679,7 +1679,7 @@ Bicycle = true
 Outdoor = false
 Bicycle = true
 MapPosition = 0,23,17
-SnapEdges = true
+SnapEdges = false
 #-------------------------------
 [315]
 # Southern Chamber
