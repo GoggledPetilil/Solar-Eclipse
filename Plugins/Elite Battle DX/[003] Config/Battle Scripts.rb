@@ -640,6 +640,36 @@ module BattleScripts
     }
   #-----------------------------------------------------------------------------
   LAIRUS_1 = {
+   "turnEnd0"   => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        b = @battlers[0]
+        b.pbBurn if b.pbCanBurn?(b,false,self)
+      end
+    end,
+   "turnEnd1"   => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        b = @battlers[0]
+        b.pbBurn if b.pbCanBurn?(b,false,self)
+      end
+    end,
+   "turnEnd2"   => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        b = @battlers[0]
+        b.pbBurn if b.pbCanBurn?(b,false,self)
+      end
+    end,
+   "turnEnd3"   => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        b = @battlers[0]
+        b.pbBurn if b.pbCanBurn?(b,false,self)
+      end
+    end,
+   "turnEnd4"   => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        b = @battlers[0]
+        b.pbBurn if b.pbCanBurn?(b,false,self)
+      end
+    end,
     "faintedOpp" => "You've got some nerve!",
     "afterLastOpp" => "Not bad, punk! But I'm not backing down.",
     "loss" => "Hah! You lose. Now get lost!!",
@@ -654,6 +684,36 @@ module BattleScripts
     }
  #-----------------------------------------------------------------------------
   LAIRUS_2 = {
+   "turnEnd0"   => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        b = @battlers[0]
+        b.pbFreeze if b.pbCanFreeze?(b,false,self)
+      end
+    end,
+   "turnEnd1"   => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        b = @battlers[0]
+        b.pbFreeze if b.pbCanFreeze?(b,false,self)
+      end
+    end,
+   "turnEnd2"   => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        b = @battlers[0]
+        b.pbFreeze if b.pbCanFreeze?(b,false,self)
+      end
+    end,
+   "turnEnd3"   => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        b = @battlers[0]
+        b.pbFreeze if b.pbCanFreeze?(b,false,self)
+      end
+    end,
+   "turnEnd4"   => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        b = @battlers[0]
+        b.pbFreeze if b.pbCanFreeze?(b,false,self)
+      end
+    end,
     "faintedOpp" => "Strong start, eh? Well, let's see you handle this!!",
     "afterLastOpp" => proc do
       pname = @battlers[1].name
