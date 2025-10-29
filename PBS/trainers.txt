@@ -7198,6 +7198,43 @@ Pokemon = RAPIDASH,60
     Form = 1
 Pokemon = ROSERADE,58
 #-------------------------------
+# MOUNT LAPLAENTA
+#-------------------------------
+[TEAMSOL_F,Grunt,21]
+LoseText = "This defeat is cold..."
+Pokemon = EMPOLEON,60
+Pokemon = CLEFABLE,60
+Pokemon = VIKAVOLT,60
+#-------------------------------
+[TEAMSOL_M,Grunt,22]
+LoseText = "I'm actually gonna crash out."
+Pokemon = ALCREMIE,60
+Pokemon = MUSHARNA,60
+Pokemon = GOTHITELLE,60
+#-------------------------------
+[TEAMSOL_F,Grunt,22]
+LoseText = "This is not legal!"
+Pokemon = CAMERUPT,60
+Pokemon = WIGGLYTUFF,60
+Pokemon = ORICORIO,60
+#-------------------------------
+[TEAMSOL_M,Grunt,23]
+LoseText = "Double D's... Double Defeat..."
+Pokemon = SCOLIPEDE,60
+Pokemon = ARAQUANID,60
+Pokemon = DRAGONITE,60
+#-------------------------------
+[DOCTOR,Harvest]
+LoseText = "I'm feeling a lot better now. Are you?"
+Pokemon = SPINDA,60
+Pokemon = SUNFLORA,60
+#-------------------------------
+[TEAMSOL_F,Grunt,23]
+LoseText = "I can't believe I loooost...!"
+Pokemon = LUNATONE,60
+Pokemon = DUSKNOIR,60
+Pokemon = SNEASLER,60
+#-------------------------------
 # PRAESTIA CAVERN
 #-------------------------------
 [TEAMSOL_M,Grunt,21]
