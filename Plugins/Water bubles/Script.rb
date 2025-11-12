@@ -58,6 +58,7 @@ module WaterBublesVariables
   end
 
 	def self.bubles(event=nil)
+		return true if $PokemonSystem.performance==1
 		if event != $game_player
 			return true if event.character_name == "" || event.character_name == "nil" || event.name.include?("/nowater/")
 			return true if pbEventCommentInput(event, 0, "NoWater")

@@ -123,6 +123,7 @@ class Sprite_OWShadow
   def update
     return if disposed? || !$scene.is_a?(Scene_Map) || !onScreen?
     return jump_sprite if @event.jumping?
+    return if $PokemonSystem.performance==1
     remove =  false
     if OWShadowSettings::CASE_SENSITIVE_BLACKLISTS
       remove = true if OWShadowSettings::SHADOWLESS_CHARACTER_NAME.any?{|e| @event.character_name[/#{e}/]}
@@ -161,6 +162,7 @@ end
 def pbSetOverworldShadow(name, event_id = nil, map_id = nil)
   return if !$scene.is_a?(Scene_Map)
   return if nil_or_empty?(name)
+  return if $PokemonSystem.performance==1
   if !event_id
     $scene.spritesetGlobal.playersprite.ow_shadow.setBitmap(name)
   else

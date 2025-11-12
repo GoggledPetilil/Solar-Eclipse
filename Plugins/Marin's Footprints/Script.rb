@@ -60,7 +60,7 @@ class Sprite_Character
     footsteps_update
     @old_x ||= @character.x
     @old_y ||= @character.y
-    if (@character.x != @old_x || @character.y != @old_y) && !["", "nil"].include?(@character.character_name)
+    if (@character.x != @old_x || @character.y != @old_y) && !["", "nil"].include?(@character.character_name) && $PokemonSystem.performance==0
       if @character == $game_player && $PokemonTemp.dependentEvents &&
          $PokemonTemp.dependentEvents.respond_to?(:realEvents) &&
          $PokemonTemp.dependentEvents.realEvents.select { |e| !["", "nil"].include?(e.character_name) }.size > 0 &&
