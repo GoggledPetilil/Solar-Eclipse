@@ -5876,7 +5876,7 @@ Pokemon = TRUBBISH,31
 Pokemon = GOLBAT,32
 #-------------------------------
 [BIRDKEEPER_F,Elsie]
-LoseText = "Whoo!"
+LoseText = "Whoohoo!"
 Pokemon = GLIGAR,32
 Pokemon = STARAVIA,32
 #-------------------------------
