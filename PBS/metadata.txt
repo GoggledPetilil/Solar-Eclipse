@@ -1882,3 +1882,12 @@ MapPosition = 0,3,5
 [378]
 # Fitzberg Station
 MapPosition = 0,3,5
+#-------------------------------
+[385]
+# Route 13
+Outdoor = false
+ShowArea = true
+Bicycle = true
+Weather = Sandstorm,100
+MapPosition = 0,10,8
+MapSize = 1,11

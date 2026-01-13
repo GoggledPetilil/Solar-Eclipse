@@ -1006,3 +1006,14 @@ Cave,5
 [356] # Friend Safari
 Land,21
     100,DITTO,30
+#-------------------------------
+[385] # Route 13 Cave
+Cave,5
+    19,GOLBAT,43,45
+    19,SANDILE,43,45
+    15,SANDYGAST,43,45
+    15,NINCADA,43,45
+    11,MAWILE,43,45
+    11,TRAPINCH,43,45
+    7,GIBLE,43,45
+    4,PUPITAR,43,45

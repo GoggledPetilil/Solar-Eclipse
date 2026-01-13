@@ -390,3 +390,7 @@ BattleEnv       = SNOW
 [365]
 # Hidden Grotto
 BattleEnv       = FOREST
+#-------------------------------
+[385]
+# Route 13
+BattleEnv       = CAVE

@@ -57,7 +57,7 @@ module QuestModule
     :QuestGiver => "Team Sol Researcher",
     :Location0 => "Sol Research Lab",
     :Location1 => :Location0,
-    :QuestDescription => "A scientist in the Sol Research Lab has shared with you information on a flute that could summon a Pokémon of the cosmos. To restore the flute to it's full power, he's asked you to show him the Elite Four for research.",
+    :QuestDescription => "A scientist in the Sol Research Lab has shared with you information on a flute that could summon a Pokémon of the cosmos. To restore the flute to its full power, he's asked you to show him the Elite Four for research.",
     :RewardString => "Nebula Flute"
   }
   
