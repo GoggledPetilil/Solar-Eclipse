@@ -11110,6 +11110,7 @@ Shape = BipedalTail
 Habitat = Mountain
 Kind = Spot Panda
 Pokedex = The chances of two Spinda having identical spot patterns is less than one in four billion.
+FormName = Spotless
 Generation = 3
 BattlerPlayerX = 0
 BattlerPlayerY = 48

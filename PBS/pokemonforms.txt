@@ -3360,3 +3360,195 @@ EffortPoints = 3,0,0,0,0,0
 Abilities = TERAFORMZERO
 Height = 1.7
 Weight = 77.0
+#-------------------------------
+[SPINDA,1]
+FormName = Pattern 1
+#-------------------------------
+[SPINDA,2]
+FormName = Pattern 2
+#-------------------------------
+[SPINDA,3]
+FormName = Pattern 3
+#-------------------------------
+[SPINDA,4]
+FormName = Pattern 4
+#-------------------------------
+[SPINDA,5]
+FormName = Pattern 5
+#-------------------------------
+[SPINDA,6]
+FormName = Pattern 6
+#-------------------------------
+[SPINDA,7]
+FormName = Pattern 7
+#-------------------------------
+[SPINDA,8]
+FormName = Pattern 8
+#-------------------------------
+[SPINDA,9]
+FormName = Pattern 9
+#-------------------------------
+[SPINDA,10]
+FormName = Pattern 10
+#-------------------------------
+[SPINDA,11]
+FormName = Pattern 11
+#-------------------------------
+[SPINDA,12]
+FormName = Pattern 12
+#-------------------------------
+[SPINDA,13]
+FormName = Pattern 13
+#-------------------------------
+[SPINDA,14]
+FormName = Pattern 14
+#-------------------------------
+[SPINDA,15]
+FormName = Pattern 15
+#-------------------------------
+[SPINDA,16]
+FormName = Pattern 16
+#-------------------------------
+[SPINDA,17]
+FormName = Pattern 17
+#-------------------------------
+[SPINDA,18]
+FormName = Pattern 18
+#-------------------------------
+[SPINDA,19]
+FormName = Pattern 19
+#-------------------------------
+[SPINDA,20]
+FormName = Pattern 20
+#-------------------------------
+[SPINDA,21]
+FormName = Pattern 21
+#-------------------------------
+[SPINDA,22]
+FormName = Pattern 22
+#-------------------------------
+[SPINDA,23]
+FormName = Pattern 23
+#-------------------------------
+[SPINDA,24]
+FormName = Pattern 24
+#-------------------------------
+[SPINDA,25]
+FormName = Pattern 25
+#-------------------------------
+[SPINDA,26]
+FormName = Pattern 26
+#-------------------------------
+[SPINDA,27]
+FormName = Pattern 27
+#-------------------------------
+[SPINDA,28]
+FormName = Pattern 28
+#-------------------------------
+[SPINDA,29]
+FormName = Pattern 29
+#-------------------------------
+[SPINDA,30]
+FormName = Pattern 30
+#-------------------------------
+[SPINDA,31]
+FormName = Pattern 31
+#-------------------------------
+[SPINDA,32]
+FormName = Pattern 32
+#-------------------------------
+[SPINDA,33]
+FormName = Pattern 33
+#-------------------------------
+[SPINDA,34]
+FormName = Pattern 34
+#-------------------------------
+[SPINDA,35]
+FormName = Pattern 35
+#-------------------------------
+[SPINDA,36]
+FormName = Pattern 36
+#-------------------------------
+[SPINDA,37]
+FormName = Pattern 37
+#-------------------------------
+[SPINDA,38]
+FormName = Pattern 38
+#-------------------------------
+[SPINDA,39]
+FormName = Pattern 39
+#-------------------------------
+[SPINDA,40]
+FormName = Pattern 40
+#-------------------------------
+[SPINDA,41]
+FormName = Pattern 41
+#-------------------------------
+[SPINDA,42]
+FormName = Pattern 42
+#-------------------------------
+[SPINDA,43]
+FormName = Pattern 43
+#-------------------------------
+[SPINDA,44]
+FormName = Pattern 44
+#-------------------------------
+[SPINDA,45]
+FormName = Pattern 45
+#-------------------------------
+[SPINDA,46]
+FormName = Pattern 46
+#-------------------------------
+[SPINDA,47]
+FormName = Pattern 47
+#-------------------------------
+[SPINDA,48]
+FormName = Pattern 48
+#-------------------------------
+[SPINDA,49]
+FormName = Pattern 49
+#-------------------------------
+[SPINDA,50]
+FormName = Pattern 50
+#-------------------------------
+[SPINDA,51]
+FormName = Pattern 51
+#-------------------------------
+[SPINDA,52]
+FormName = Pattern 52
+#-------------------------------
+[SPINDA,53]
+FormName = Pattern 53
+#-------------------------------
+[SPINDA,54]
+FormName = Pattern 54
+#-------------------------------
+[SPINDA,55]
+FormName = Pattern 55
+#-------------------------------
+[SPINDA,56]
+FormName = Pattern 56
+#-------------------------------
+[SPINDA,57]
+FormName = Pattern 57
+#-------------------------------
+[SPINDA,58]
+FormName = Pattern 58
+#-------------------------------
+[SPINDA,59]
+FormName = Pattern 59
+#-------------------------------
+[SPINDA,60]
+FormName = Pattern 60
+#-------------------------------
+[SPINDA,61]
+FormName = Pattern 61
+#-------------------------------
+[SPINDA,62]
+FormName = Pattern 62
+#-------------------------------
+[SPINDA,63]
+FormName = Pattern 63
+#-------------------------------
+[SPINDA,64]
+FormName = Pattern 64
