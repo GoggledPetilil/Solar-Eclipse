@@ -76,7 +76,7 @@
 74,PUREPOWER,Pure Power,"Doubles raw Attack stat."
 75,SHELLARMOR,Shell Armor,"Protects against critical hits."
 76,AIRLOCK,Air Lock,"Eliminates the effects of weather."
-77,TANGLEDFEET,Tangled Feet,"Boosts evasion by 1.5x if confused."
+77,TANGLEDFEET,Tangled Feet,"While confused, 1.5x evasion and reduced self-hit odds."
 78,MOTORDRIVE,Motor Drive,"Absorbs Electric-type moves and ups Speed."
 79,RIVALRY,Rivalry,"Boosts damage by 1.25x to same gender foes."
 80,STEADFAST,Steadfast,"Raises Speed if flinching."
