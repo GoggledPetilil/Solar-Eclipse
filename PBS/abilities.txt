@@ -78,7 +78,7 @@
 76,AIRLOCK,Air Lock,"Eliminates the effects of weather."
 77,TANGLEDFEET,Tangled Feet,"While confused, 1.5x evasion and reduced self-hit odds."
 78,MOTORDRIVE,Motor Drive,"Absorbs Electric-type moves and ups Speed."
-79,RIVALRY,Rivalry,"Boosts damage by 1.25x to same gender foes."
+79,RIVALRY,Rivalry,"Boosts damage by 1.25x to same-gender foes."
 80,STEADFAST,Steadfast,"Raises Speed if flinching."
 81,SNOWCLOAK,Snow Cloak,"Boosts evasion by 1.25x in hail."
 82,GLUTTONY,Gluttony,"Eats held Berries earlier at 50% HP."
