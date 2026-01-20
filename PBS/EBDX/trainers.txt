@@ -174,15 +174,18 @@ BattleScript     = DIANA_5
 Ace		 = 6
 #-------------------------------
 [RIVAL_Diana,Diana,6]
-BattleScript     = DIANA_6
 BattleBGM        = Battle Diana Final.ogg
+BattleScript     = DIANA_6
 Ace		 = 6
 #-------------------------------
+[RIVAL_Diana,Diana,7]
+BattleBGM        = Battle Diana Final.ogg
+#-------------------------------
 [RIVAL_Diana,Diana,8]
+BattleBGM        = Battle Gym Leader.ogg
 BattleVS         = crystalSM
 VictoryTheme     = Victory Against Gym Leader.ogg
 BattleScript     = DIANA_8
-BattleBGM        = Battle Gym Leader.ogg
 Ace		 = 6
 #-------------------------------
 [RIVAL_Giltbert]
@@ -204,6 +207,13 @@ BattleScript     = GILTBERT_4
 BattleBGM        = Battle Giltbert Final.ogg
 BattleScript     = GILTBERT_6
 Ace		 = 6
+#-------------------------------
+[RIVAL_Giltbert,Giltbert,7]
+BattleBGM        = Battle Giltbert Final.ogg
+#-------------------------------
+[RIVAL_Giltbert,Giltbert,8]
+BattleBGM        = Battle Giltbert.ogg
+BattleScript     = GILTBERT_1
 #-------------------------------
 [TEAMSOL_AdminX]
 BattleIntro      = evilTeam
