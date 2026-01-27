@@ -101,13 +101,11 @@ module QuestModule
   
   Quest10 = {
     :ID => "10",
-    :Name => "Singing in the rain",
-    :QuestGiver => "Some old dude",
-    :Stage1 => "I've run out of things to write.",
-    :Stage2 => "If you're reading this, I hope you have a great day!",
-    :Location1 => "Somewhere prone to rain?",
-    :QuestDescription => "Whatever you want it to be.",
-    :RewardString => "Wet clothes."
+    :Name => "The Power of Song and Dance",
+    :QuestGiver => "Guitar Maker",
+    :Location0 => "Jadevik City",
+    :Location1 => :Location0,
+    :QuestDescription => "The Spiky-Ear Pichu's ukulele has been repaired, but it seems like that is only the first step to help find its friend. Perhaps it could call forth its friend with the help of dancers."
   }
   
   Quest11 = {

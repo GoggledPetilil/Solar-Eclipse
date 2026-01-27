@@ -752,3 +752,4 @@
 839,NEBULAFLUTE_3,Solar Flute,Solar Flutes,8,0,"A blue, green and orange flute. It was blessed by Cobalion, Virizion and Terrakion.",0,0,6
 840,NEBULAFLUTE_4,Nebula Flute,Nebular Flutes,8,0,"It is said that the tones it produces were offered up as gratitude to the Legendary Pokémon of the stars.",0,0,6
 841,JOYCANDY,Joy Candy,Joy Candies,8,0,"A candy that is packed with energy. It changes the level of a single Pokémon to match the next challenge.",5,0,6
+842,BROKENUKULELE,Worn Ukulele,Worn Ukulele,8,0,"A ukulele carried by Spiky-eared Pichu with worn strings that are off-tune and liable to snap.",0,0,6
