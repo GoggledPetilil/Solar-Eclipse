@@ -110,14 +110,11 @@ module QuestModule
   
   Quest11 = {
     :ID => "11",
-    :Name => "When is this list going to end?",
-    :QuestGiver => "Me",
-    :Stage1 => "When IS this list going to end?",
-    :Stage2 => "123",
-    :Stage3 => "456",
-    :Stage4 => "789",
-    :QuestDescription => "I'm losing my sanity.",
-    :RewardString => "nil"
+    :Name => "Feelings of Gratitude",
+    :QuestGiver => "Giltbert",
+    :Location0 => "Gardenia Town",
+    :Location1 => :Location0,
+    :QuestDescription => "Giltbert has asked you to find him the Pokémon of Gratitude, supposedly found in flower fields. If you show it to him, he'll share with you a reward."
   }
   
   Quest12 = {
