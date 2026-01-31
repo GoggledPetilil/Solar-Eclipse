@@ -119,14 +119,11 @@ module QuestModule
   
   Quest12 = {
     :ID => "12",
-    :Name => "The laaast melon",
-    :QuestGiver => "Some stupid dodo",
-    :Stage1 => "Fight for the last of the food.",
-    :Stage2 => "Don't die.",
-    :Location1 => "A volcano/cliff thing?",
-    :Location2 => "Good advice for life.",
-    :QuestDescription => "Tea and biscuits, anyone?",
-    :RewardString => "Food, glorious food!"
+    :Name => "The Strange Meteor",
+    :QuestGiver => "Old Lady",
+    :Location0 => "Meteor Hills",
+    :Location1 => :Location0,
+    :QuestDescription => "The old lady near the meteor in Junkar City has asked you to investigate Meteor Hills, following a tremor. If you find anything noteworthy there, be sure to show it to her for a reward."
   }
   
   Quest13 = {
