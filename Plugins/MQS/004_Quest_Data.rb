@@ -135,5 +135,14 @@ module QuestModule
     :QuestDescription => "Having taken care of all her administration work, Emilia is ready to hand you her Gym Badge... after a rematch.",
     :RewardString => "Gym Badge"
   }
+  
+  Quest14 = {
+    :ID => "14",
+    :Name => "The Lonely Lighthouse Beacon",
+    :QuestGiver => "Rosy's Caretaker",
+    :Location0 => "Jadevik Lighthouse",
+    :Location1 => :Location0,
+    :QuestDescription => "The caretaker of Rosy, the Jadevik Lighthouse's source of light, has asked you to provide her with some company. Show Rosy a Mareep, Flaaffy, or Ampharos to brighten her day."
+  }
 
 end
