@@ -5881,7 +5881,7 @@ Pokemon = GLIGAR,32
 Pokemon = STARAVIA,32
 #-------------------------------
 [BACKPACKER_M,Billybob]
-LoseText = "I lied! But well done anyway!"
+LoseText = "Nice sweat, bro."
 Pokemon = LYCANROC,31
 Pokemon = LYCANROC,31
     Form = 1
