@@ -30,7 +30,7 @@ class PokeBattle_Battler
     item = @pokemon.item if @pokemon.hasItem?
     return unless item
     # if we have an item and sucessfully added it
-    if item != nil && $game_switches[Settings::NO_WILD_ITEM_DROPS]
+    if item != nil && !$game_switches[Settings::NO_WILD_ITEM_DROPS]
       $PokemonBag.pbStoreItem(@pokemon.item,1)
       item_data = GameData::Item.get(item)
       itemname = item_data.real_name
