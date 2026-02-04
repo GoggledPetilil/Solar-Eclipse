@@ -144,5 +144,14 @@ module QuestModule
     :Location1 => :Location0,
     :QuestDescription => "The caretaker of Rosy, the Jadevik Lighthouse's source of light, has asked you to provide her with some company. Show Rosy a Mareep, Flaaffy, or Ampharos to brighten her day."
   }
+  
+  Quest15 = {
+    :ID => "15",
+    :Name => "The Love Confession",
+    :QuestGiver => "Lover Boy",
+    :Location0 => "Zimbani City",
+    :Location1 => :Location0,
+    :QuestDescription => "A man in Zimbani City has asked for your help with proposing to his girlfriend. He requests that you give him a Spinda with a heart pattern. He will trade you the Spinda for a reward."
+  }
 
 end
