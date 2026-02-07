@@ -153,5 +153,14 @@ module QuestModule
     :Location1 => :Location0,
     :QuestDescription => "A man in Zimbani City has asked for your help with proposing to his girlfriend. He requests that you give him a Spinda with a heart pattern. He will trade you the Spinda for a reward."
   }
+  
+  Quest16 = {
+    :ID => "16",
+    :Name => "The Hypnotist",
+    :QuestGiver => "Sleepless Black Belt",
+    :Location0 => "Towngor City",
+    :Location1 => :Location0,
+    :QuestDescription => "A restless man in Towngor City has asked you to show him a Pokémon knowing the move Hypnosis to help him fall asleep. If you present him with one, he'll give you a reward."
+  }
 
 end
