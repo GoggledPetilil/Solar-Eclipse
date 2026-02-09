@@ -470,7 +470,7 @@
 463,MOSAICMAIL,Mosaic Mail,Mosaic Mail,1,50,"Stationery featuring a print of a vivid rainbow pattern. Let a Pokémon hold it for delivery.",0,0,2
 464,BRICKMAIL,Brick Mail,Brick Mail,1,50,"Stationery featuring a print of a tough-looking brick pattern. Let a Pokémon hold it for delivery.",0,0,2
 #-------------------------------
-465,XATTACK,X Attack,X Attacks,4,500,"An item that sharply boosts the Attack stat of a Pokémon while it remains in battle.",0,3,0
+465,XATTACK,X Attack,X Attacks,4,550,"An item that sharply boosts the Attack stat of a Pokémon while it remains in battle.",0,3,0
 466,XATTACK2,X Attack 2,X Attack 2s,4,0,"It sharply raises the Attack stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.",0,3,0
 467,XATTACK3,X Attack 3,X Attack 3s,4,0,"It drastically raises the Attack stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.",0,3,0
 468,XATTACK6,X Attack 6,X Attack 6s,4,0,"It raises the Attack stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.",0,3,0
@@ -478,11 +478,11 @@
 470,XDEFENSE2,X Defense 2,X Defense 2s,4,0,"It sharply raises the Defense stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.",0,3,0
 471,XDEFENSE3,X Defense 3,X Defense 3s,4,0,"It drastically raises the Defense stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.",0,3,0
 472,XDEFENSE6,X Defense 6,X Defense 6s,4,0,"It raises the Defense stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.",0,3,0
-473,XSPATK,X Sp. Atk,X Sp. Atks,4,350,"An item that sharply boosts the Sp. Atk stat of a Pokémon while it remains in battle.",0,3,0
+473,XSPATK,X Sp. Atk,X Sp. Atks,4,550,"An item that sharply boosts the Sp. Atk stat of a Pokémon while it remains in battle.",0,3,0
 474,XSPATK2,X Sp. Atk 2,X Sp. Atk 2s,4,0,"It sharply raises the Sp. Atk stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.",0,3,0
 475,XSPATK3,X Sp. Atk 3,X Sp. Atk 3s,4,0,"It drastically raises the Sp. Atk stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.",0,3,0
 476,XSPATK6,X Sp. Atk 6,X Sp. Atk 6s,4,0,"It raises the Sp. Atk stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.",0,3,0
-477,XSPDEF,X Sp. Def,X Sp. Defs,4,350,"An item that sharply boosts the Sp. Def stat of a Pokémon while it remains in battle.",0,3,0
+477,XSPDEF,X Sp. Def,X Sp. Defs,4,550,"An item that sharply boosts the Sp. Def stat of a Pokémon while it remains in battle.",0,3,0
 478,XSPDEF2,X Sp. Def 2,X Sp. Def 2s,4,0,"It sharply raises the Sp. Def stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.",0,3,0
 479,XSPDEF3,X Sp. Def 3,X Sp. Def 3s,4,0,"It drastically raises the Sp. Def stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.",0,3,0
 480,XSPDEF6,X Sp. Def 6,X Sp. Def 6s,4,0,"It raises the Sp. Def stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.",0,3,0
@@ -533,7 +533,7 @@
 524,OVALCHARM,Oval Charm,Oval Charms,8,0,"An oval charm said to increase the chance of Eggs being found at the Day Care.",0,0,6
 525,SHINYCHARM,Shiny Charm,Shiny Charms,8,0,"A shiny charm said to increase the chance of finding a Shiny Pokémon.",0,0,6
 #-------------------------------
-526,ICESTONE,Ice Stone,Ice Stones,1,5000,"A peculiar stone that makes certain species of Pokémon evolve. It has a snowflake pattern.",1,0,7
+526,ICESTONE,Ice Stone,Ice Stones,1,2100,"A peculiar stone that makes certain species of Pokémon evolve. It has a snowflake pattern.",1,0,7
 527,JAWFOSSIL,Jaw Fossil,Jaw Fossils,7,1000,"A fossil from a prehistoric Pokémon that once lived on the land. It appears to be part of a large jaw.",0,0,8
 528,SAILFOSSIL,Sail Fossil,Sail Fossils,7,1000,"A fossil from a prehistoric Pokémon that once lived on the land. It looks like the impression from a skin sail.",0,0,8
 529,REDNECTAR,Red Nectar,Red Nectars,1,300,"A flower nectar obtained at Ula'ula Meadow. It changes the form of certain species of Pokémon.",1,0,0

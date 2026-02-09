@@ -162,5 +162,23 @@ module QuestModule
     :Location1 => :Location0,
     :QuestDescription => "A restless man in Towngor City has asked you to show him a Pokémon knowing the move Hypnosis to help him fall asleep. If you present him with one, he'll give you a reward."
   }
+  
+  Quest17 = {
+    :ID => "17",
+    :Name => "The Shroom Maniac",
+    :QuestGiver => "Poké Maniac",
+    :Location0 => "Helianthus Poké Fan Club",
+    :Location1 => :Location0,
+    :QuestDescription => "An enthusiastic Pokémon fan from the Helianthus Poké Fan Club proclaimed his love for Shroomish to you. Perhaps something will happen if you show him one."
+  }
+  
+  Quest18 = {
+    :ID => "18",
+    :Name => "The Trick to Victory",
+    :QuestGiver => "Super Nerd",
+    :Location0 => "R2-Yoko Gate",
+    :Location1 => :Location0,
+    :QuestDescription => "A Super Nerd has asked you to catch and show him a Yanma in Yoko Forest. He says he'll give you something useful for your journey if you do."
+  }
 
 end
