@@ -180,5 +180,14 @@ module QuestModule
     :Location1 => :Location0,
     :QuestDescription => "A Super Nerd has asked you to catch and show him a Yanma in Yoko Forest. He says he'll give you something useful for your journey if you do."
   }
+  
+  Quest19 = {
+    :ID => "19",
+    :Name => "The Dare",
+    :QuestGiver => "Roughneck",
+    :Location0 => "Towngor Tunnels",
+    :Location1 => :Location0,
+    :QuestDescription => "While travelling through the Towngor Tunnels, you got taunted by a Roughneck that your Pokémon aren't high enough level. Show him a high-level Pokémon to put him in his place."
+  }
 
 end
