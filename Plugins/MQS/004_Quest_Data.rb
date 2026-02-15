@@ -189,5 +189,23 @@ module QuestModule
     :Location1 => :Location0,
     :QuestDescription => "While travelling through the Towngor Tunnels, you got taunted by a Roughneck that your Pokémon aren't high enough level. Show him a high-level Pokémon to put him in his place."
   }
+  
+  Quest20 = {
+    :ID => "20",
+    :Name => "The Final Request",
+    :QuestGiver => "Old man",
+    :Location0 => "Dragon Tomb",
+    :Location1 => :Location0,
+    :QuestDescription => "Having lost his partner, an old man wishes to spend his final years not in misery but in joy. He has asked you to give him a Pokémon that he can raise, a Pokémon that's still weak."
+  }
+  
+  Quest21 = {
+    :ID => "21",
+    :Name => "The Worthwhile Experience",
+    :QuestGiver => "Scientist",
+    :Location0 => "Holtlant Town",
+    :Location1 => :Location0,
+    :QuestDescription => "A scientist in Holtlant Town has told you about Exp. growth rates and how some Pokémon are slower to level up than others. If you show him such a Pokémon, he'll give you something worthwhile."
+  }
 
 end
