@@ -207,5 +207,14 @@ module QuestModule
     :Location1 => :Location0,
     :QuestDescription => "A scientist in Holtlant Town has told you about Exp. growth rates and how some Pokémon are slower to level up than others. If you show him such a Pokémon, he'll give you something worthwhile."
   }
+  
+  Quest22 = {
+    :ID => "22",
+    :Name => "The Fairly Enthusiastic Fairy Lover",
+    :QuestGiver => "Fairy Tale Girl",
+    :Location0 => "Zimbani City",
+    :Location1 => :Location0,
+    :QuestDescription => "A fariry-loving girl in Zimbani City has asked you to show her a Fairy-type Pokémon who shares a close bond with you. Despite her oddities, doing so might prove worthwhile."
+  }
 
 end
