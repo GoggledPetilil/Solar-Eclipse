@@ -727,7 +727,7 @@
 817,PUNCHINGGLOVE,Punching Glove,Punching Gloves,4,4000,"An item to be held by a Pokémon. It boosts the holder's punching moves and prevents direct contact.",0,0,0
 818,COVERTCLOAK,Covert Cloak,Covert Cloaks,4,4000,"An item to be held by a Pokémon. It conceals the holder, protecting it from move's additional effects.",0,0,0
 819,LOADEDDICE,Loaded Dice,Loaded Dice,4,4000,"An item to be held by a Pokémon. It ensures the holder's multistrike moves hit more times.",0,0,0
-820,FAIRYFEATHER,Fairy Feather,Fairy Feathers,4,3000,"An item to be held by a Pokémon. This feather, which gleams when hit by light, boosts the power of Fairy-type moves.",0,0,0
+820,FAIRYFEATHER,Fairy Feather,Fairy Feathers,4,3000,"An item to be held by a Pokémon. It is a gleaming, light feather that boosts the power of Fairy-type moves.",0,0,0
 #-------------------------------
 821,SOLARKEY,Solar Key,Solar Keys,8,0,"A card key to grand access to even the most private sects of Team Sol's HQs.",0,0,6
 822,SOLMEMBERCARD,Sol Member Card,Sol Member Cards,8,0,"A card key to grand access to sects of Team Sol's HQs. It apparently belongs to Cathy Summers.",0,0,6
