@@ -216,5 +216,14 @@ module QuestModule
     :Location1 => :Location0,
     :QuestDescription => "A fariry-loving girl in Zimbani City has asked you to show her a Fairy-type Pokémon who shares a close bond with you. Despite her oddities, doing so might prove worthwhile."
   }
+  
+  Quest23 = {
+    :ID => "23",
+    :Name => "The Sky Battle",
+    :QuestGiver => "Bird Keeper",
+    :Location0 => "Route 7",
+    :Location1 => :Location0,
+    :QuestDescription => "Someone claiming to be a Sky Trainer has challenged you to a Sky Battle. You're only allowed to bring Flying-type Pokémon or Pokémon that are able to float. Knock this Sky Trainer down a peg for a reward."
+  }
 
 end

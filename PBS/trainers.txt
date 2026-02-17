@@ -5876,9 +5876,10 @@ Pokemon = TRUBBISH,31
 Pokemon = GOLBAT,32
 #-------------------------------
 [BIRDKEEPER_F,Elsie]
-LoseText = "Whoohoo!"
+LoseText = "How could a SKY TRAINER be defeated?!"
 Pokemon = GLIGAR,32
 Pokemon = STARAVIA,32
+Pokemon = VIBRAVA,34
 #-------------------------------
 [BACKPACKER_M,Billybob]
 LoseText = "Nice sweat, bro."
@@ -5960,6 +5961,13 @@ Pokemon = DITTO,80
     Item = METALPOWDER
     IV = 31,31,31,31,31,31
     EV = 252,0,252,0,0,0
+#-------------------------------
+[BATTLEGIRL,Takara]
+LoseText = "My perfect winning streak...!!"
+Pokemon = FALINKS,34
+Pokemon = DEWOTT,34
+Pokemon = PAWMOT,33
+Pokemon = SIRFETCHD,33
 #-------------------------------
 # MALUM GYM
 #-------------------------------
