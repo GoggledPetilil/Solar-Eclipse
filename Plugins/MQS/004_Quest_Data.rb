@@ -225,5 +225,32 @@ module QuestModule
     :Location1 => :Location0,
     :QuestDescription => "Someone claiming to be a Sky Trainer has challenged you to a Sky Battle. You're only allowed to bring Flying-type Pokémon or Pokémon that are able to float. Knock this Sky Trainer down a peg for a reward."
   }
+  
+  Quest24 = {
+    :ID => "24",
+    :Name => "The Perfect Beverage",
+    :QuestGiver => "Tea Maker",
+    :Location0 => "Malum City",
+    :Location1 => :Location0,
+    :QuestDescription => "A tea maker in Malum City has asked you to help her create a new beverage. Show her a Chikorita, Fennekin, and Oshawott to help her create the beverage and she'll give you a reward."
+  }
+  
+  Quest25 = {
+    :ID => "25",
+    :Name => "The Ghostly Theory",
+    :QuestGiver => "Psychic",
+    :Location0 => "Jyeshtha City",
+    :Location1 => :Location0,
+    :QuestDescription => "A Psychic in the Jyeshtha Pokémon Center has asked you to give her a Pokémon with the ability Scrappy, an ability that lets it hit Ghost-Type Pokémon. She hopes that this could be used to fight back against the desert shadows."
+  }
+  
+  Quest26 = {
+    :ID => "26",
+    :Name => "The Researcher",
+    :QuestGiver => "School Kid",
+    :Location0 => "R9-Zimbani Gate",
+    :Location1 => :Location0,
+    :QuestDescription => "A School Kid has told you about her favourite Pokémon: Minccino. Noticing that you have the Pokédex, she has asked you to show her the complete entry for Minccino."
+  }
 
 end
