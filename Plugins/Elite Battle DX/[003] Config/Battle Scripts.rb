@@ -401,13 +401,13 @@ module BattleScripts
   GILTBERT_3 = {
    "faintedOpp" => "Oof! You're good as always, ha ha!",
     "afterLastOpp" => proc do
+      pname = @battlers[1].name
+      tname = @battle.opponent[0].full_name
+      # begin code block for the first turn
+      @scene.pbTrainerSpeak(["My last Pokémon... We'll keep fighting until the end!",
+                            "We'll show you the combined might of me and #{pname}!"
+                          ])
       if $game_switches[Settings::HARDER_BOSSES]
-        pname = @battlers[1].name
-        tname = @battle.opponent[0].full_name
-        # begin code block for the first turn
-        @scene.pbTrainerSpeak(["My last Pokémon... We'll keep fighting until the end!",
-                              "We'll show you the combined might of me and #{pname}!"
-                            ])
         # play aura flare
         @scene.pbDisplay("#{tname} and #{pname} are breathing in perfect sync with one another!")
         EliteBattle.playCommonAnimation(:AURAFLARE, @scene, 1)
@@ -508,11 +508,27 @@ module BattleScripts
     }
   #-----------------------------------------------------------------------------
   DIANA_3 = {
-   "faintedOpp" => "So what?",
-   "afterLastOpp" => {
-   	:text => "The stars did not foretell this..."
-   	},
-   "loss" => "What's up with you?",
+   "faintedOpp" => "Tch... So what?",
+    "afterLastOpp" => proc do
+      pname = @battlers[1].name
+      tname = @battle.opponent[0].full_name
+      # begin code block for the first turn
+      @scene.pbTrainerSpeak(["The stars did not foretell this... So you know how to keep up...",
+                            "#{pname} and I are far from done. Our victory was written in the stars."
+                          ])
+      if $game_switches[Settings::HARDER_BOSSES]
+        # play aura flare
+        @scene.pbDisplay("#{tname} and #{pname} are breathing in perfect sync with one another!")
+        EliteBattle.playCommonAnimation(:AURAFLARE, @scene, 1)
+        @vector.reset # AURAFLARE doesn't reset the vector by default
+        @scene.wait(16, true) # set true to anchor the sprites to vector
+        # raise battler stats (doesn't display text)
+        @battlers[1].pbRaiseStatStageBasic(:EVASION, 1)
+        @battlers[1].effects[PBEffects::ImmuneStatus] = true
+        @battlers[1].effects[PBEffects::FocusEnergy] = 2
+      end
+    end,
+   "loss" => "What's up with you? Stop wasting my time...",
    "afterLast" => proc do
       hasRevive = $PokemonBag.pbHasItem?(:REVIVE) || $PokemonBag.pbHasItem?(:MAXREVIVE) || $PokemonBag.pbHasItem?(:REVIVALHERB)
       lastMon = (!hasRevive || $game_switches[Settings::BAN_REVIVAL])
@@ -528,7 +544,7 @@ module BattleScripts
    "afterLastOpp" => {
    	:text => "Fascinating."
    	},
-   "loss" => "Hmph. I'm a little disappointed.",
+   "loss" => "Hmph. I'm disappointed.",
    "afterLast" => proc do
       hasRevive = $PokemonBag.pbHasItem?(:REVIVE) || $PokemonBag.pbHasItem?(:MAXREVIVE) || $PokemonBag.pbHasItem?(:REVIVALHERB)
       lastMon = (!hasRevive || $game_switches[Settings::BAN_REVIVAL])

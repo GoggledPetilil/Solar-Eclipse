@@ -187,6 +187,11 @@ VictoryTheme     = Victory Against Gym Leader.ogg
 BattleScript     = DIANA_8
 Ace		 = 6
 #-------------------------------
+[RIVAL_Diana,Diana,9]
+BattleBGM        = Battle Diana.ogg
+BattleScript     = DIANA_3
+Ace		 = 6
+#-------------------------------
 [RIVAL_Giltbert]
 BattleIntro      = specialSM
 #-------------------------------
