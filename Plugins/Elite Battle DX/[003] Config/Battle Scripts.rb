@@ -367,6 +367,25 @@ module BattleScripts
 #===============================================================================
   #-----------------------------------------------------------------------------
   GILTBERT_1 = {
+    "afterLastOpp" => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        pname = @battlers[1].name
+        tname = @battle.opponent[0].full_name
+        # begin code block for the first turn
+        @scene.pbTrainerSpeak(["You already share such a strong bond with your Pokémon!",
+                              "But me and #{pname}, we trust each other fully!"
+                            ])
+        # play aura flare
+        @scene.pbDisplay("#{tname} and #{pname} are breathing in perfect sync with one another!")
+        EliteBattle.playCommonAnimation(:AURAFLARE, @scene, 1)
+        @vector.reset # AURAFLARE doesn't reset the vector by default
+        @scene.wait(16, true) # set true to anchor the sprites to vector
+        # raise battler stats (doesn't display text)
+        @battlers[1].pbRaiseStatStageBasic(:EVASION, 1)
+        @battlers[1].effects[PBEffects::ImmuneStatus] = true
+        @battlers[1].effects[PBEffects::FocusEnergy] = 2
+      end
+    end,
     "loss" => "Whoo! We did it, yes!",
    "afterLast" => proc do
       pname = @battlers[1].name
@@ -381,9 +400,25 @@ module BattleScripts
   #-----------------------------------------------------------------------------
   GILTBERT_3 = {
    "faintedOpp" => "Oof! You're good as always, ha ha!",
-   "afterLastOpp" => {
-   	:text => "My last Pokémon... We'll keep fighting until the end!"
-   	},
+    "afterLastOpp" => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        pname = @battlers[1].name
+        tname = @battle.opponent[0].full_name
+        # begin code block for the first turn
+        @scene.pbTrainerSpeak(["My last Pokémon... We'll keep fighting until the end!",
+                              "We'll show you the combined might of me and #{pname}!"
+                            ])
+        # play aura flare
+        @scene.pbDisplay("#{tname} and #{pname} are breathing in perfect sync with one another!")
+        EliteBattle.playCommonAnimation(:AURAFLARE, @scene, 1)
+        @vector.reset # AURAFLARE doesn't reset the vector by default
+        @scene.wait(16, true) # set true to anchor the sprites to vector
+        # raise battler stats (doesn't display text)
+        @battlers[1].pbRaiseStatStageBasic(:EVASION, 1)
+        @battlers[1].effects[PBEffects::ImmuneStatus] = true
+        @battlers[1].effects[PBEffects::FocusEnergy] = 2
+      end
+    end,
    "loss" => "My Pokémon are my strength, and I'm theirs! We'll always cover each other.",
    "afterLast" => proc do
       pname = @battlers[1].name

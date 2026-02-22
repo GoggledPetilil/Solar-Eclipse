@@ -296,19 +296,19 @@ Pokemon = AMPHAROS,80
 #-------------------------------
 [RIVAL_Giltbert,Giltbert,8]
 LoseText = "That was an awesome battle!"
-Pokemon = MAREEP,10
-    Name = Joel
-    Gender = male
-    Moves = CHARGE,COTTONSPORE,TACKLE,THUNDERSHOCK
-    Nature = MODEST
-    AbilityIndex = 0
-    IV = 31,31,31,31,31,31
-    EV = 252,0,0,0,252,0
 Pokemon = LILLIPUP,8
     Name = Doug
     Gender = male
     Moves = MUDSLAP,TACKLE,LICK,BITE
     Nature = JOLLY
+    AbilityIndex = 0
+    IV = 31,31,31,31,31,31
+    EV = 0,252,0,252,0,0
+Pokemon = RUFFLET,6
+    Name = Brady
+    Gender = male
+    Moves = LEER,PECK,HONECLAWS
+    Nature = BRAVE
     AbilityIndex = 0
     IV = 31,31,31,31,31,31
     EV = 0,252,0,252,0,0
@@ -325,17 +325,87 @@ Pokemon = DRILBUR,5
     Gender = male
     Moves = MUDSLAP,TACKLE
     Nature = ADAMANT
-    AbilityIndex = 0
+    AbilityIndex = 1
     IV = 31,31,31,31,31,31
     EV = 0,252,0,252,0,0
-Pokemon = BUDEW,5
+Pokemon = BUDEW,6
     Name = Buddy
     Gender = male
     Moves = PINMISSILE,WORRYSEED,GROWTH,ABSORB
     Nature = BOLD
-    AbilityIndex = 0
+    AbilityIndex = 1
     IV = 31,31,31,31,31,31
     EV = 252,0,252,0,0,0
+Pokemon = MAREEP,10
+    Name = Joel
+    Gender = male
+    Moves = CHARGE,COTTONSPORE,TACKLE,THUNDERSHOCK
+    Nature = MODEST
+    AbilityIndex = 0
+    IV = 31,31,31,31,31,31
+    EV = 252,0,0,0,252,0
+#-------------------------------
+# Route 4 (Hard)
+#-------------------------------
+[RIVAL_Giltbert,Giltbert,9]
+LoseText = "Man, you're so much better at this!"
+Pokemon = BAYLEEF,21
+    Name = Leif
+    Gender = male
+    Moves = LIGHTSCREEN,REFLECT,MAGICALLEAF,DAZZLINGGLEAM
+    Nature = BOLD
+    AbilityIndex = 0
+    Item = LIGHTCLAY
+    IV = 31,31,31,31,31,31
+    EV = 252,0,0,0,0,252
+    Happiness = 200
+Pokemon = HERDIER,23
+    Name = Doug
+    Gender = male
+    Moves = RETALIATE,PLAYROUGH,WORKUP,RETURN
+    Nature = JOLLY
+    AbilityIndex = 0
+    Item = SILKSCARF
+    IV = 31,31,31,31,31,31
+    EV = 0,252,0,252,0,0
+    Happiness = 255
+Pokemon = GROWLITHE,22
+    Name = Ash
+    Gender = male
+    Moves = FLAMEWHEEL,RETURN,DOUBLEKICK,COVET
+    Nature = ADAMANT
+    AbilityIndex = 0
+    Item = ASSAULTVEST
+    IV = 31,31,31,31,31,31
+    EV = 0,252,0,252,0,0
+    Happiness = 200
+Pokemon = RIOLU,22
+    Name = Luke
+    Gender = male
+    Moves = ROCKTOMB,METALCLAW,FORCEPALM,BITE
+    Nature = HASTY
+    AbilityIndex = 2
+    Item = LIECHIBERRY
+    IV = 31,31,31,31,31,31
+    EV = 0,252,0,252,0,0
+Pokemon = QUAGSIRE,21
+    Name = Sir
+    Gender = male
+    Moves = DOUBLEKICK,BULLDOZE,WATERPULSE,REST
+    Nature = NAUGHTY
+    AbilityIndex = 0
+    Item = CHESTOBERRY
+    IV = 31,31,31,31,31,31
+    EV = 252,0,0,0,0,252
+Pokemon = FLAAFFY,24
+    Name = Joel
+    Gender = male
+    Moves = SIGNALBEAM,ELECTROWEB,THUNDERWAVE,GRASSKNOT
+    Nature = MODEST
+    AbilityIndex = 0
+    Item = SITRUSBERRY
+    IV = 31,31,31,31,31,31
+    EV = 252,0,0,0,252,0
 #-------------------------------
 # Gardenia Academy
 #-------------------------------
@@ -349,23 +419,17 @@ Pokemon = EEVEE,5
     IV = 31,31,31,31,31,31
     EV = 0,0,0,0,0,0
 #-------------------------------
-# Unused
+# Gardenia Academy (Hard)
 #-------------------------------
 [RIVAL_Diana,Diana,2]
-LoseText = "I can't believe it..."
-Pokemon = STARLY,15
+LoseText = "What?!"
+Pokemon = EEVEE,5
     Gender = female
-    AbilityIndex = 1
-    IV = 31,31,31,31,31,31
-Pokemon = BOUNSWEET,15
-    AbilityIndex = 1
-    IV = 31,31,31,31,31,31
-Pokemon = EEVEE,17
-    Gender = female
+    Moves = TACKLE,CAPTIVATE,CHARM,SANDATTACK
     AbilityIndex = 0
-    Nature = MODEST
+    Nature = SERIOUS
     IV = 31,31,31,31,31,31
-    EV = 0,0,252,0,252,0
+    EV = 0,0,0,0,0,0
 #-------------------------------
 # Route 6
 #-------------------------------
@@ -389,6 +453,7 @@ Pokemon = STEENEE,31
 Pokemon = SALANDIT,31
     Gender = female
     Moves = NASTYPLOT,FLAMEBURST,TOXIC,SMOG
+    AbilityIndex = 0
     Item = CHARCOAL
     Nature = HASTY
     IV = 31,31,31,31,31,31
