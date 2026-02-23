@@ -368,13 +368,13 @@ module BattleScripts
   #-----------------------------------------------------------------------------
   GILTBERT_1 = {
     "afterLastOpp" => proc do
+      pname = @battlers[1].name
+      tname = @battle.opponent[0].full_name
+      # begin code block for the first turn
+      @scene.pbTrainerSpeak(["You already share such a strong bond with your Pokémon!",
+                            "But me and #{pname}, we trust each other fully!"
+                          ])
       if $game_switches[Settings::HARDER_BOSSES]
-        pname = @battlers[1].name
-        tname = @battle.opponent[0].full_name
-        # begin code block for the first turn
-        @scene.pbTrainerSpeak(["You already share such a strong bond with your Pokémon!",
-                              "But me and #{pname}, we trust each other fully!"
-                            ])
         # play aura flare
         @scene.pbDisplay("#{tname} and #{pname} are breathing in perfect sync with one another!")
         EliteBattle.playCommonAnimation(:AURAFLARE, @scene, 1)
@@ -481,13 +481,20 @@ module BattleScripts
                              "So... lend me your strength! And I'll give you mine!"
                            ])
       # play aura flare
-      @scene.pbDisplay("Immense energy is swelling up in #{pname}!")
+      @scene.pbDisplay("#{tname} and #{pname} are breathing in perfect sync with one another!")
       EliteBattle.playCommonAnimation(:AURAFLARE, @scene, 1)
       @vector.reset # AURAFLARE doesn't reset the vector by default
       @scene.wait(16, true) # set true to anchor the sprites to vector
       # raise battler stats (doesn't display text)
       @battlers[1].pbRaiseStatStageBasic(:SPECIAL_ATTACK, 2)
-      @battlers[1].pbRaiseStatStageBasic(:SPEED, 2) if $game_switches[Settings::HARDER_BOSSES]
+      @battlers[1].pbRaiseStatStageBasic(:SPEED, 2) 
+      if $game_switches[Settings::HARDER_BOSSES]
+        @battlers[1].pbRaiseStatStageBasic(:EVASION, 1)
+        @battlers[1].effects[PBEffects::ImmuneStatus] = true
+        @battlers[1].effects[PBEffects::FocusEnergy] = 2
+        @scene.pbDisplay("#{pname} is getting pumped!")
+        @scene.pbDisplay("#{pname}'s determination will shrug off status ailments!")
+      end
     end,
    "loss" => "I really thought you'd win... It's thanks to you that I even got this far.",
    "afterLast" => proc do
@@ -608,13 +615,19 @@ module BattleScripts
                              "I've fought my whole life for the title of Solar Monarch!"
                            ])
       # play aura flare
-      @scene.pbDisplay("Immense energy is swelling up in #{pname}!")
+      @scene.pbDisplay("#{tname} and #{pname} are breathing in perfect sync with one another!")
       EliteBattle.playCommonAnimation(:AURAFLARE, @scene, 1)
       @vector.reset # AURAFLARE doesn't reset the vector by default
       @scene.wait(16, true) # set true to anchor the sprites to vector
       # raise battler stats (doesn't display text)
       @battlers[1].pbRaiseStatStageBasic(:SPECIAL_ATTACK, 2)
-      @battlers[1].pbRaiseStatStageBasic(:SPEED, 2) if $game_switches[Settings::HARDER_BOSSES]
+      if $game_switches[Settings::HARDER_BOSSES]
+        @battlers[1].pbRaiseStatStageBasic(:EVASION, 1)
+        @battlers[1].effects[PBEffects::ImmuneStatus] = true
+        @battlers[1].effects[PBEffects::FocusEnergy] = 2
+        @scene.pbDisplay("#{pname} is getting pumped!")
+        @scene.pbDisplay("#{pname}'s determination will shrug off status ailments!")
+      end
     end,
    "loss" => "I won... I honestly didn't think I'd win here...",
    "afterLast" => proc do
