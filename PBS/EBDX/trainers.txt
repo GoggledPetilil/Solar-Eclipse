@@ -192,6 +192,11 @@ BattleBGM        = Battle Diana.ogg
 BattleScript     = DIANA_3
 Ace		 = 6
 #-------------------------------
+[RIVAL_Diana,Diana,10]
+BattleBGM        = Battle Diana.ogg
+BattleScript     = DIANA_5
+Ace		 = 6
+#-------------------------------
 [RIVAL_Giltbert]
 BattleIntro      = specialSM
 #-------------------------------
@@ -223,6 +228,11 @@ Ace		 = 6
 [RIVAL_Giltbert,Giltbert,9]
 BattleBGM        = Battle Giltbert.ogg
 BattleScript     = GILTBERT_3
+Ace		 = 6
+#-------------------------------
+[RIVAL_Giltbert,Giltbert,10]
+BattleBGM        = Battle Giltbert.ogg
+BattleScript     = GILTBERT_4
 Ace		 = 6
 #-------------------------------
 [TEAMSOL_AdminX]

@@ -384,6 +384,8 @@ module BattleScripts
         @battlers[1].pbRaiseStatStageBasic(:EVASION, 1)
         @battlers[1].effects[PBEffects::ImmuneStatus] = true
         @battlers[1].effects[PBEffects::FocusEnergy] = 2
+        @scene.pbDisplay("#{pname} is getting pumped!")
+        @scene.pbDisplay("#{pname}'s determination will shrug off status ailments!")
       end
     end,
     "loss" => "Whoo! We did it, yes!",
@@ -417,6 +419,8 @@ module BattleScripts
         @battlers[1].pbRaiseStatStageBasic(:EVASION, 1)
         @battlers[1].effects[PBEffects::ImmuneStatus] = true
         @battlers[1].effects[PBEffects::FocusEnergy] = 2
+        @scene.pbDisplay("#{pname} is getting pumped!")
+        @scene.pbDisplay("#{pname}'s determination will shrug off status ailments!")
       end
     end,
    "loss" => "My Pokémon are my strength, and I'm theirs! We'll always cover each other.",
@@ -433,9 +437,27 @@ module BattleScripts
   #-----------------------------------------------------------------------------
   GILTBERT_4 = {
    "faintedOpp" => "You did your best, buddy. It's not over yet!",
-   "afterLastOpp" => {
-   	:text => "My Pokémon and I will never yield, no matter what happens!"
-   	},
+    "afterLastOpp" => proc do
+      pname = @battlers[1].name
+      tname = @battle.opponent[0].full_name
+      # begin code block for the first turn
+      @scene.pbTrainerSpeak(["My Pokémon and I will never yield, no matter what happens!",
+                            "You'll see the power of the bond #{pname} and I share!"
+                          ])
+      if $game_switches[Settings::HARDER_BOSSES]
+        # play aura flare
+        @scene.pbDisplay("#{tname} and #{pname} are breathing in perfect sync with one another!")
+        EliteBattle.playCommonAnimation(:AURAFLARE, @scene, 1)
+        @vector.reset # AURAFLARE doesn't reset the vector by default
+        @scene.wait(16, true) # set true to anchor the sprites to vector
+        # raise battler stats (doesn't display text)
+        @battlers[1].pbRaiseStatStageBasic(:EVASION, 1)
+        @battlers[1].effects[PBEffects::ImmuneStatus] = true
+        @battlers[1].effects[PBEffects::FocusEnergy] = 2
+        @scene.pbDisplay("#{pname} is getting pumped!")
+        @scene.pbDisplay("#{pname}'s determination will shrug off status ailments!")
+      end
+    end,
    "loss" => "Our power comes from our unbreakable bond. That's what makes us a good team!",
    "afterLast" => proc do
       pname = @battlers[1].name
@@ -526,6 +548,8 @@ module BattleScripts
         @battlers[1].pbRaiseStatStageBasic(:EVASION, 1)
         @battlers[1].effects[PBEffects::ImmuneStatus] = true
         @battlers[1].effects[PBEffects::FocusEnergy] = 2
+        @scene.pbDisplay("#{pname} is getting pumped!")
+        @scene.pbDisplay("#{pname}'s determination will shrug off status ailments!")
       end
     end,
    "loss" => "What's up with you? Stop wasting my time...",
@@ -540,17 +564,35 @@ module BattleScripts
     }
   #-----------------------------------------------------------------------------
   DIANA_5 = {
-   "faintedOpp" => "I'm sensing great power...",
-   "afterLastOpp" => {
-   	:text => "Fascinating."
-   	},
+   "faintedOpp" => "I'm sensing it... Your great power...",
+    "afterLastOpp" => proc do
+      pname = @battlers[1].name
+      tname = @battle.opponent[0].full_name
+      # begin code block for the first turn
+      @scene.pbTrainerSpeak(["Fascinating... Even with all my skills and strategies, I'm still backed into a corner.",
+                            "But we've still got one more ace up our sleeve. Me and #{pname} will not lose here!"
+                          ])
+      if $game_switches[Settings::HARDER_BOSSES]
+        # play aura flare
+        @scene.pbDisplay("#{tname} and #{pname} are breathing in perfect sync with one another!")
+        EliteBattle.playCommonAnimation(:AURAFLARE, @scene, 1)
+        @vector.reset # AURAFLARE doesn't reset the vector by default
+        @scene.wait(16, true) # set true to anchor the sprites to vector
+        # raise battler stats (doesn't display text)
+        @battlers[1].pbRaiseStatStageBasic(:EVASION, 1)
+        @battlers[1].effects[PBEffects::ImmuneStatus] = true
+        @battlers[1].effects[PBEffects::FocusEnergy] = 2
+        @scene.pbDisplay("#{pname} is getting pumped!")
+        @scene.pbDisplay("#{pname}'s determination will shrug off status ailments!")
+      end
+    end,
    "loss" => "Hmph. I'm disappointed.",
    "afterLast" => proc do
       hasRevive = $PokemonBag.pbHasItem?(:REVIVE) || $PokemonBag.pbHasItem?(:MAXREVIVE) || $PokemonBag.pbHasItem?(:REVIVALHERB)
       lastMon = (!hasRevive || $game_switches[Settings::BAN_REVIVAL])
       if lastMon
         pbBGMPlay("EBDX/Low HP Battle") if $PokemonSystem.lowhp<2
-        @scene.pbTrainerSpeak("Am I really about to beat you here? You're not that weak, right...")
+        @scene.pbTrainerSpeak("Am I really about to beat you so easily here? You're stronger than this.")
       end
    end
     }
@@ -574,7 +616,7 @@ module BattleScripts
       @battlers[1].pbRaiseStatStageBasic(:SPECIAL_ATTACK, 2)
       @battlers[1].pbRaiseStatStageBasic(:SPEED, 2) if $game_switches[Settings::HARDER_BOSSES]
     end,
-   "loss" => "I won... I didn't think I'd win here.",
+   "loss" => "I won... I honestly didn't think I'd win here...",
    "afterLast" => proc do
       hasRevive = $PokemonBag.pbHasItem?(:REVIVE) || $PokemonBag.pbHasItem?(:MAXREVIVE) || $PokemonBag.pbHasItem?(:REVIVALHERB)
       lastMon = (!hasRevive || $game_switches[Settings::BAN_REVIVAL])
