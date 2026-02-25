@@ -667,8 +667,27 @@ module BattleScripts
 #===============================================================================
   #-----------------------------------------------------------------------------
   AELIA_1 = {
+   "turnEnd0"   => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        @battle.sides[0].effects[PBEffects::Swamp] = 4
+      end
+    end,
     "faintedOpp" => "Aha... So this is a Gym Challenger's might.",
-    "afterLastOpp" => "This is my last Pokémon... Won't go a bit easier on me?",
+    "afterLastOpp" => proc do
+      pname = @battlers[1].name
+      tname = @battle.opponent[0].name
+      # begin code block for the first turn
+      pbBGMPlay("Battle Team Sol Admin Salty")
+      @scene.pbTrainerSpeak(["This is my last Pokémon... Won't go a bit easier on me?"
+                           ])
+      if $game_switches[Settings::HARDER_BOSSES]
+        # play aura flare
+        EliteBattle.playCommonAnimation(:USEITEM, @scene, 1)
+        @scene.pbDisplay("#{tname} used the X Attack!")
+        # raise battler stats
+        @battlers[1].pbRaiseStatStage(:ATTACK, 1)
+      end
+    end,
     "loss" => "Honestly, it was...easier than I thought or hoped...",
    "afterLast" => proc do
       hasRevive = $PokemonBag.pbHasItem?(:REVIVE) || $PokemonBag.pbHasItem?(:MAXREVIVE) || $PokemonBag.pbHasItem?(:REVIVALHERB)
@@ -681,6 +700,11 @@ module BattleScripts
     }
   #-----------------------------------------------------------------------------
   AELIA_2 = {
+   "turnEnd0"   => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        @battle.sides[0].effects[PBEffects::Swamp] = 4
+      end
+    end,
     "faintedOpp" => "Good, good! Your skill doesn't disappoint.",
     "afterLastOpp" => proc do
       pname = @battlers[1].name
@@ -714,6 +738,11 @@ module BattleScripts
     }
   #-----------------------------------------------------------------------------
   AELIA_3 = {
+   "turnEnd0"   => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        @battle.sides[0].effects[PBEffects::Swamp] = 4
+      end
+    end,
     "faintedOpp" => "Here we go...! You're as good as ever!",
     "afterLastOpp" => proc do
       pname = @battlers[1].name
@@ -778,6 +807,31 @@ module BattleScripts
     end,
     "faintedOpp" => "You've got some nerve!",
     "afterLastOpp" => "Not bad, punk! But I'm not backing down.",
+    "afterLastOpp" => proc do
+      pname = @battlers[1].name
+      tname = @battle.opponent[0].name
+      # begin code block for the first turn
+      if $game_switches[Settings::HARDER_BOSSES]
+        @scene.pbTrainerSpeak(["Not bad, punk! But I'm not backing down.",
+                                "Tsk... I'll just have to use THIS!",
+                           ])
+        # play aura flare
+        EliteBattle.playCommonAnimation(:USEITEM, @scene, 1)
+        @scene.pbDisplay("#{tname} used a strange item!")
+        @scene.pbDisplay("Immense energy is swelling up in #{pname}!")
+        pbBGMPlay("Battle Team Sol Admin Salty")
+        EliteBattle.playCommonAnimation(:AURAFLARE, @scene, 1)
+        @vector.reset # AURAFLARE doesn't reset the vector by default
+        @scene.wait(16, true) # set true to anchor the sprites to vector
+        # raise battler stats (doesn't display text)
+        @battlers[1].pbRaiseStatStageBasic(:ATTACK, 1)
+        @battlers[1].pbRaiseStatStageBasic(:SPEED, 1)
+      else
+        pbBGMPlay("Battle Team Sol Admin Salty")
+        @scene.pbTrainerSpeak(["Not bad, punk. But I'm not backing down!"
+                           ])
+      end
+    end,
     "loss" => "Hah! You lose. Now get lost!!",
    "afterLast" => proc do
       hasRevive = $PokemonBag.pbHasItem?(:REVIVE) || $PokemonBag.pbHasItem?(:MAXREVIVE) || $PokemonBag.pbHasItem?(:REVIVALHERB)
@@ -838,7 +892,7 @@ module BattleScripts
       @scene.wait(16, true) # set true to anchor the sprites to vector
       # raise battler stats (doesn't display text)
       @battlers[1].pbRaiseStatStageBasic(:ATTACK, 1)
-      @battlers[1].pbRaiseStatStageBasic(:SPECIAL_ATTACK, 1)
+      @battlers[1].pbRaiseStatStageBasic(:SPEED, 1)
     end,
     "loss" => "Bwhahaha!! You only have yourself to blame.",
    "afterLast" => proc do
@@ -852,6 +906,36 @@ module BattleScripts
     }
  #-----------------------------------------------------------------------------
   LAIRUS_3 = {
+   "turnEnd0"   => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        b = @battlers[0]
+        b.pbParalyze if b.pbCanParalyze?(b,false,self)
+      end
+    end,
+   "turnEnd1"   => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        b = @battlers[0]
+        b.pbParalyze if b.pbCanParalyze?(b,false,self)
+      end
+    end,
+   "turnEnd2"   => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        b = @battlers[0]
+        b.pbParalyze if b.pbCanParalyze?(b,false,self)
+      end
+    end,
+   "turnEnd3"   => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        b = @battlers[0]
+        b.pbParalyze if b.pbCanParalyze?(b,false,self)
+      end
+    end,
+   "turnEnd4"   => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        b = @battlers[0]
+        b.pbParalyze if b.pbCanParalyze?(b,false,self)
+      end
+    end,
     "faintedOpp" => "No bad, noobie. Let's keep this up!!",
     "afterLastOpp" => proc do
       pname = @battlers[1].name
@@ -870,7 +954,7 @@ module BattleScripts
       @scene.wait(16, true) # set true to anchor the sprites to vector
       # raise battler stats (doesn't display text)
       @battlers[1].pbRaiseStatStageBasic(:ATTACK, 1)
-      @battlers[1].pbRaiseStatStageBasic(:DEFENSE, 1)
+      @battlers[1].pbRaiseStatStageBasic(:SPEED, 1)
     end,
     "loss" => "Ha... Ha...",
    "afterLast" => proc do
@@ -884,6 +968,11 @@ module BattleScripts
     }
   #-----------------------------------------------------------------------------
   SIENNA_1 = {
+   "turnEnd0"   => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        @battle.sides[1].effects[PBEffects::Tailwind] = 4
+      end
+    end,
     "faintedOpp" => "Unfortunate.",
     "afterLastOpp" => proc do
       pname = @battlers[1].name
@@ -916,6 +1005,11 @@ module BattleScripts
     }
   #-----------------------------------------------------------------------------
   SIENNA_2 = {
+   "turnEnd0"   => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        @battle.sides[1].effects[PBEffects::Tailwind] = 4
+      end
+    end,
     "faintedOpp" => "Interesting.",
     "afterLastOpp" => proc do
       pname = @battlers[1].name
@@ -933,10 +1027,8 @@ module BattleScripts
       @vector.reset # AURAFLARE doesn't reset the vector by default
       @scene.wait(16, true) # set true to anchor the sprites to vector
       # raise battler stats (doesn't display text)
-      @battlers[1].pbRaiseStatStageBasic(:ATTACK, 1)
+      @battlers[1].pbRaiseStatStageBasic(:ATTACK, 2)
       @battlers[1].pbRaiseStatStageBasic(:DEFENSE, 1)
-      @battlers[1].pbRaiseStatStageBasic(:SPECIAL_ATTACK, 1)
-      @battlers[1].pbRaiseStatStageBasic(:SPECIAL_DEFENSE, 1)
     end,
     "loss" => "You have been bested. But the odds were never in your favour.",
    "afterLast" => proc do
@@ -950,13 +1042,18 @@ module BattleScripts
     }
   #-----------------------------------------------------------------------------
   SIENNA_3 = {
+   "turnEnd0"   => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        @battle.sides[1].effects[PBEffects::Tailwind] = 4
+      end
+    end,
     "faintedOpp" => "...",
     "afterLastOpp" => proc do
       pname = @battlers[1].name
       tname = @battle.opponent[0].full_name
       # begin code block for the first turn
       @scene.pbTrainerSpeak(["Day in and day out, I fine tune everything I can.",
-                             "This is the best that I can offer you. I hope it will be enough."
+                             "This is the best that I can offer you. We'll see if it's enough."
                            ])
       # play aura flare
       EliteBattle.playCommonAnimation(:USEITEM, @scene, 1)
@@ -968,7 +1065,7 @@ module BattleScripts
       @scene.wait(16, true) # set true to anchor the sprites to vector
       # raise battler stats (doesn't display text)
       @battlers[1].pbRaiseStatStageBasic(:ATTACK, 1)
-      @battlers[1].pbRaiseStatStageBasic(:SPECIAL_ATTACK, 1)
+      @battlers[1].pbRaiseStatStageBasic(:DEFENSE, 1)
     end,
     "loss" => "I have bested you. Your services are no longer required.",
    "afterLast" => proc do
@@ -976,12 +1073,17 @@ module BattleScripts
       lastMon = (!hasRevive || $game_switches[Settings::BAN_REVIVAL])
       if lastMon
         pbBGMPlay("EBDX/Low HP Battle") if $PokemonSystem.lowhp<2
-        @scene.pbTrainerSpeak("Is this it? Have I cracked the formula?")
+        @scene.pbTrainerSpeak("Interesting. Have I cracked the formula?")
       end
    end
     }
   #-----------------------------------------------------------------------------
   ZENITHIAN_1 = {
+   "turnEnd0"   => proc do
+      if $game_switches[Settings::HARDER_BOSSES]
+        @battle.sides[1].effects[PBEffects::Spikes] = 1
+      end
+    end,
     "faintedOpp" => "Alright, alright... But how about this?",
     "afterLastOpp" => proc do
       pname = @battlers[1].name
@@ -1042,6 +1144,10 @@ module BattleScripts
       @battlers[1].effects[PBEffects::ImmuneStatus] = true
       @battlers[1].effects[PBEffects::ImmuneDebuffs] = true
       @scene.pbDisplay("#{pname} is radiating sheer might!")
+
+      if $game_switches[Settings::HARDER_BOSSES]
+        @battle.sides[1].effects[PBEffects::Spikes] = 1
+      end
     end,
    "halfHPOpp"   => proc do
       pname = @battlers[1].name
@@ -1143,6 +1249,7 @@ module BattleScripts
       @battlers[1].effects[PBEffects::INVINCIBLE] = true
       @battlers[1].effects[PBEffects::ImmuneStatus] = true
       @battlers[1].effects[PBEffects::ImmuneDebuffs] = true
+      @battlers[1].effects[PBEffects::UNSTOPPABLE] = true
     end
   }
   #-----------------------------------------------------------------------------
@@ -1154,7 +1261,7 @@ module BattleScripts
       end
     end
   }
-  #-----------------------------------------------------------------------------
+  #-------------------------------------s----------------------------------------
   FRIEND = {
    "loss" => proc do
       speach = pbGet(166)[:win] || "I've won!"
