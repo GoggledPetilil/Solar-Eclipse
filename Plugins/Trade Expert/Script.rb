@@ -118,7 +118,7 @@ module TradeExpert
   #-----------------------------------------------------------------------------
   def self.givePokemon
     # decides the parameters that determine Pokemon trade elegibility
-    ableProc = proc{|poke| !poke.egg? && !poke.isShadow? && !TradeExpert::GIVING_BLACKLIST.include?(poke.species)}
+    ableProc = proc{|poke| !poke.egg? && !poke.isShadow? && !TradeExpert::GIVING_BLACKLIST.include?(poke.species) && poke.owner.id != TradeExpert::TRAINER_ID}
     chosen = 0
     pbFadeOutIn(99999){
     scene = PokemonParty_Scene.new
@@ -139,9 +139,9 @@ module TradeExpert
   def self.tradePoke(give, recv)
     myPokemon = $Trainer.party[give]
     # name of the Trade Expert is decided here
-    opponent = NPCTrainer.new("Mystery Man", 0)
+    opponent = NPCTrainer.new(TradeExpert::TRAINER_NAME, 0)
     # custom trainer ID of the Trade Expert
-    opponent.id = 1204
+    opponent.id = TradeExpert::TRAINER_ID
     # generates the Pokemon
     yourPokemon = Pokemon.new(recv, myPokemon.level, opponent)
     # sets the Pokemon's mode to be traded
@@ -152,7 +152,7 @@ module TradeExpert
     # registers Pokemon in the Pokedex
     $Trainer.pokedex.register(yourPokemon)
     $Trainer.pokedex.set_owned(recv)
-    pbSeenForm(yourPokemon)
+#    pbSeenForm(yourPokemon)
     # starts trading sequence
     pbFadeOutInWithMusic(99999){
       evo = PokemonTrade_Scene.new

@@ -32,6 +32,9 @@ module TradeExpert
 
   ]
 
+  TRAINER_NAME = "Mystery Man"
+  TRAINER_ID = 1204
+
   # hash containing the spoken text
   # add multiple entries as array to speak in sequence, or assign single message
   # to each defined key
