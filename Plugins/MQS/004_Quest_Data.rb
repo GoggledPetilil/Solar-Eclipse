@@ -252,5 +252,14 @@ module QuestModule
     :Location1 => :Location0,
     :QuestDescription => "A School Kid has told you about her favourite Pokémon: Minccino. Noticing that you have the Pokédex, she has asked you to show her the complete entry for Minccino."
   }
+  
+  Quest27 = {
+    :ID => "27",
+    :Name => "The Form Assistant Researcher",
+    :QuestGiver => "Audrey",
+    :Location0 => "Fitzberg Museum",
+    :Location1 => :Location0,
+    :QuestDescription => "A researcher, Audrey, has recently opened up a museum dedicated to Pokémon forms. To help her make accurate display statues, she has asked you to show her entries of different forms of the following Pokémon: Vivillon, Spinda, Minior, and Roselia. The forms only need to be seen, not necessarily caught."
+  }
 
 end
