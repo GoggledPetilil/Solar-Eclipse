@@ -3552,3 +3552,51 @@ FormName = Pattern 63
 #-------------------------------
 [SPINDA,64]
 FormName = Pattern 64
+#-------------------------------
+[ROSELIA,1]
+FormName = Red-Yellow Bouquet
+#-------------------------------
+[ROSELIA,2]
+FormName = Red-Red Bouquet
+#-------------------------------
+[ROSELIA,3]
+FormName = Blue-Yellow Bouquet
+#-------------------------------
+[ROSELIA,4]
+FormName = Blue-Red Bouquet
+#-------------------------------
+[ROSELIA,5]
+FormName = Blue-Blue Bouquet
+#-------------------------------
+[ROSELIA,6]
+FormName = Yellow-Red Bouquet
+#-------------------------------
+[ROSELIA,7]
+FormName = Yellow-Blue Bouquet
+#-------------------------------
+[ROSELIA,8]
+FormName = Yellow-Yellow Bouquet
+#-------------------------------
+[ROSERADE,1]
+FormName = Red-Yellow Bouquet
+#-------------------------------
+[ROSERADE,2]
+FormName = Red-Red Bouquet
+#-------------------------------
+[ROSERADE,3]
+FormName = Blue-Yellow Bouquet
+#-------------------------------
+[ROSERADE,4]
+FormName = Blue-Red Bouquet
+#-------------------------------
+[ROSERADE,5]
+FormName = Blue-Blue Bouquet
+#-------------------------------
+[ROSERADE,6]
+FormName = Yellow-Red Bouquet
+#-------------------------------
+[ROSERADE,7]
+FormName = Yellow-Blue Bouquet
+#-------------------------------
+[ROSERADE,8]
+FormName = Yellow-Yellow Bouquet
