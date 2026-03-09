@@ -78,7 +78,7 @@ module QuestModule
     :Location0 => "Solaria",
     :Location1 => :Location0,
     :QuestDescription => "It is a great honour to participate in the Gym Challenge and you have been chosen to do so. Travel the Solaria region and challenge the 8 Gym Leaders to earn their Gym Badge.",
-    :RewardString => "Privledge of participating in the SCT"
+    :RewardString => "Privilege of participating in the SCT"
   }
   
   Quest8 = {
