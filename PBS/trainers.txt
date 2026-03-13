@@ -8890,10 +8890,3 @@ Pokemon = KLINKLANG,67
 LoseText = "Woah!"
 Pokemon = OBSTAGOON,68
 Pokemon = GYARADOS,68
-#-------------------------------
-[YOUNGSTER,Test]
-LoseText = "That was an awesome battle!"
-Pokemon = OSHAWOTT,10
-    Moves = DOUBLETEAM,VICTORYDANCE,QUIVERDANCE,HONECLAWS
-Pokemon = PETILIL,8
-    Moves = DOUBLETEAM,VICTORYDANCE,QUIVERDANCE,HONECLAWS
