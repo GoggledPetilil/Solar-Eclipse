@@ -678,7 +678,7 @@ module BattleScripts
       tname = @battle.opponent[0].name
       # begin code block for the first turn
       pbBGMPlay("Battle Team Sol Admin Salty")
-      @scene.pbTrainerSpeak(["This is my last Pokémon... Won't go a bit easier on me?"
+      @scene.pbTrainerSpeak(["This is my last Pokémon... Won't you go a bit easier on me?"
                            ])
       if $game_switches[Settings::HARDER_BOSSES]
         # play aura flare
@@ -688,13 +688,13 @@ module BattleScripts
         @battlers[1].pbRaiseStatStage(:ATTACK, 1)
       end
     end,
-    "loss" => "Honestly, it was...easier than I thought or hoped...",
+    "loss" => "Honestly, it was... easier than I thought or hoped...",
    "afterLast" => proc do
       hasRevive = $PokemonBag.pbHasItem?(:REVIVE) || $PokemonBag.pbHasItem?(:MAXREVIVE) || $PokemonBag.pbHasItem?(:REVIVALHERB)
       lastMon = (!hasRevive || $game_switches[Settings::BAN_REVIVAL])
       if lastMon
         pbBGMPlay("EBDX/Low HP Battle") if $PokemonSystem.lowhp<2
-        @scene.pbTrainerSpeak("My my my... Is this going to be your trump card?")
+        @scene.pbTrainerSpeak("My, my, my... Is this going to be your trump card?")
       end
    end
     }
