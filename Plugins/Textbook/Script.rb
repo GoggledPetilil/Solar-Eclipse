@@ -25,7 +25,7 @@ BookOne = [
 BookTwo = [
 "The History of Solaria, Part I",
   "-Regnal Year 1: The Kingdom of Solaria-\n
-  In the first year of the Solarian calender, the glorious Solaria Monarchy was established. Helianthus was chosen as its capital and the central seat of power for the Solarian royal family.",
+  In the first year of the Solarian calendar, the glorious Solaria Monarchy was established. Helianthus was chosen as its capital and the central seat of power for the Solarian royal family.",
 "The History of Solaria, Part I",
   "-Regnal Year 1: The Kingdom of Solaria-\n
   14 Noble Houses were created by the highest ranking generals of the Unification Army to maintain loyalty to the crown. These are the Houses of: Astor, Biytea, Jadevik, Dinnex, Farnlor, Fishland, Illdoos, Junkar, Malum, Myrfield, Polallon, Pumon, Towngor and Zimbani.",
@@ -43,7 +43,7 @@ BookTwo = [
 #  The brief period of peace between northern and central had been broken with the assassination of the resistance leader Evan van Holtlant. His successor, Linda van Holtlant, eventually forced House Towngor to surrender and cut ties with northern Towngor. House Holtlant had gained independence."
 "The History of Solaria, Part I",
   "-Regnal Year 246: The War of Lilies-\n
-  Following multiple assassinations of Solarian royalty, an investigation was set into motion and House Ildoos was found guilty. War broke out between House Ildoos and the Solarian monarchy, resulting in the complete destruction of the Ildoos bloodline. Its land was given to Jyeshtha.",
+  Following multiple assassinations of Solarian royalty, an investigation was set into motion and House Ildoos was found guilty. While House Ildoos attemped to resist, it was ultimately dismantled. A year later, the land formerly governed by House Ildoos was struck with an almighty meteorite, which caused mass casualities. This region remained derelict until eventually delegated to Jyeshtha.",
 "The History of Solaria, Part I",
   "-Regnal Year 306: The Junkar Civil War-\n
   Tudwal Telgior, an ordinary working class citizen, discovered a valuable mine within Junkar territory. He used his new high income and influence to establish House Telgior within Junkar territory. House Junkar attempted to stop him, but Tudwal's new power was too much and the new territory of Telgior gained independence.",
@@ -55,13 +55,13 @@ BookTwo = [
   It was during this time that Houses Bastor, Origins, Boucket, Hoog, and eventually Zimbani and Vespera, formed the Tablecloth alliance encouraging trade of food and offering shelter between the citizens of these territories.",
 "The History of Solaria, Part I",
   "-Regnal Year 356: First Contact with Areinal-\n
-  Succeeding King Augustus, King Edmund was tasked with earning the people's trust and rebuilding the ruined Solaria. The King had made contact with the distant Areinal region and, using his excellent diplomacy skills, secured trading relationship with the tropical region.",
+  Succeeding King Augustus, King Edmund was tasked with earning the people's trust and rebuilding the ruined Solaria. The King had made contact with the distant Areinel region and, using his excellent diplomacy skills, secured trading relationship with the tropical region.",
 "The History of Solaria, Part I",
   "-Regnal Year 460: The Pumon Civil War-\n
   House Pumon slowly began to lose power and influence. Unable to pay their debts, parts of their border lands were given to the growing House Schicksals. A civil war erupted within Pumon territory with the common folk seeing House Pumon as weak and cowardice. 40 years of fighting only left Pumon in a worse state than before.",
 "The History of Solaria, Part I",
   "-Regnal Year 512: The Border Alliance-\n
-  With the increasing power of smaller noble houses in the north, it was decided between them that it would be most economically beneficial to create an alliance. Thus House Schicksals, House Eisenblut, House Mondwanderer, House Airbva and House Meeresbeobachter formed the Border Alliance to ensure economic growth, free trade and protection from northern Lunarian forces and other threats.",
+  With the increasing power of smaller noble houses in the north, it was decided between them that it would be most economically beneficial to create an alliance. Thus House Schicksals, House Eisenblut, House Mondwanderer, House Airabva and House Meeresbeobachter formed the Border Alliance to ensure economic growth, free trade and protection from northern Lunarian forces and other threats.",
 "The History of Solaria, Part I",
   "-Regnal Year 524: The Battle of Fishland-\n
   From the east, the Lunaria region invaded Solaria. They attempted to break into Solaria territory via Fishland in the south. House Fishland and Jadevik fought to defend the border, managing to drive the Lunarian invasion back at the cost of losing Fishland completely to Lunaria.",
@@ -82,7 +82,7 @@ BookThree = [
   After years of seeming peace, Crown Princess Miranda had been assassinated. Ruling Monarch King Ruben was so distraught that he and the rest of the Royal Family had chosen to isolate themselves from the public.",
 "The History of Solaria, Part II",
   "-Regnal Year 732: The United Junkar-Telgior-\n
-  Head of House Junkar, Alfred von Junkar, and his wife had been found guilty of conspiring with wicked cults to eliminate select noble houses in Solaria. As House Junkar had no heir, power was given to Amadine von Telgior who began the unification of Junkar and Telgior to provide immediate aid to the struggling Telgior region. This remains a controversial decision.",
+  Head of House Junkar, Alfred van Junkar, and his wife had been found guilty of conspiring with wicked cults to eliminate select noble houses in Solaria. As House Junkar had no heir, power was given to Amadine von Telgior who began the unification of Junkar and Telgior to provide immediate aid to the struggling Telgior region. This remains a controversial decision.",
 "The History of Solaria, Part II",
   "-Regnal Year 736: The Five Elite-\n
   In order to support the now-absent Royal Family, the Council of the Five Elite was formed by House Astor to advice the Royal Family. The Council of the Five Elite was comprised of the most powerful houses: Astor, Towngor, Zimbani, Farnlor and Junkar-Telgior.",
@@ -109,7 +109,7 @@ BookFour = [
   A major war that started when Jett van Junkar-Telgior killed Milo Oakheart on suspicions of treason. This caused Junkar-Telgior to split from each other and multiple skirmishes between Junkar, Telgior and Oakheart. All sides claimed to be loyal to the Monarchy.",
 "Beginning of the Sunbreak War",
   "-Regnal Year 1471: The Farkar War-\n
-  King Zacharias was left with no heir and attempted to install his brother Alastair Cornelius to become the next ruler of Solaria, but when Queen Elsie unexpectedly gave birth to Tobias Cornelius chaos began to brew as to wether Alastair or Tobias would be the next king.",
+  King Zacharias was left with no heir and attempted to install his brother Alastair Cornelius to become the next ruler of Solaria, but when Queen Elsie unexpectedly gave birth to Tobias Cornelius chaos began to brew as to whether Alastair or Tobias would be the next king.",
 "Beginning of the Sunbreak War",
   "-Regnal Year 1471: The Farkar War-\n
   Finally, conflict arose between the Northern Army, lead by Elois Farnlor in support of Tobias Cornelius, and the Southern Army, led by Jett van Junkar in support of Alastair Cornelius. Skirmishes between the two factions arose across all of Solaria, before settling in Helianthus.",
@@ -120,11 +120,11 @@ BookFour = [
 
 BookFive = [
 "The Sunbreak War",
-  "-Regnal Year 1564: Battle of Goerlyn-\n
-  Harald Goerlyn, the warlord of Goerlyn, had amassed a massive army and planned on marching towards Helianthus to establish himself as the new Solar King of Solaria. Mars, a smaller warlord, stood in his way. Harald, thinking he could easily defeat Mars, threw a party ahead of his victory.",
+  "-Regnal Year 1564: Battle of Aegelia-\n
+  Harald Aegelia, the warlord of Aegelia, had amassed a massive army and planned on marching towards Helianthus to establish himself as the new Solar King of Solaria. Mars, a smaller warlord, stood in his way. Harald, thinking he could easily defeat Mars, threw a party ahead of his victory.",
 "The Sunbreak War",
-  "-Regnal Year 1564: Battle of Goerlyn-\n
-  The Goerlyn army partying the night away, along with a heavy storm approaching, gave Mars the opportunity for a surprise attack that resulted in Goerlyn's defeat and established Mars as one of the front-running warlords of the war.",
+  "-Regnal Year 1564: Battle of Aegelia-\n
+  The Aegelian army partying the night away, along with a heavy storm approaching, gave Mars the opportunity for a surprise attack that resulted in Aegelia's defeat and established Mars as one of the front-running warlords of the war.",
 "The Sunbreak War",
   "-Regnal Year 1566: The Cornelius Campaign-\n
   Ash Cornelius, banished by his brother after failing to take control of the capital, had requested aid from warlords to escort him back to Helianthus. He succeeded in enlisting Mars to his cause. Mars's forces reached Helianthus that same year and installed Ash as a puppet king.",
@@ -157,7 +157,7 @@ BookFive = [
   Dissatisfied with the position the Cornelius family found itself in, Camus Cornelius's wife Tienna urged her husband to revolt against Mars and take his rightful power. Camus refused, however. Enraged, Tienna discreetly called for aid from Crown loyalists to arm themselves against Mars so that her young son, Hemal Cornelius, could take the throne.",
 "The Sunbreak War",
   "-Regnal Year 1600: Battle of Jyeshtha-\n
-  The battle between those loyal to the Crown and those loyal to Mars was fought in the fields of Jyeshtha. Mars's son, Cecile, had failed to show up to the battle on time. Just as it seemed Mar's forces would be defeated, discourse began to brew amongst the Crown loyalists.",
+  The battle between those loyal to the Crown and those loyal to Mars was fought in the fields of Jyeshtha. Mars's son, Cecile, had failed to show up to the battle on time. Just as it seemed Mars's forces would be defeated, discourse began to brew amongst the Crown loyalists.",
 "The Sunbreak War",
   "-Regnal Year 1600: Battle of Jyeshtha-\n
   Many within the army loyal to the crown became distrustful of Tienna Cornelius, and defected to Mars's side who would eventually win the battle. Instead of executing them, Mars banished the Cornelius family to Towngor."
@@ -181,7 +181,7 @@ BookSix = [
   While the Cornelius forces outside managed to deal multiple strong blows to the Solar King's forces, with one soldier nearly assassinating Mars himself, they would soon be struck down as behind them the Cornelius bloodline burned to extinction.",
 "The Solar King of Solaria",
   "-Regnal Year 1639: The End of Solar King Mars-\n
-  After many years, Mars would eventually meet his end. The cause of death is unknown, but many speculate it to be either cancer or syphilis. Mars would be posthumously crowned as the Eternal Solar King of Solaria.",
+  After many years, Mars would eventually meet his end. The cause of death is unknown, but many speculate it to be either cancer or heart failure. Mars would be posthumously crowned as the Eternal Solar King of Solaria.",
 "The Solar King of Solaria",
   "-Regnal Year 1639: The End of Solar King Mars-\n
   The last piece of writing by Mars is as follows:\n\"Suns rise and suns set\nSolaria is endless\nUnited through peace\"",
@@ -205,13 +205,13 @@ BookSeven = [
   A devastating burst of energy exploded from the Arcadia Temple. The explosion engulfed a major part of the Solaria region, incinerating Jyeshtha's luscious green plains and drastically altering other parts of the region.",
 "The History of Solaria, Part III",
   "-Regnal Year 1654: The Decimation-\n
-  While many were able to evacuate, it is estimated that 100,000 to 120,000 people lost their lives in Jyeshtha. The territory would remain uninhabitable until the 1700's.",
+  While many were able to evacuate, it is estimated that 100,000 to 120,000 people lost their lives in Jyeshtha. The territory would remain uninhabitable until the 1700s.",
 "The History of Solaria, Part III",
   "-Regnal Year 1687: Solaria Renaissance-\n
   With peace settling firmly in the Solaria region, culture began to flourish. Many schools and roads were constructed, paintings and plays depicting the legends of Solar Kings Mars and Solgaleo were created, and historical records began to be compiled.",
 "The History of Solaria, Part III",
   "-Regnal Year 1687: Solaria Renaissance-\n
-  Major port cities began to rise in power with the expansion of trade collaborations with Areinal, as well as new collaborations with Shuimar. Gardenia Academy was established as well, a school dedicated to Solar King Mars.",
+  Major port cities began to rise in power with the expansion of trade collaborations with Areinel, as well as new collaborations with Shuimar. Gardenia Academy was established as well, a school dedicated to Solar King Mars.",
 "The History of Solaria, Part III",
   "-Regnal Year 1788: Cosmic Power-\n
   Following the years after the Decimation, the people of Solaria would begin to take note of anomalies with the Pokémon of Solaria. Much like how the region's landscape had been drastically altered, so to seemed to have its Pokémon. Creatures were seen awakening new abilities and attributes, as well as enhanced strength.",
