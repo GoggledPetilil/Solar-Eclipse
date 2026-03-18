@@ -122,8 +122,15 @@ Generation = 7
 WildItemUncommon = PECHABERRY
 BattlerEnemyX = 4
 #-------------------------------
-[PIKACHU,3]
+[PIKACHU,2]
 FormName = Cosplay Pikachu
+Compatibility = Undiscovered
+Pokedex = When it comes across something new, it blasts it with electricity. If you find a charred berry, it's evidence that a Pikachu mistook the power of its charge.
+Generation = 6
+#-------------------------------
+[PIKACHU,3]
+FormName = Cosplay Pikachu - Rock Star
+BaseStats = 45,80,50,120,75,60
 Compatibility = Undiscovered
 Pokedex = When it comes across something new, it blasts it with electricity. If you find a charred berry, it's evidence that a Pikachu mistook the power of its charge.
 Generation = 6
@@ -136,7 +143,7 @@ Pokedex = When it comes across something new, it blasts it with electricity. If 
 Generation = 6
 #-------------------------------
 [PIKACHU,5]
-FormName = Cosplay Pikachu - Libre
+FormName = Cosplay Pikachu - Pop Star
 BaseStats = 45,80,50,120,75,60
 Compatibility = Undiscovered
 Pokedex = When it comes across something new, it blasts it with electricity. If you find a charred berry, it's evidence that a Pikachu mistook the power of its charge.
@@ -150,20 +157,13 @@ Pokedex = When it comes across something new, it blasts it with electricity. If 
 Generation = 6
 #-------------------------------
 [PIKACHU,7]
-FormName = Cosplay Pikachu - Pop Star
+FormName = Cosplay Pikachu - Libre
 BaseStats = 45,80,50,120,75,60
 Compatibility = Undiscovered
 Pokedex = When it comes across something new, it blasts it with electricity. If you find a charred berry, it's evidence that a Pikachu mistook the power of its charge.
 Generation = 6
 #-------------------------------
 [PIKACHU,8]
-FormName = Cosplay Pikachu - Rock Star
-BaseStats = 45,80,50,120,75,60
-Compatibility = Undiscovered
-Pokedex = When it comes across something new, it blasts it with electricity. If you find a charred berry, it's evidence that a Pikachu mistook the power of its charge.
-Generation = 6
-#-------------------------------
-[PIKACHU,9]
 FormName = Original Cap Pikachu
 BaseStats = 45,80,50,120,75,60
 Compatibility = Undiscovered
@@ -171,7 +171,7 @@ Pokedex = This Pikachu wears its partner's cap, which is brimming with memories 
 BattlerEnemyX = 3
 BattlerEnemyY = 27
 #-------------------------------
-[PIKACHU,10]
+[PIKACHU,9]
 FormName = Hoenn Cap Pikachu
 BaseStats = 45,80,50,120,75,60
 Compatibility = Undiscovered
@@ -180,7 +180,7 @@ Generation = 3
 BattlerEnemyX = 3
 BattlerEnemyY = 27
 #-------------------------------
-[PIKACHU,11]
+[PIKACHU,10]
 FormName = Sinnoh Cap Pikachu
 BaseStats = 45,80,50,120,75,60
 Compatibility = Undiscovered
@@ -189,7 +189,7 @@ Generation = 4
 BattlerEnemyX = 3
 BattlerEnemyY = 27
 #-------------------------------
-[PIKACHU,12]
+[PIKACHU,11]
 FormName = Unova Cap Pikachu
 BaseStats = 45,80,50,120,75,60
 Compatibility = Undiscovered
@@ -198,7 +198,7 @@ Generation = 5
 BattlerEnemyX = 3
 BattlerEnemyY = 27
 #-------------------------------
-[PIKACHU,13]
+[PIKACHU,12]
 FormName = Kalos Cap Pikachu
 BaseStats = 45,80,50,120,75,60
 Compatibility = Undiscovered
@@ -207,7 +207,7 @@ Generation = 6
 BattlerEnemyX = 3
 BattlerEnemyY = 27
 #-------------------------------
-[PIKACHU,14]
+[PIKACHU,13]
 FormName = Alola Cap Pikachu
 BaseStats = 45,80,50,120,75,60
 Compatibility = Undiscovered
@@ -216,7 +216,7 @@ Generation = 7
 BattlerEnemyX = 3
 BattlerEnemyY = 27
 #-------------------------------
-[PIKACHU,15]
+[PIKACHU,14]
 FormName = Partner Cap Pikachu
 BaseStats = 45,80,50,120,75,60
 Compatibility = Undiscovered
@@ -225,7 +225,7 @@ Generation = 7
 BattlerEnemyX = 3
 BattlerEnemyY = 27
 #-------------------------------
-[PIKACHU,16]
+[PIKACHU,15]
 FormName = World Cap Pikachu
 BaseStats = 45,80,50,120,75,60
 Compatibility = Undiscovered
