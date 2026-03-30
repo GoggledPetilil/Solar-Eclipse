@@ -216,9 +216,9 @@ class PokemonLoad_Scene
       if Input.trigger?(Input::USE)
         return @sprites["cmdwindow"].index
       elsif @sprites["cmdwindow"].index == continue_idx
-        if Input.trigger?(Input::LEFT) && @hidecommands==false
+        if Input.trigger?(Input::LEFT) && @hidecommands!=true
           return -3
-        elsif Input.trigger?(Input::RIGHT) && @hidecommands==false
+        elsif Input.trigger?(Input::RIGHT) && @hidecommands!=true
           return -2
         end
       end
