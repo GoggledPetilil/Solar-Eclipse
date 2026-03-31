@@ -39,7 +39,7 @@ class PokeBattle_Battler
       # change the false to true if your battle window skin is dark
       colour_tag = getSkinColor(nil, 1, true)
       pbMEPlay("Battle Item Get")
-      @battle.pbDisplay(_INTL("{1} dropped\n{4} {2}{3}</c3>!",pbThis,colour_tag,itemname,article))
+      @battle.pbDisplay(_INTL("{1} dropped\n{4} {2}{3}</c3>!", pbThis, colour_tag, itemname, article))
     end
   end
 end
