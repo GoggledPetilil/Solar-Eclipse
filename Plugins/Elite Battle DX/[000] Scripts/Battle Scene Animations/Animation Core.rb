@@ -293,6 +293,8 @@ class PokeBattle_Scene
     when 2; pbSEPlay("Battle damage super")
     end
     # begin animation
+    oldX = @sprites["dataBox_#{t[0].index}"].x
+    oldY = @sprites["dataBox_#{t[0].index}"].y
     for k in 1..(effect.max == 2 ? 3 : 2)
       for i in 0...8
         for t in targets
@@ -303,6 +305,9 @@ class PokeBattle_Scene
         self.wait(1, true)
       end
     end
+    # Make sure databox doesn't end at the wrong animation.
+    @sprites["dataBox_#{t[0].index}"].x = oldX
+    @sprites["dataBox_#{t[0].index}"].y = oldY
     # animations for triggering Substitute
     self.substitueAll(indexes)
     # try set low HP BGM music
