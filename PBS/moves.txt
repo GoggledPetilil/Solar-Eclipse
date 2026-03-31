@@ -134,7 +134,7 @@
 #-------------------------------
 129,LIGHTOFRUIN,Light of Ruin,0FC,140,FAIRY,Special,90,5,0,NearOther,0,bef,"Fires a powerful beam of light drawn from the Eternal Flower. It also damages the user a lot."
 130,FLEURCANNON,Fleur Cannon,03F,130,FAIRY,Special,90,5,0,NearOther,0,bef,"The user unleashes a strong beam. The attack's recoil harshly lowers the user's Sp. Atk stat."
-131,MOONBLAST,Moonblast,045,95,FAIRY,Special,100,15,30,NearOther,0,bef,"The user attacks by borrowing the power of the moon. This may also lower the target's Sp. Atk stat."
+131,MOONBLAST,Moonblast,045,90,FAIRY,Special,100,15,20,NearOther,0,befn,"The user attacks by borrowing the power of the moon. This may also lower the target's Sp. Atk stat."
 132,PLAYROUGH,Play Rough,042,90,FAIRY,Physical,100,10,10,NearOther,0,abef,"The user plays rough with the target and attacks it. This may also lower the target's Attack stat."
 133,DAZZLINGGLEAM,Dazzling Gleam,000,80,FAIRY,Special,100,10,0,AllNearFoes,0,bef,"The user damages opposing Pokémon by emitting a powerful flash."
 134,DRAININGKISS,Draining Kiss,14F,70,FAIRY,Special,100,10,0,NearOther,0,abef,"The user steals the target's HP with a kiss. The user's HP is restored by over half of the damage dealt."
