@@ -67,7 +67,7 @@ EliteBattle.defineMoveAnimation(:DESTINYBOND) do
       @userSprite.tone.blue += (c[k].blue - @userSprite.tone.blue)*0.2
     end
     pbSEPlay("Anim/Absorb2",100) if i == 16
-    pbSEPlay("EBDX/Anim/ghost2",70) if i == 16
+    pbSEPlay("EBDX/Anim/ghost2",100) if i == 16
     @scene.wait(1,true)
   end
   @sprites["battlebg"].focus

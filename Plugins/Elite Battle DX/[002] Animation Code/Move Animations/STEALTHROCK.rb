@@ -36,7 +36,7 @@ EliteBattle.defineMoveAnimation(:STEALTHROCK) do | args |
     fp["spike"].zoom_x = z
     fp["spike"].zoom_y = z
     fp["spike"].update
-	pbSEPlay("Anim/Throw",60) if i == 4
+	pbSEPlay("Anim/Spikes_Throw",90) if i == 4
     @scene.wait(1,true)
   end
   @vector.set(EliteBattle.get_vector(opp))
@@ -61,7 +61,7 @@ EliteBattle.defineMoveAnimation(:STEALTHROCK) do | args |
   # spike shatter animation
   for i in 0...64
     break if !bomb && i > 15
-	pbSEPlay("Anim/Spikes2",90) if i == 5
+	pbSEPlay("Anim/Stealth Rock",90) if i == 5
     for j in 0...32
       next if !bomb
       next if i < 8

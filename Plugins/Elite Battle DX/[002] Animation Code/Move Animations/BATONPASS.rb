@@ -24,7 +24,7 @@ EliteBattle.defineMoveAnimation(:BATONPASS) do
   # start animation
   @vector.set(vector)
   @scene.wait(20,true)
-  pbSEPlay("Anim/throw")
+  pbSEPlay("EBDX/Anim/flying1")
   for i in 0...20
     cx, cy = @userSprite.getCenter
     fp["weatherball"].x = cx
@@ -64,7 +64,7 @@ EliteBattle.defineMoveAnimation(:BATONPASS) do
     fp["weatherball"].x = cx
     fp["weatherball"].y = cy
     fp["weatherball"].y -= 32*(i-10) if i >= 10
-    pbSEPlay("EBDX/Anim/flying1") if i == 10
+    pbSEPlay("EBDX/Anim/workup2") if i == 10
   end
   for i in 0...20
     fp["weatherball"].y -= 32

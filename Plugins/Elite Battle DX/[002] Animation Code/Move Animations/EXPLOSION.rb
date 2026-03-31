@@ -26,14 +26,12 @@ EliteBattle.defineMoveAnimation(:EXPLOSION) do
   @vector.set(vector)
   @vector.inc = 0.2
   @scene.wait(16,true)
-  #pbSEPlay("Anim/psychic3",60) #change
-  pbSEPlay("Anim/superdamage",60) #change
   @sprites["battlebg"].defocus
   for i in 0...10
     fp["bg"].opacity += 14
     @scene.wait(1,true)
   end
-  pbSEPlay("Anim/Explosion1",100) #change
+  pbSEPlay("Anim/ExplosionCharge",100)
   cx, cy = @targetSprite.getCenter
   fp["flare"] = Sprite.new(@viewport)
   fp["flare"].bitmap = pbBitmap("Graphics/EBDX/Animations/Moves/eb614_19")
@@ -75,7 +73,7 @@ EliteBattle.defineMoveAnimation(:EXPLOSION) do
     fp["bg"].color.alpha -= 32 if fp["bg"].color.alpha > 0
     fp["flare"].opacity += 32*(i < 8 ? 1 : -1)
     fp["flare"].angle += 32
-    pbSEPlay("Anim/Explosion1",100) if i == 8 || i == 18 || i == 28 # keep
+    pbSEPlay("Anim/Explosion",100) if i == 8 || i == 18 || i == 28 # keep
     for j in 0...3
       next if i < 12
       next if j>(i-12)/4
