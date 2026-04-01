@@ -49,7 +49,7 @@
 47,THICKFAT,Thick Fat,"Halves Fire/Ice-type damage."
 48,EARLYBIRD,Early Bird,"Awakens quickly from sleep."
 49,FLAMEBODY,Flame Body,"30% chance contact-making attackers get burned."
-50,RUNAWAY,Run Away,"Can switch out without fail."
+50,RUNAWAY,Run Away,"Can escape without fail."
 51,KEENEYE,Keen Eye,"Prevents others from lowering its accuracy."
 52,HYPERCUTTER,Hyper Cutter,"Prevents others from lowering its Attack."
 53,PICKUP,Pickup,"May pick up any items after battle or when consumed."
