@@ -261,5 +261,14 @@ module QuestModule
     :Location1 => :Location0,
     :QuestDescription => "A researcher, Audrey, has recently opened up a museum dedicated to Pokémon forms. To help her make accurate display statues, she has asked you to show her entries of different forms of the following Pokémon: Vivillon, Spinda, Minior, and Roselia. The forms only need to be seen, not necessarily caught."
   }
+  
+  Quest28 = {
+    :ID => "28",
+    :Name => "The Revival",
+    :QuestGiver => "Scientist",
+    :Location0 => "Junkar City",
+    :Location1 => :Location0,
+    :QuestDescription => "A scientist in Junkar City has told you about the fossils that can be found in the rocks of Telgior Mines, as well as of technology that can revive these fossils. Find an Armor Fossil with Rock Smash, revive it and then show it to the scientist for a reward."
+  }
 
 end
