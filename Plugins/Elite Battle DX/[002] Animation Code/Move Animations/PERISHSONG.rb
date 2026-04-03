@@ -64,7 +64,7 @@ EliteBattle.defineMoveAnimation(:PERISHSONG) do
       end
     end
     fp["bg"].opacity += 5 if fp["bg"].opacity < 255*0.5
-    pbSEPlay("Anim/PerishSong",80) if i==0 
+    pbSEPlay("Anim/PerishSong") if i==0 
     if i >= 96
       @targetSprite.ox += shake
       shake = -2 if @targetSprite.ox > @targetSprite.bitmap.width/2 + 2

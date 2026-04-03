@@ -5562,7 +5562,7 @@ Pokemon = FROSMOTH,80
 #-------------------------------
 [DRAGONTAMER,Richard]
 LoseText = "Such power..."
-Pokemon = AXEW,24
+Pokemon = AXEW,22
 Pokemon = GIBLE,22
 #-------------------------------
 [WORKER,Steve]
@@ -5573,13 +5573,13 @@ Pokemon = BELDUM,23
 #-------------------------------
 [DOCTOR,Adam]
 LoseText = "Maybe I need some fresh air!"
-Pokemon = CHANSEY,24
+Pokemon = CHANSEY,22
 #-------------------------------
 [DRAGONTAMER,Lin]
 LoseText = "Oohh..."
-Pokemon = NOIBAT,22
-Pokemon = DUNSPARCE,23
+Pokemon = NOIBAT,23
 Pokemon = YANMA,24
+Pokemon = DUNSPARCE,22
 #-------------------------------
 [RUINMANIAC,Man]
 LoseText = "Am I stupid?"

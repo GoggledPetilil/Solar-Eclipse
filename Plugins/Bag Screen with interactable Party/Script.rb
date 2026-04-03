@@ -735,12 +735,21 @@ class PokemonBag_Scene
       ]
       baseY = Graphics.height - 91
       lineHeight = 18
+      typeColours = [Color.new(193, 194, 193), Color.new(255, 172, 89), Color.new(173, 210, 245), Color.new(184, 132, 221), Color.new(184, 142, 111),
+      Color.new(203, 199, 173), Color.new(184, 194, 106), Color.new(162, 132, 162), Color.new(152, 194, 209), Color.new(157, 193, 183), Color.new(239, 115, 116),
+      Color.new(116, 172, 245), Color.new(130, 194, 116), Color.new(252, 214, 89), Color.new(245, 132, 168), Color.new(129, 223, 247), Color.new(141, 152, 236),
+      Color.new(153, 139, 140), Color.new(245, 162, 245)]
+      categoryColours = [Color.new(242, 145, 115), Color.new(125, 148, 205), Color.new(174, 174, 174)]
 
       lines.each_with_index do |line, i|
+        ti = GameData::Type.get(move.type).id_number
+        color = ITEMTEXTBASECOLOR
+        color = typeColours[ti] if i==0 
+        color = categoryColours[move.category] if i==1
         pbDrawOutlineText(
           bitmap,
           6, baseY + i * lineHeight, Graphics.width, lineHeight,
-          line, ITEMTEXTBASECOLOR, Color.new(0, 0, 0)
+          line, color, Color.new(0, 0, 0)
         )
       end
 

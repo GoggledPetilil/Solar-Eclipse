@@ -107,14 +107,14 @@ EliteBattle.defineMoveAnimation(:MEMENTO) do
   @vector.set(vector)
   @vector.inc = 0.2
   @scene.wait(16,true)
-  pbSEPlay("Anim/Darkness6",60) #change
-  pbSEPlay("Anim/Psych Up",60) #change
+  pbSEPlay("Anim/Darkness6") #change
+  pbSEPlay("Anim/Psych Up") #change
   @sprites["battlebg"].defocus
   for i in 0...10
     fp["bg"].opacity += 14
     @scene.wait(1,true)
   end
-  pbSEPlay("Anim/Explosion4",80) #change
+  pbSEPlay("Anim/Explosion") 
   cx, cy = @targetSprite.getCenter
   fp["flare"] = Sprite.new(@viewport)
   fp["flare"].bitmap = pbBitmap("Graphics/EBDX/Animations/Moves/eb614_16")

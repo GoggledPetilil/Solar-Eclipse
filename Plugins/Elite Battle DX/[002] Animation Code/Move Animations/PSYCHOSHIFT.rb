@@ -11,6 +11,7 @@ EliteBattle.defineMoveAnimation(:PSYCHOSHIFT) do | args |
   fp["change2"].keyFrame = 1
   fp["change2"].z = @userSprite.z + 1
   # shooting out the change1
+  pbSEPlay("EBDX/Anim/move1")
   for i in 0...24
     cxT, cyT = @targetSprite.getCenter(true)
     cxP, cyP = @userSprite.getAnchor(true)
@@ -33,7 +34,7 @@ EliteBattle.defineMoveAnimation(:PSYCHOSHIFT) do | args |
     @scene.wait(1,true)
   end
   @vector.set(EliteBattle.get_vector(:DUAL))
-  pbSEPlay("Anim/Saint7")
+  pbSEPlay("EBDX/Anim/psychic2")
   @targetSprite.color = Color.new(253,161,255,0)
   @userSprite.color = Color.new(253,161,255,0)
   fp["change1"].dispose
