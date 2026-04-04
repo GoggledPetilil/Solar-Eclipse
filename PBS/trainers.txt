@@ -5618,14 +5618,14 @@ Pokemon = KLINK,24
 #-------------------------------
 [PARTNER_Lisbeth,Lisbeth]
 LoseText = "..."
-Pokemon = CHANSEY,27
+Pokemon = LEAFEON,28
     Gender = female
-    Moves = HELPINGHAND,SEISMICTOSS,SING,DOUBLESLAP
+    Moves = HELPINGHAND,WISH,AERIALACE,RAZORLEAF
     AbilityIndex = 2
 Pokemon = SHROOMISH,26
     Gender = female
-    Moves = LEECHSEED,MEGADRAIN,HEADBUTT,HELPINGHAND
-    AbilityIndex = 2
+    Moves = LEECHSEED,MEGADRAIN,WAKEUPSLAP,GRASSWHISTLE
+    AbilityIndex = 0
 #-------------------------------
 [PARTNER_Lisbeth,Lisbeth,1]
 LoseText = "I knew you were strong, but...!"
