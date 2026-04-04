@@ -67,7 +67,7 @@
 65,ODDKEYSTONE,Odd Keystone,Odd Keystones,8,0,"A mysterious stone that glows with an eerie purple light. Voices can be heard from it occasionally.",0,0,6
 66,AIRBALLOON,Air Balloon,Air Balloons,4,4000,"An item to be held by a Pokémon. The holder will float in the air until hit. Once hit, this item will burst.",0,0,0
 67,BRIGHTPOWDER,Bright Powder,Bright Powders,4,4000,"An item to be held by a Pokémon. It casts a tricky glare that lowers the opponent's accuracy.",0,0,0
-68,EVIOLITE,Eviolite,Eviolites,4,4000,"If the holder of this item can still evolve, it raises Defense and Sp. Def and prevents evolution.",0,0,0
+68,EVIOLITE,Eviolite,Eviolites,4,4000,"If the holder can still evolve, raises Def/Sp. Def by 1.5x. Prevents evolution.",0,0,0
 69,FLOATSTONE,Float Stone,Float Stones,4,4000,"A very light stone. It reduces the weight of a Pokémon when held.",0,0,0
 70,DESTINYKNOT,Destiny Knot,Destiny Knots,4,4000,"A long, thin, bright-red string to be held by a Pokémon. If the holder becomes infatuated, so does the foe.",0,0,0
 71,ROCKYHELMET,Rocky Helmet,Rocky Helmets,4,4000,"If the holder of this item takes damage, the attacker will also be damaged upon contact.",0,0,0
