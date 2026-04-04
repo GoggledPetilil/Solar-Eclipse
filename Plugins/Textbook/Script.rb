@@ -28,7 +28,7 @@ BookTwo = [
   In the first year of the Solarian calendar, the glorious Solaria Monarchy was established. Helianthus was chosen as its capital and the central seat of power for the Solarian royal family.",
 "The History of Solaria, Part I",
   "-Regnal Year 1: The Kingdom of Solaria-\n
-  14 Noble Houses were created by the highest ranking generals of the Unification Army to maintain loyalty to the crown. These are the Houses of: Astor, Biytea, Jadevik, Dinnex, Farnlor, Fishland, Illdoos, Junkar, Malum, Myrfield, Polallon, Pumon, Towngor and Zimbani.",
+  14 Noble Houses were created by the highest ranking generals of the Unification Army to maintain loyalty to the crown. These are the Houses of: Astor, Biytea, Jadevik, Dinnex, Farnlor, Fishland, Ildoos, Junkar, Malum, Myrfield, Polallon, Pumon, Towngor and Zimbani.",
 "The History of Solaria, Part I",
   "-Regnal Year 1: The Kingdom of Solaria-\n
   The inaugural King Indulf Cornelius expanded the nobility, established the Solarian judicial system and remained on the frontlines to maintain peace across the land.",
