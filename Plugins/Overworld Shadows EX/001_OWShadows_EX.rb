@@ -84,7 +84,10 @@ class Sprite_OWShadow
   # Check whether the event is on screen or not
   #-----------------------------------------------------------------------------
   def onScreen?
-    offset = 25
+    # Always be cosidered "on screen" on the following maps:
+    return true if $game_map.map_id == 196
+    
+    offset = 26
     if @event.screen_x < 0-offset || @event.screen_x > 512+offset || @event.screen_y < 0-offset || @event.screen_y > 384+offset
         return false
     else
