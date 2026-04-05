@@ -266,29 +266,29 @@
 263,RARECANDY,Rare Candy,Rare Candies,2,4800,"A candy that is packed with energy. It raises the level of a single Pokémon by one.",1,0,0
 #-------------------------------
 264,MASTERBALL,Master Ball,Master Balls,3,0,"The best Ball with the ultimate level of performance. It will catch any wild Pokémon without fail.",0,4,4
-265,ULTRABALL,Ultra Ball,Ultra Balls,3,200,"An ultra-performance Ball that provides a higher Pokémon catch rate than a Great Ball.",0,4,4
-266,GREATBALL,Great Ball,Great Balls,3,150,"A good, high-performance Ball that provides a higher Pokémon catch rate than a standard Poké Ball.",0,4,4
-267,POKEBALL,Poké Ball,Poké Balls,3,50,"A device for catching wild Pokémon. It is thrown like a ball at the target. It is designed as a capsule system.",0,4,4
-268,SAFARIBALL,Safari Ball,Safari Balls,3,250,"A special Poké Ball to capture Grass- and Ground-type Pokémon. It is decorated in a camouflage pattern.",0,4,4
-269,SPORTBALL,Sport Ball,Sport Balls,3,200,"A special Poké Ball that helps awaken a caught Pokemon's potential.",0,4,4
-270,NETBALL,Net Ball,Net Balls,3,250,"A somewhat different Poké Ball that works especially well on Water- and Bug-type Pokémon.",0,4,4
-271,DIVEBALL,Dive Ball,Dive Balls,3,250,"A somewhat different Poké Ball that works especially well on Pokémon found on water.",0,4,4
-272,NESTBALL,Nest Ball,Nest Balls,3,250,"A somewhat different Poké Ball that works especially well on Normal-type and Field Pokémon.",0,4,4
-273,REPEATBALL,Repeat Ball,Repeat Balls,3,250,"A somewhat different Poké Ball that works especially well on Pokémon species that were previously caught.",0,4,4
-274,TIMERBALL,Timer Ball,Timer Balls,3,250,"A somewhat different Ball that becomes progressively better the more turns there are in a battle.",0,4,4
-275,LUXURYBALL,Luxury Ball,Luxury Balls,3,1000,"A comfortable Poké Ball that makes a caught wild Pokémon quickly grow friendly.",0,4,4
-276,PREMIERBALL,Premier Ball,Premier Balls,3,50,"A somewhat rare Poké Ball that has been specially made to commemorate an event of some sort.",0,4,4
-277,DUSKBALL,Dusk Ball,Dusk Balls,3,250,"A somewhat different Poké Ball that makes it easier to catch wild Pokémon at night.",0,4,4
+265,ULTRABALL,Ultra Ball,Ultra Balls,3,200,"An ultra-performance Ball. It has a 2x catch rate.",0,4,4
+266,GREATBALL,Great Ball,Great Balls,3,150,"A good, high-performance Ball. It has a 1.5x catch rate.",0,4,4
+267,POKEBALL,Poké Ball,Poké Balls,3,50,"A device for catching wild Pokémon. It is thrown like a ball at the target. It has a 1x catch rate.",0,4,4
+268,SAFARIBALL,Safari Ball,Safari Balls,3,250,"A special camouflage pattern Poké Ball. It has a 3.5x catch rate against Grass- and Ground-type Pokémon.",0,4,4
+269,SPORTBALL,Sport Ball,Sport Balls,3,200,"A special Poké Ball that boosts 3 of a caught Pokemon's IVs to max. It has a 0.8x catch rate.",0,4,4
+270,NETBALL,Net Ball,Net Balls,3,250,"A special net pattern Poké Ball. It has a 3.5x catch rate against Water- and Bug-type Pokémon.",0,4,4
+271,DIVEBALL,Dive Ball,Dive Balls,3,250,"A special underwater pattern Poké Ball. It has a 3.5x catch rate against Pokémon found while Surfing.",0,4,4
+272,NESTBALL,Nest Ball,Nest Balls,3,250,"A special verdant pattern Poké Ball. It has a 3.5x catch rate against Grass-type and Field-group Pokémon.",0,4,4
+273,REPEATBALL,Repeat Ball,Repeat Balls,3,250,"A special Poké Ball. It has a 5x catch rate against Pokémon that have been caught before.",0,4,4
+274,TIMERBALL,Timer Ball,Timer Balls,3,250,"A somewhat different Ball. For every turn passed, its catch rate increases by 0.3x up to 4x max.",0,4,4
+275,LUXURYBALL,Luxury Ball,Luxury Balls,3,1000,"A comfortable Poké Ball that increases a Pokémon's friendship at a faster rate.",0,4,4
+276,PREMIERBALL,Premier Ball,Premier Balls,3,50,"A Poké Ball made to commemorate customer loyalty. It has a 1.5x catch rate.",0,4,4
+277,DUSKBALL,Dusk Ball,Dusk Balls,3,250,"A special dark pattern Poké Ball. It has a 3x catch rate against Pokémon found at night.",0,4,4
 278,HEALBALL,Heal Ball,Heal Balls,3,75,"A remedial Poké Ball that restores the caught Pokémon's HP and eliminates any status problem.",0,4,4
-279,QUICKBALL,Quick Ball,Quick Balls,3,250,"A somewhat different Poké Ball that provides a better catch rate if used at the start of a wild encounter.",0,4,4
-280,CHERISHBALL,Cherish Ball,Cherish Balls,3,500,"A quite rare Poké Ball that has been specially crafted to commemorate an occasion of some sort.",0,4,4
-281,FASTBALL,Fast Ball,Fast Balls,3,250,"A Poké Ball to catch Electric- and Flying-type Pokémon.",0,4,4
-282,LEVELBALL,Level Ball,Level Balls,3,150,"A Poké Ball for catching Pokémon that are a lower level than your own.",0,4,4
-283,LUREBALL,Lure Ball,Lure Balls,3,200,"A Poké Ball for catching Pokémon hooked by a Rod when fishing.",0,4,4
-284,HEAVYBALL,Heavy Ball,Heavy Balls,3,250,"A Poké Ball for catching Rock- and Steel-type Pokémon.",0,4,4
-285,LOVEBALL,Love Ball,Love Balls,3,250,"A Poké Ball for catching Pokémon that are the opposite gender of your Pokémon.",0,4,4
-286,FRIENDBALL,Friend Ball,Friend Balls,3,250,"A Poké Ball that makes caught Pokémon more friendly.",0,4,4
-287,MOONBALL,Moon Ball,Moon Balls,3,250,"A Poké Ball for catching Dark- and Fairy-type Pokémon.",0,4,4
+279,QUICKBALL,Quick Ball,Quick Balls,3,250,"A somewhat different Poké Ball. At the start of the encounter, it has a catch rate of 5x.",0,4,4
+280,CHERISHBALL,Cherish Ball,Cherish Balls,3,500,"A quite rare Poké Ball that has been specially crafted to commemorate an occasion or event.",0,4,4
+281,FASTBALL,Fast Ball,Fast Balls,3,250,"A special lightning pattern Poké Ball. It has a 3.5x catch rate against Electric- and Flying-type Pokémon.",0,4,4
+282,LEVELBALL,Level Ball,Level Balls,3,150,"If your level exceeds the target's, boost catch rate by 2x, 4x, or up to 8x at triple the level gap.",0,4,4
+283,LUREBALL,Lure Ball,Lure Balls,3,200,"A special blue Poké Ball. It has a 5x catch rate against Pokémon hooked by a Fishing Rod.",0,4,4
+284,HEAVYBALL,Heavy Ball,Heavy Balls,3,250,"A special metal pattern Poké Ball. It has a 3.5x catch rate against Rock- and Steel-type Pokémon.",0,4,4
+285,LOVEBALL,Love Ball,Love Balls,3,250,"A special love pattern Poké Ball. It has a 4x catch rate against opposite gender Pokémon.",0,4,4
+286,FRIENDBALL,Friend Ball,Friend Balls,3,250,"A comfortable Poké Ball that makes caught Pokémon instantly more friendly.",0,4,4
+287,MOONBALL,Moon Ball,Moon Balls,3,250,"A special moon pattern Poké Ball. It has a 3.5x catch rate against Dark- and Fairy-type Pokémon.",0,4,4
 #-------------------------------
 288,TM00,TM00,TM00s,6,10000,"A unique attack that varies in type and intensity depending on the Pokémon using it.",3,0,0,HIDDENPOWER
 289,TM01,TM01,TM01s,6,40000,"The user vigorously performs a mystic, powerful dance that raises its Attack and Speed stats.",3,0,0,DRAGONDANCE
@@ -628,8 +628,8 @@
 617,BIGMALASADA,Big Malasada,Big Malasadas,2,350,"The Alola region's specialty--fried bread. It can be used once to heal all the status conditions of a Pokémon.",1,1,0
 618,ABILITYCAPSULE,Ability Capsule,Ability Capsule,2,9800,"A capsule that allows a Pokémon with two Abilities to switch between these Abilities when it is used.",1,0,0
 #-------------------------------
-619,DREAMBALL,Dream Ball,Dream Balls,3,500,"A somewhat different Poké Ball that activates a caught Pokémon's hidden ability.",0,4,4
-620,BEASTBALL,Beast Ball,Beast Balls,3,250,"A special Poké Ball designed to catch Dragon-type and Monster Pokémon.",0,4,4
+619,DREAMBALL,Dream Ball,Dream Balls,3,500,"A special Poké Ball that activates a caught Pokémon's Hidden Ability. It has a 1x catch rate.",0,4,4
+620,BEASTBALL,Beast Ball,Beast Balls,3,250,"A wormhole pattern Poké Ball. It has a 3.5x catch rate against Dragon-type and Monster-group Pokémon.",0,4,4
 #-------------------------------
 626,ROSELIBERRY,Roseli Berry,Roseli Berries,5,20,"If held by a Pokémon, this Berry will lessen the damage taken from one supereffective Fairy-type attack.",0,0,5
 627,KEEBERRY,Kee Berry,Kee Berries,5,20,"If held by a Pokémon, this Berry will increase the holder's Defense if it's hit with a physical move.",0,0,5
