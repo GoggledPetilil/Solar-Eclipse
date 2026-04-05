@@ -3971,7 +3971,7 @@ Pokemon = PIKACHU,9
 Pokemon = FOMANTIS,8
 Pokemon = RALTS,7
 #-------------------------------
-[OFFICEWORKER_M,Sam]
+[OFFICEWORKER_M,Ruairidh]
 LoseText = "I won!! No, wait... You won..."
 Pokemon = PAWMI,9
 Pokemon = TEDDIURSA,8
@@ -4518,7 +4518,7 @@ Pokemon = THIEVUL,80
 #-------------------------------
 # YOKO FOREST
 #-------------------------------
-[BUGCATCHER,Bug]
+[BUGCATCHER,Hunter]
 LoseText = "What a shocker!"
 Pokemon = SPEWPA,9
 Pokemon = SPEWPA,9
@@ -5272,7 +5272,7 @@ Pokemon = DARMANITAN,80
     IV = 31,31,31,31,31,31
     EV = 0,252,0,252,0,0
 #-------------------------------
-[CAMPER,Bob]
+[CAMPER,Mariusz]
 LoseText = "Soiled it!"
 Pokemon = TRAPINCH,15
 Pokemon = PIPLUP,16
@@ -5477,8 +5477,8 @@ LoseText = "That's life!"
 Pokemon = SWABLU,19
 Pokemon = PAWMO,20
 #-------------------------------
-[BACKPACKER_M,Billy]
-LoseText = "Oh, sucks to be me!"
+[BACKPACKER_M,Blair]
+LoseText = "We went down... as a team!"
 Pokemon = SHELLOS,19
 Pokemon = JOLTIK,20
 #-------------------------------
@@ -5773,8 +5773,8 @@ Pokemon = PETILIL,25
 Pokemon = BRAIXEN,25
 Pokemon = BAYLEEF,25
 #-------------------------------
-[POKEMONRANGER_M,Bobby]
-LoseText = "Maybe I'm the sick one!"
+[POKEMONRANGER_M,Hamish]
+LoseText = "That wasn't very environmentally conscious of you!"
 Pokemon = SKIPLOOM,26
 Pokemon = DOLLIV,27
 #-------------------------------
@@ -5934,7 +5934,7 @@ Pokemon = MIMIKYU,29
 Pokemon = FINIZEN,30
 Pokemon = SNOM,31
 #-------------------------------
-[GAMBLER,Philipp]
+[GAMBLER,Marceau]
 LoseText = "No! Not my money!"
 Pokemon = TOXEL,29
 Pokemon = RHYHORN,29
@@ -6432,7 +6432,7 @@ Pokemon = GALVANTULA,38
 #-------------------------------
 # ROUTE 9
 #-------------------------------
-[HIKER,McGinnis]
+[HIKER,Angus]
 LoseText = "Gah! Careless!"
 Pokemon = GOLBAT,40
 Pokemon = PUPITAR,41
@@ -6949,7 +6949,7 @@ Pokemon = MAREANIE,46
 Pokemon = CHINCHOU,47
 Pokemon = FINNEON,48
 #-------------------------------
-[TUBER_F,Jamey]
+[TUBER_F,Junie]
 LoseText = "All spun out!"
 Pokemon = MARILL,48
 Pokemon = WOOPER,48
@@ -6960,7 +6960,7 @@ LoseText = "Amnesia would be nice right now..."
 Pokemon = AZUMARILL,48
 Pokemon = WALREIN,47
 #-------------------------------
-[TUBER_F,Kelies]
+[TUBER_F,Caoimhe]
 LoseText = "We had fun, though!"
 Pokemon = CORSOLA,47
     Form = 1
@@ -7324,17 +7324,17 @@ LoseText = "Now use those smarts for the puzzle ahead!"
 Pokemon = CRYOGONAL,59
 Pokemon = FROSMOTH,59
 #-------------------------------
-[SKIER_M,Vice]
+[SKIER_M,Shane]
 LoseText = "So coooold!"
 Pokemon = VANILLISH,59
 Pokemon = VANILLUXE,59
 #-------------------------------
-[SKIER_M,Joakim]
+[SKIER_M,Ilya]
 LoseText = "The winner is clear, at least."
 Pokemon = WALREIN,60
 Pokemon = GLACEON,60
 #-------------------------------
-[VETERAN_M,Alaska]
+[VETERAN_M,Tadhg]
 LoseText = "What just happened?"
 Pokemon = PILOSWINE,60
 Pokemon = GLALIE,60
@@ -7491,13 +7491,13 @@ Pokemon = CAMERUPT,61
 Pokemon = WIGGLYTUFF,62
 #-------------------------------
 [TEAMSOL_M,Grunt,23]
-LoseText = "Double D's... Double Defeat..."
+LoseText = "Double Ds... Double Defeat..."
 Pokemon = SCOLIPEDE,60
 Pokemon = ARAQUANID,61
-Pokemon = DRAGONITE,62
+Pokemon = DRAGONAIR,62
 #-------------------------------
-[DOCTOR,Harvest]
-LoseText = "I'm feeling a lot better now. Are you?"
+[DOCTOR,Kestrel]
+LoseText = "Be careful of frostbite!"
 Pokemon = BLISSEY,60
 Pokemon = SPINDA,60
 Pokemon = SUNFLORA,60
@@ -7581,8 +7581,8 @@ LoseText = "I lost? But I've been with Pokémon for 500 years!"
 Pokemon = WHIMSICOTT,62
 Pokemon = GRIMMSNARL,62
 #-------------------------------
-[HEXMANIAC,Erina]
-LoseText = "Did you know? Defeat can bring about a sense of failure."
+[HEXMANIAC,Kepler]
+LoseText = "This is just embarrassing for me."
 Pokemon = SHEDINJA,62
 Pokemon = MISMAGIUS,62
 #-------------------------------
@@ -7720,12 +7720,12 @@ Pokemon = MAGNEZONE,68
 #-------------------------------
 [BACKERS_F,Evelyn & Miki]
 LoseText = "Very peaceful!"
-Pokemon = LOPUNNY,67
-Pokemon = CHANSEY,68
+Pokemon = DUDUNSPARCE,67
+Pokemon = ZEBSTRIKA,67
 #-------------------------------
-[DOCTOR,Carles]
+[DOCTOR,Carlos]
 LoseText = "Far out!"
-Pokemon = LILLIGANT,69
+Pokemon = SINISTCHA,69
 Pokemon = NINJASK,68
 #-------------------------------
 [YOUNGSTER,Oswald]
@@ -7983,7 +7983,7 @@ Pokemon = NOIVERN,74
 Pokemon = HYDREIGON,75
     Moves = DRACOMETEOR,DARKPULSE,FIREBLAST,UTURN
 #-------------------------------
-[BATTLEGIRL,Claice]
+[BATTLEGIRL,Celeste]
 LoseText = "My Pokémon are so weak! ...Or am I?"
 Pokemon = NOIVERN,74
     Moves = HEATWAVE,DRACOMETEOR,HURRICANE,XSCISSOR
@@ -8066,7 +8066,7 @@ Pokemon = DRAGALGE,75
 Pokemon = APPLETUN,76
     Moves = DRACOMETEOR,GIGADRAIN,GYROBALL,RECOVER
 #-------------------------------
-[BATTLEGIRL,Charlie]
+[BATTLEGIRL,Aoife]
 LoseText = "What? How can someone be this strong?!"
 Pokemon = BAXCALIBUR,74
     Moves = SCALESHOT,EARTHQUAKE,ICICLESPEAR,ZENHEADBUTT
