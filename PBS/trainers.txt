@@ -5802,7 +5802,7 @@ Pokemon = RABOOT,30
 #-------------------------------
 [PRESCHOOLER_F,Aqua]
 LoseText = "...!"
-Pokemon = DEWOTT,30
+Pokemon = PRINPLUP,30
 #-------------------------------
 [NURSERYAIDE,Wendy]
 LoseText = "Oh my, you're impressive!"

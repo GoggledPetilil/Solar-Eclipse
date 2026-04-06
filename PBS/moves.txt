@@ -644,7 +644,7 @@
 628,HEALINGWISH,Healing Wish,0E3,0,PSYCHIC,Status,0,10,0,User,0,d,"The user faints. In return, the Pokémon taking its place will have its HP restored and status cured."
 629,HEARTSWAP,Heart Swap,054,0,PSYCHIC,Status,0,10,0,NearOther,0,be,"The user employs its psychic power to switch stat changes with the target."
 630,HYPNOSIS,Hypnosis,003,0,PSYCHIC,Status,60,20,0,NearOther,0,bce,"The user employs hypnotic suggestion. Inflicts Sleep on target."
-631,IMPRISON,Imprison,0B8,0,PSYCHIC,Status,0,10,0,User,0,d,"If the foe knows any move also known by the user, the foe is prevented from using it."
+631,IMPRISON,Imprison,0B8,0,PSYCHIC,Status,0,10,0,User,0,d,"Moves known by the user cannot be used by any foes."
 632,INSTRUCT,Instruct,16B,0,PSYCHIC,Status,0,15,0,NearOther,0,b,"The user instructs the target to use the target's last move again."
 633,KINESIS,Kinesis,047,0,PSYCHIC,Status,80,15,0,NearOther,0,bce,"The user distracts the target by bending a spoon. Lowers target's Acc by 1."
 634,LIGHTSCREEN,Light Screen,0A3,0,PSYCHIC,Status,0,30,0,UserSide,0,d,"A wondrous wall of light is put up. For 5 turns, damage from special attacks to allies is halved."
