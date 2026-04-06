@@ -420,6 +420,7 @@ class ItemBerryPots_Scene
       if berryData.length>6
         # Gen 4 berry yield calculation
         berrycount = [berryvalues.maximum_yield - berryData[6], berryvalues.minimum_yield].max
+        berrycount = (berrycount * 1.5).ceil if berryData[7] == :GOOEYMULCH
       else
         # Gen 3 berry yield calculation
         if berryData[4]>0 # Update v19
@@ -529,29 +530,30 @@ class ItemBerryPots_Scene
         maxreplants = (maxreplants * 1.5).ceil
       when :STABLEMULCH
         ripestages = 6
+        dryingrate = (dryingrate * 0.8).floor
       end
       # Cycle through all replants since last check
-# (Berry Plants don't die anymore.)
-#      loop do
-#        secondsalive=berryData[2]
-#        growinglife=(berryData[5]>0) ? 3 : 4 # number of growing stages
-#        numlifestages=growinglife+ripestages # number of growing + ripe stages
-#        # Should replant itself?
-#        if secondsalive+timeDiff>=timeperstage*numlifestages
-#          # Should replant
-#          if berryData[5]>=maxreplants   # Too many replants
-#            return [0,0,0,0,0,0,0,0]
-#          end
-#          # Replant
-#          berryData[0]=2   # replants start in sprouting stage
-#          berryData[2]=0   # seconds alive
-#          berryData[5]+=1  # add to replant count
-#          berryData[6]=0   # yield penalty
-#          timeDiff-=(timeperstage*numlifestages-secondsalive)
-#        else
-#          break
-#        end
-#      end
+      loop do
+        secondsalive=berryData[2]
+        growinglife=(berryData[5]>0) ? 3 : 4 # number of growing stages
+        numlifestages=growinglife+ripestages # number of growing + ripe stages
+        # Should replant itself?
+        if secondsalive+timeDiff>=timeperstage*numlifestages
+          # Should replant
+          if berryData[5]>=maxreplants   # Too many replants
+            berryData[5] = maxreplants   # Plants don't die anymore
+            #return [0,0,0,0,0,0,0,0]
+          end
+          # Replant
+          berryData[0]=2   # replants start in sprouting stage
+          berryData[2]=0   # seconds alive
+          berryData[5]+=1  # add to replant count
+          berryData[6]=0   # yield penalty
+          timeDiff-=(timeperstage*numlifestages-secondsalive)
+        else
+          break
+        end
+      end
       # Update current stage and dampness
       if berryData[0]>0
         # Advance growth stage

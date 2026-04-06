@@ -58,10 +58,10 @@
 56,RELICBAND,Relic Band,Relic Bands,7,0,"A bracelet made in a civilization about 3,000 years ago. A maniac will buy it for a high price.",0,0,0
 57,RELICSTATUE,Relic Statue,Relic Statues,7,0,"A stone figure made in a civilization about 3,000 years ago. A maniac will buy it for a high price.",0,0,0
 58,RELICCROWN,Relic Crown,Relic Crowns,7,0,"A crown made in a civilization about 3,000 years ago. A maniac will buy it for a high price.",0,0,0
-59,GROWTHMULCH,Growth Mulch,Growth Mulch,1,200,"A fertilizer to be spread on soft soil in regions where Berries are grown. A maniac will buy it for a high price.",0,0,11
-60,DAMPMULCH,Damp Mulch,Damp Mulch,1,200,"A fertilizer to be spread on soft soil in regions where Berries are grown. A maniac will buy it for a high price.",0,0,11
-61,STABLEMULCH,Stable Mulch,Stable Mulch,1,200,"A fertilizer to be spread on soft soil in regions where Berries are grown. A maniac will buy it for a high price.",0,0,11
-62,GOOEYMULCH,Gooey Mulch,Gooey Mulch,1,200,"A fertilizer to be spread on soft soil in regions where Berries are grown. A maniac will buy it for a high price.",0,0,11
+59,GROWTHMULCH,Growth Mulch,Growth Mulch,1,200,"A fertilizer to be spread on soft soil. It speeds up the growth of Berries. However, it also dries the soil faster.",0,0,11
+60,DAMPMULCH,Damp Mulch,Damp Mulch,1,200,"A fertilizer to be spread on soft soil. It slows the growth of Berries, but also causes the soil to dry slower.",0,0,11
+61,STABLEMULCH,Stable Mulch,Stable Mulch,1,200,"A fertilizer to be spread on soft soil. It extends the time ripened Berries remain on their plants before falling.",0,0,11
+62,GOOEYMULCH,Gooey Mulch,Gooey Mulch,1,200,"A fertilizer to be spread on soft soil. It ups the number of Berries harvested from matured plants.",0,0,11
 63,SHOALSALT,Shoal Salt,Shoal Salts,7,20,"Pure salt that can be discovered deep inside the Shoal Cave. A maniac will buy it for a high price.",0,0,0
 64,SHOALSHELL,Shoal Shell,Shoal Shells,7,20,"A pretty seashell that can be found deep inside the Shoal Cave. A maniac will buy it for a high price.",0,0,0
 65,ODDKEYSTONE,Odd Keystone,Odd Keystones,8,0,"A mysterious stone that glows with an eerie purple light. Voices can be heard from it occasionally.",0,0,6
