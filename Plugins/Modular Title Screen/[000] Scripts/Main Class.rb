@@ -153,6 +153,19 @@ class ModularTitleScreen
     @sprites["start"].visible = false
     @sprites["start"].opacity = 0
     @fade = 8
+    #---------------------------------------------------------------------------
+    # setting up version text
+    @sprites["version"] = Sprite.new(@viewport)
+    @sprites["version"].bitmap = Bitmap.new(256, 42)
+    @sprites["version"].x = 8
+    @sprites["version"].y = @viewport.rect.height - 12
+    @sprites["version"].z = 999
+    @sprites["version"].visible = false
+    pbSetSmallFont(@sprites["version"].bitmap)
+    @sprites["version"].bitmap.font.size /= 2
+    t = "v" + (Settings::GAME_VERSION).to_s
+    pbDrawOutlineText(@sprites["version"].bitmap, 0, 0, 256, 42, t, 
+    Color.new(255, 255, 255),Color.new(0, 0, 0),0)
   end
   # trigger for playing the intro animation
   def intro
@@ -163,6 +176,7 @@ class ModularTitleScreen
     end
     @currentFrame = intro.currentFrame
     @sprites["start"].visible = true
+    @sprites["version"].visible = true
   end
   # main update for all the visual elements
   def updateElements
