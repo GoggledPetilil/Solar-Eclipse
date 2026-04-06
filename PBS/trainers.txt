@@ -6336,13 +6336,13 @@ Pokemon = ESPEON,80
     EV = 0,0,0,252,252,0
 #-------------------------------
 [FIREBREATHER,Freek]
-LoseText = "Hot hot HOOOOT!!"
+LoseText = "No! Not into the pit! It buuurns!"
 Pokemon = SALANDIT,35
 Pokemon = HOUNDOUR,36
 Pokemon = VULPIX,37
 #-------------------------------
 [BAKER,Janice]
-LoseText = "Something's burning!"
+LoseText = "My cakes will burn!"
 Pokemon = VULPIX,35
 Pokemon = GROWLITHE,36
 Pokemon = FARFETCHD,37
@@ -6449,19 +6449,19 @@ Pokemon = WHIMSICOTT,40
 Pokemon = NINETALES,40
 #-------------------------------
 [RICHBOY,Raymon]
-LoseText = "G-guh...!"
+LoseText = "But... I'm supposed to be amongst the elite!"
 Pokemon = RIOLU,41
     Form = 1
 Pokemon = SIRFETCHD,41
 #-------------------------------
 [RICHBOY,Raymon,1]
-LoseText = "G-Guh...!"
+LoseText = "But... I'm supposed to be amongst the elite!"
 Pokemon = RIOLU,46
 Pokemon = SIRFETCHD,46
 Pokemon = FALINKS,45
 #-------------------------------
 [RICHBOY,Raymon,2]
-LoseText = "G-Guh...!"
+LoseText = "But... I'm supposed to be amongst the elite!"
 Pokemon = LUCARIO,60
 Pokemon = SIRFETCHD,60
 Pokemon = FALINKS,59
@@ -6469,7 +6469,7 @@ Pokemon = SIMISEAR,59
 Pokemon = ARCANINE,59
 #-------------------------------
 [RICHBOY,Raymon,3]
-LoseText = "G-Guh...!"
+LoseText = "But... I'm supposed to be amongst the elite!"
 Pokemon = LUCARIO,75
 Pokemon = SIRFETCHD,75
 Pokemon = FALINKS,74
@@ -6478,7 +6478,7 @@ Pokemon = ARCANINE,73
 Pokemon = STEELIX,73
 #-------------------------------
 [RICHBOY,Raymon,4]
-LoseText = "G-Guh...!"
+LoseText = "But... I'm supposed to be amongst the elite!"
 Pokemon = LUCARIO,80
     Moves = AURASPHERE,PSYCHIC,SHADOWBALL,NASTYPLOT
     AbilityIndex = 0
@@ -7983,7 +7983,7 @@ Pokemon = NOIVERN,74
 Pokemon = HYDREIGON,75
     Moves = DRACOMETEOR,DARKPULSE,FIREBLAST,UTURN
 #-------------------------------
-[BATTLEGIRL,Celeste]
+[BATTLEGIRL,Merel]
 LoseText = "My Pokémon are so weak! ...Or am I?"
 Pokemon = NOIVERN,74
     Moves = HEATWAVE,DRACOMETEOR,HURRICANE,XSCISSOR
