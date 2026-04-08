@@ -91,7 +91,7 @@ class PokeSearch_Scene
     @sprites["repel_text"].shadowColor = ITEMTEXTSHADOWCOLOR
     @sprites["repel_text"].visible     = true
     @sprites["repel_text"].windowskin  = nil
-    @sprites["repel_text"].text = "Add a Honey pot to attract wild Pokémon."
+    @sprites["repel_text"].text = "Use a Honey pot to attract wild Pokémon. (Required)"
     @sprites["berry_icon"].visible = false
     @sprites["repel_icon"].visible = false
     pbFadeInAndShow(@sprites) { pbUpdate }
@@ -233,7 +233,7 @@ class PokeSearch_Scene
         @sprites["repel_text"].text = description(repel)
         @sprites["repel_icon"].visible = true
       else
-        @sprites["repel_text"].text = "Add a Honey pot to attract wild Pokémon."
+        @sprites["repel_text"].text = "Use a Honey pot to attract wild Pokémon. (Required)"
         @sprites["repel_icon"].visible = false
       end
       @current_repel = repel
