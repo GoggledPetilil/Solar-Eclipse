@@ -33,7 +33,7 @@ module BattleScripts
    "faintedOpp" => "Oh? We might need to be serious, bro.",
    "afterLastOpp" => {
    	:bgm => "Battle Gym Leader FINAL",
-   	:text => "We're in a corner... Come on, bro! Just one last push!"
+   	:text => "It's not looking good... Come on, bro! Just one last push!"
    	},
    "loss" => "Too bad. Have you tried getting a bro of your own?",
    "afterLast" => proc do
@@ -81,7 +81,7 @@ module BattleScripts
    "faintedOpp" => "Ah! There goes my precious, but we're not finished yet!",
    "afterLastOpp" => {
    	:bgm => "Battle Gym Leader FINAL",
-   	:text => "I may be backed into a corner, but my shine hasn't been dimmed yet!"
+   	:text => "My shine hasn't been dimmed yet!"
    	},
    "loss" => "I understand, my radiance is just too much for you! You're not the first, nor the last!",
    "afterLast" => proc do
@@ -327,7 +327,7 @@ module BattleScripts
    	:bgm => "Battle Gym Leader FINAL",
    	:text => "Hehe... HAH-HAH-HAH!! That's it!! Let's finish this fight!!"
    	},
-   "loss" => "Hmph... I thought you would do beter.",
+   "loss" => "Hmph... I thought you would do better.",
    "afterLast" => proc do
       hasRevive = $PokemonBag.pbHasItem?(:REVIVE) || $PokemonBag.pbHasItem?(:MAXREVIVE) || $PokemonBag.pbHasItem?(:REVIVALHERB)
       lastMon = (!hasRevive || $game_switches[Settings::BAN_REVIVAL])
@@ -358,7 +358,7 @@ module BattleScripts
       lastMon = (!hasRevive || $game_switches[Settings::BAN_REVIVAL])
       if lastMon
         pbBGMPlay("EBDX/Low HP Battle") if $PokemonSystem.lowhp<2
-        @scene.pbTrainerSpeak("Is this really all you have...? Perhaps it's time to end this.")
+        @scene.pbTrainerSpeak("What will you do? Persevere, or concede?")
       end
    end
   }
@@ -576,8 +576,8 @@ module BattleScripts
       pname = @battlers[1].name
       tname = @battle.opponent[0].full_name
       # begin code block for the first turn
-      @scene.pbTrainerSpeak(["Fascinating... Even with all my skills and strategies, I'm still backed into a corner.",
-                            "But we've still got one more ace up our sleeve. Me and #{pname} will not lose here!"
+      @scene.pbTrainerSpeak(["When the stars foretold this battle, I truly don't believe they expected this.",
+                            "But no matter. The stars do not reveal all. Me and #{pname} will not lose here!"
                           ])
       if $game_switches[Settings::HARDER_BOSSES]
         # play aura flare
@@ -593,13 +593,13 @@ module BattleScripts
         @scene.pbDisplay("#{pname}'s determination will shrug off status ailments!")
       end
     end,
-   "loss" => "Hmph. I'm disappointed.",
+   "loss" => "Sadly, I'm disappointed with what you have to offer.",
    "afterLast" => proc do
       hasRevive = $PokemonBag.pbHasItem?(:REVIVE) || $PokemonBag.pbHasItem?(:MAXREVIVE) || $PokemonBag.pbHasItem?(:REVIVALHERB)
       lastMon = (!hasRevive || $game_switches[Settings::BAN_REVIVAL])
       if lastMon
         pbBGMPlay("EBDX/Low HP Battle") if $PokemonSystem.lowhp<2
-        @scene.pbTrainerSpeak("Am I really about to beat you so easily here? You're stronger than this.")
+        @scene.pbTrainerSpeak("What now? Are you going to lose, just like that?")
       end
    end
     }
@@ -610,9 +610,9 @@ module BattleScripts
       pname = @battlers[1].name
       tname = @battle.opponent[0].name
       # begin code block for the first turn
-      @scene.pbTrainerSpeak(["You're always pushing me in a corner...",
+      @scene.pbTrainerSpeak(["The stars are always on your side...",
                              "But I don't intend to give up so easily!",
-                             "I've fought my whole life for the title of Solar Monarch!"
+                             "With my passion, I'll claim the title of Solar Monarch!"
                            ])
       # play aura flare
       @scene.pbDisplay("#{tname} and #{pname} are breathing in perfect sync with one another!")
@@ -629,13 +629,13 @@ module BattleScripts
         @scene.pbDisplay("#{pname}'s determination will shrug off status ailments!")
       end
     end,
-   "loss" => "I won... I honestly didn't think I'd win here...",
+   "loss" => "I won... The stars were always on my side, after all.",
    "afterLast" => proc do
       hasRevive = $PokemonBag.pbHasItem?(:REVIVE) || $PokemonBag.pbHasItem?(:MAXREVIVE) || $PokemonBag.pbHasItem?(:REVIVALHERB)
       lastMon = (!hasRevive || $game_switches[Settings::BAN_REVIVAL])
       if lastMon
         pbBGMPlay("EBDX/Low HP Battle") if $PokemonSystem.lowhp<2
-        @scene.pbTrainerSpeak("We've always pushed me to my limits. Come on, push your own!")
+        @scene.pbTrainerSpeak("You've always pushed me to my limits. Come on, push your own!")
       end
    end
     }
@@ -748,7 +748,7 @@ module BattleScripts
       pname = @battlers[1].name
       tname = @battle.opponent[0].name
       # begin code block for the first turn
-      @scene.pbTrainerSpeak(["Everyone! Please bare witness...",
+      @scene.pbTrainerSpeak(["Everyone! Please bear witness...",
                              "Allow me to unlock #{pname}'s true potential!"
                            ])
       # play aura flare
@@ -832,7 +832,7 @@ module BattleScripts
                            ])
       end
     end,
-    "loss" => "Hah! You lose. Now get lost!!",
+    "loss" => "Hah! You lose. Now get lost!",
    "afterLast" => proc do
       hasRevive = $PokemonBag.pbHasItem?(:REVIVE) || $PokemonBag.pbHasItem?(:MAXREVIVE) || $PokemonBag.pbHasItem?(:REVIVALHERB)
       lastMon = (!hasRevive || $game_switches[Settings::BAN_REVIVAL])
@@ -874,7 +874,7 @@ module BattleScripts
         b.pbFreeze if b.pbCanFreeze?(b,false,self)
       end
     end,
-    "faintedOpp" => "Strong start, eh? Well, let's see you handle this!!",
+    "faintedOpp" => "Strong start, eh? Well, let's see you handle this!",
     "afterLastOpp" => proc do
       pname = @battlers[1].name
       tname = @battle.opponent[0].name
@@ -900,7 +900,7 @@ module BattleScripts
       lastMon = (!hasRevive || $game_switches[Settings::BAN_REVIVAL])
       if lastMon      
         pbBGMPlay("EBDX/Low HP Battle") if $PokemonSystem.lowhp<2
-        @scene.pbTrainerSpeak("Where did that attitude from before go? Face it, it's game over!!")
+        @scene.pbTrainerSpeak("Where did that attitude from before go? Face it, it's game over!")
       end
    end
     }
@@ -936,7 +936,7 @@ module BattleScripts
         b.pbParalyze if b.pbCanParalyze?(b,false,self)
       end
     end,
-    "faintedOpp" => "No bad, noobie. Let's keep this up!!",
+    "faintedOpp" => "Not bad. But this is only the beginning!",
     "afterLastOpp" => proc do
       pname = @battlers[1].name
       tname = @battle.opponent[0].name
@@ -962,7 +962,7 @@ module BattleScripts
       lastMon = (!hasRevive || $game_switches[Settings::BAN_REVIVAL])
       if lastMon      
         pbBGMPlay("EBDX/Low HP Battle") if $PokemonSystem.lowhp<2
-        @scene.pbTrainerSpeak("I can taste it...! Sweet victory, it's just within my grasp!!")
+        @scene.pbTrainerSpeak("I can taste it...! Sweet victory, it's within my grasp!")
       end
    end
     }
@@ -993,13 +993,13 @@ module BattleScripts
       @battlers[1].pbRaiseStatStageBasic(:ATTACK, 1)
       @battlers[1].pbRaiseStatStageBasic(:DEFENSE, 1)
     end,
-    "loss" => "You are defeated.",
+    "loss" => "You have been defeated.",
    "afterLast" => proc do
       hasRevive = $PokemonBag.pbHasItem?(:REVIVE) || $PokemonBag.pbHasItem?(:MAXREVIVE) || $PokemonBag.pbHasItem?(:REVIVALHERB)
       lastMon = (!hasRevive || $game_switches[Settings::BAN_REVIVAL])
       if lastMon
         pbBGMPlay("EBDX/Low HP Battle") if $PokemonSystem.lowhp<2
-        @scene.pbTrainerSpeak("It is useless.")
+        @scene.pbTrainerSpeak("It is useless to resist.")
       end
    end
     }
@@ -1125,7 +1125,7 @@ module BattleScripts
       @scene.pbDisplay("#{pname} is radiating sheer might!")
     end,
    "fainted"   => proc do
-      @scene.pbTrainerSpeak(["I assume you're too stupid to realize, so spoiler warning...",
+      @scene.pbTrainerSpeak(["I assume you're too stupid to realise, so spoiler alert...",
                              "But there is absolutely NOTHING you can do! So just admit defeat!"
                            ])
    end

@@ -2194,7 +2194,7 @@ Pokemon = ELECTABUZZ,40
     EV = 0,252,0,252,0,0
 #-------------------------------
 [TEAMSOL_AdminY,Lairus,2]
-LoseText = "No way... No way!!"
+LoseText = "Whoa, chill out!"
 Pokemon = TYRANTRUM,62
     Gender = male
     Moves = HEADSMASH,DRAGONDANCE,CLOSECOMBAT,SCALESHOT
@@ -2239,7 +2239,7 @@ Pokemon = ELECTIVIRE,64
     EV = 0,252,0,252,0,0
 #-------------------------------
 [TEAMSOL_AdminY,Lairus,3]
-LoseText = "Not again... I thought I was over this!"
+LoseText = "Why does this keep on happening?!"
 Pokemon = TYRANTRUM,75
     Gender = male
     Moves = HEADSMASH,OUTRAGE,CLOSECOMBAT,SCALESHOT
