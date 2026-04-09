@@ -23833,7 +23833,7 @@ BattlerEnemyX = 0
 BattlerEnemyY = 12
 BattlerShadowX = 0
 BattlerShadowSize = 1
-Evolutions = NOIVERN,Level,48
+Evolutions = NOIVERN,Level,38
 #-------------------------------
 [715]
 Name = Noivern
