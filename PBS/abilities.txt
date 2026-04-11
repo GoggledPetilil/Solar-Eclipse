@@ -245,7 +245,7 @@
 243,LIBERO,Libero,"Changes type to the move type it's about to use."
 244,MIMICRY,Mimicry,"Changes type based on the terrain."
 245,MIRRORARMOR,Mirror Armor,"Reflects stat-lowering effects."
-246,NEUTRALIZINGGAS,Neutralizing Gas,"Supresses all Abilities."
+246,NEUTRALIZINGGAS,Neutralizing Gas,"Suppresses all Abilities."
 247,PASTELVEIL,Pastel Veil,"Protects self and allies from poison."
 248,PERISHBODY,Perish Body,"Upon being hit, all Pokémon faint after 3 turns."
 249,POWERSPOT,Power Spot,"Powers up moves used by allies."

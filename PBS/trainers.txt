@@ -7470,6 +7470,15 @@ Pokemon = RAPIDASH,61
     Form = 1
 Pokemon = ROSERADE,60
 #-------------------------------
+[POKEMANIAC,Takki]
+LoseText = "I can't even feel my toes..."
+Pokemon = CRYOGONAL,58
+Pokemon = SANDSLASH,58
+Pokemon = EISCUE,58
+Pokemon = CETITAN,58
+Pokemon = VANILLUXE,58
+
+#-------------------------------
 # MOUNT LAPLAENTA
 #-------------------------------
 [TEAMSOL_F,Grunt,21]

@@ -214,7 +214,7 @@ module QuestModule
     :QuestGiver => "Fairy Tale Girl",
     :Location0 => "Zimbani City",
     :Location1 => :Location0,
-    :QuestDescription => "A fariry-loving girl in Zimbani City has asked you to show her a Fairy-type Pokémon who shares a close bond with you. Despite her oddities, doing so might prove worthwhile."
+    :QuestDescription => "A fairy-loving girl in Zimbani City has asked you to show her a Fairy-type Pokémon who shares a close bond with you. Despite her oddities, doing so might prove worthwhile."
   }
   
   Quest23 = {
@@ -269,6 +269,42 @@ module QuestModule
     :Location0 => "Junkar City",
     :Location1 => :Location0,
     :QuestDescription => "A scientist in Junkar City has told you about the fossils that can be found in the rocks of Telgior Mines, as well as of technology that can revive these fossils. Find an Armor Fossil with Rock Smash, revive it and then show it to the scientist for a reward."
+  }
+
+  Quest29 = {
+    :ID => "29",
+    :Name => "Stay Healthy",
+    :QuestGiver => "Nurse",
+    :Location0 => "Farnlor City",
+    :Location1 => :Location0,
+    :QuestDescription => "A nurse in Farnlor City is asking you to show her a Pokémon that knows the move Heal Pulse, which might teach her some new skills. She's promised you a generous helping of healing items in return, which is something any trainer would want!"
+  }
+
+ Quest30 = {
+    :ID => "30",
+    :Name => "Toxic Treatment",
+    :QuestGiver => "Pharmacist",
+    :Location0 => "Myrfield City",
+    :Location1 => :Location0,
+    :QuestDescription => "A pharmacist in Myrfield City is particularly interested in Pokémon with the ability Poison Heal, which recover HP when poisoned. It looks like she'd have something good to give you if you give her one."
+  }
+
+ Quest31 = {
+    :ID => "31",
+    :Name => "Cold Shoulder",
+    :QuestGiver => "Poké Maniac",
+    :Location0 => "Route 19",
+    :Location1 => :Location0,
+    :QuestDescription => "A Poké Maniac who is obsessed with the cold has asked you for a battle using only the coldest Pokémon. It's all chill, though - just find some Ice-type Pokémon who are up to the job. Maybe he'll find it in his cold heart to part with a reward should you defeat him."
+  }
+
+Quest32 = {
+    :ID => "32",
+    :Name => "She Ain't No Diva",
+    :QuestGiver => "Beauty",
+    :Location0 => "R18-Eisenblut Gate",
+    :Location1 => :Location0,
+    :QuestDescription => "A Beauty has a dilemma - nothing cute to wear on a night out with the girls. That is the ultimate crime. Find a beautiful Pokémon that looks like it's rocking some killer footwear and show it to her. But beware: she has HIGH standards. What are you waiting for? Get searching!"
   }
 
 end
